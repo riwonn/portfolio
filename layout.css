@@ -98,8 +98,8 @@ main{
 	grid-row: 2/3;
  }
 .sidebar-r:nth-child(3) { 
-    grid-column: 2/3; 
-    grid-row: 2/3;
+/*     grid-column: 2/3; 
+    grid-row: 2/3; */
 }
 /* .item:nth-child(3) { 
     grid-row: 3/4; 
@@ -125,10 +125,12 @@ main{
     size: 32px,32px;
     gap: 48px;
 margin: 20px;
+	grid-column: 2/3; 
+    grid-row: 2/3;
 }
 .list1 { 
     grid-area: list1; 
-	grid-column: 1/5;
+	grid-column: 1/3;
 	grid-row: 3/4;
     display: flex;
     flex-direction: column;
