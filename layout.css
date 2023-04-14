@@ -72,8 +72,6 @@ strong{
 
 /* Grid */
 main{
-	width: 100vw;
-        height: 100vh;
 	display: grid;
 	 grid-template-columns: 4fr 1fr;
     grid-template-rows: repeat(auto-fill,minmax(100px, auto));
@@ -121,6 +119,8 @@ main{
 	grid-row: 2/3;
 } */
 .sidebar-r { 
+	width: 100vw;
+        height: 100vh;
     grid-area: r; 
     z-index: 1;
     display: flex;
@@ -146,6 +146,8 @@ main{
 
 /*Main Text*/
 .main-text{
+	width: 100vw;
+        height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
