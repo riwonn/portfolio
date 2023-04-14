@@ -75,7 +75,7 @@ strong{
 .container {
 	display: grid;
 	/* display: inline-grid; */
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(auto-fill,minmax(100px, auto));
     place-items: start stretch;
 /*     grid-template-areas:
