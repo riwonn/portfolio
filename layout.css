@@ -14,6 +14,9 @@ strong{
 
 /* 메뉴, 링크, 호버, 로고 */
 .menu{
+	grid-column: 1 / 5;
+	grid-row: 1 / 2;
+
     display: flex;
     position: fixed;
     top: 0;
@@ -100,10 +103,14 @@ strong{
     grid-row: 3 / 5;} */
 
 
-.main { grid-area: main;}
+.main { 
+	grid-area: main;
+	grid-column: 1/4;
+	grid-row: 2/3;
+}
 .sidebar-r { 
     grid-column: 4 / 5;
-	grid-row: 1 / 2;
+	grid-row: 2 / 3;
     
     grid-area: r; 
     z-index: 1;
@@ -115,6 +122,8 @@ strong{
 }
 .list1 { 
     grid-area: list1; 
+	grid-column: 1/5;
+	grid-row: 3/4;
     display: flex;
     flex-direction: column;
     align-items: center;
