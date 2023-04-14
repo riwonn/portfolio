@@ -85,6 +85,10 @@ strong{
        		 "list3 list3 list4 list4"
 		 "footer footer footer footer"; */
 }
+
+main{
+	display: grid;
+}
 /* Main Text */
 .main-text:nth-child(1) { 
     grid-area: main;
