@@ -13,11 +13,7 @@ strong{
 }
 
 /* full page */
-.container{
- 	width: 100vw;
-        height: 100vh;
 
- */
 /* 메뉴, 링크, 호버, 로고 */
 .menu{
     display: flex;
@@ -76,6 +72,8 @@ strong{
 
 /* Grid */
 main{
+	width: 100vw;
+        height: 100vh;
 	display: grid;
 	 grid-template-columns: 4fr 1fr;
     grid-template-rows: repeat(auto-fill,minmax(100px, auto));
