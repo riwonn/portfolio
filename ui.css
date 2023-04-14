@@ -1,0 +1,23 @@
+/* Menu */
+.menu{
+    /* 메뉴 상단 고정 */
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    padding: 0 2rem;
+    background:#F8F8FB;
+    z-index: 10;
+}
+/* Menu buttons */
+.btn_group{
+    display: flex;
+    /* flex: 1 1 auto; */
+    text-align: center;
+    align-items: center;
+    /* 브레이크 포인트에서 갭 줄이도록 코딩해야 함!! */
+    gap: 60px;
+ }
+

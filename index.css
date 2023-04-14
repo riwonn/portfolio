@@ -37,6 +37,33 @@
     text-decoration: none;
 }
 
+/* H2 */
+.menu-link{
+    display: flex;
+    flex: 1 1 auto;
+    text-decoration: none;
+    color: #20202D;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 400;
+}
+
+.menu-link.logo{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+}
+.menu-link:hover{
+    color: #00AA50;
+}
+
+.img-switch{
+    width: 40px;
+    height: 40px;
+}
+
 
 
 

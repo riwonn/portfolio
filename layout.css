@@ -12,116 +12,28 @@ strong{
     font-weight: 600;
 }
 
-/* full page */
-
-/* 메뉴, 링크, 호버, 로고 */
-.menu{
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    /* 축 정렬 */
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 40px 16px;
-    background:#F8F8FB;
-    z-index: 10;
-}
-.btn_group{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    height: 40px;
-    gap: 60px;
-    /* Inside auto layout */
-    flex: none;
-    order: 1;   
-    flex-grow: 0
- }
-
-/* H2 */
-.menu-link{
-    display: flex;
-    flex: 1 1 auto;
-    text-decoration: none;
-    color: #20202D;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    font-weight: 400;
-}
-
-.menu-link.logo{
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 100%;
-}
-.menu-link:hover{
-    color: #00AA50;
-}
-
-.img-switch{
-    width: 40px;
-    height: 40px;
-}
-
 /* Grid */
 main{
 	display: grid;
 	 grid-template-columns: 4fr 1fr;
     grid-template-rows: repeat(auto-fill,minmax(100px, auto));
     place-items: start stretch;
-	
-/* .container {
-	display: grid;
-	/* display: inline-grid; */
-/*     grid-template-columns: 4fr 1fr;
-    grid-template-rows: repeat(auto-fill,minmax(100px, auto));
-    place-items: start stretch;
-    grid-template-areas: */
-/* 		"main main main r"
-		"list1 list1 list1 list1"
-       		 "list2 list2 list2 list2"
-       		 "list3 list3 list4 list4"
-		 "footer footer footer footer";
-} */
+}
 
-/* } */
-/* Main Text */
-
+/* grid 순서 */
 .main-text:nth-child(1) { 
     grid-area: main;
 	grid-column: 1/2;
-	grid-row: 2/3;
+	grid-row: 1/2;
  }
 .sidebar-r:nth-child(2) { 
-    grid-column: 2/3; 
-    grid-row: 2/3;
-}
-/* .item:nth-child(3) { 
-    grid-row: 3/4; 
-}
-.item:nth-child(4) { 
-    grid-row: 4/5;
-}
-.item:nth-child(4) { 
-    grid-row: 3 / 5;} */
-
-/* 
-.main { 
-	grid-area: main;
-	grid-column: 1/4;
-	grid-row: 2/3;
-} */
-.sidebar-r { 
-	width: 100vw;
-        height: 100vh;
     grid-area: r; 
+    grid-column: 2/3; 
+    grid-row: 1/2;
+}
+
+/* grid 요소 */
+.sidebar-r { 
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -143,12 +55,9 @@ main{
 .list4 { grid-area: list4; }
 .footer { grid-area: footer; }
 
-
-
 /*Main Text*/
 .main-text{
-/* 	width: 100vw;
-        height: 100vh; */
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -160,8 +69,8 @@ main{
     left: 50%;
     top: 50%;
     transform:translate(-50%,-50%); */
-
 }
+
 .text-width{
     max-width: 794px;
 }
