@@ -1,23 +1,171 @@
+/* Basic Setting */
+html {
+    scroll-behavior: smooth;
+    overflow: scroll;
+  }
+body{
+    background:#F8F8FB;
+    margin: 0px;
+    font-family: 'Kanit';
+}
+strong{
+    font-weight: 600;
+}
+
+/* 이 파일에서는 layout.css의 그리드에 들어가는 ui 요소들을 정의한다. */
+
 /* Menu */
 .menu{
     /* 메뉴 상단 고정 */
     display: flex;
-    width: 100%;
     position: fixed;
-    justify-content: space-between;
+    left: 50%;
+    right: 50%;
+    transform:translate(-50%,0%);
     align-items: center;
-    height: 88px;
-    padding: 0 2rem;
-    background:#F8F8FB;
+    height: 64px;
+    border-radius: 32px;
+    /* 반응형 코딩 필요 */
+    width: 794px;
+    margin:16px 0;
+    padding: 0 2vw 0 3vw;
+    background-color: hsla(240, 10%, 94%, 0.8);
+    border: 1px solid hsla(240, 19%, 86%, 0.8);
+    backdrop-filter:blur(10px);
     z-index: 10;
 }
 /* Menu buttons */
 .btn_group{
     display: flex;
-    /* flex: 1 1 auto; */
+    flex: 1 1 auto;
     text-align: center;
     align-items: center;
     /* 브레이크 포인트에서 갭 줄이도록 코딩해야 함!! */
-    gap: 60px;
  }
+/*Main Text*/
+.page{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.main-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px 20vw;
+    gap:32px;
+}
 
+/* Social network's buttons */
+.sidebar-r { 
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    margin-right: 4vw;
+    height: 100vh;
+}
+/* down to protpolio list */
+.down{
+    max-height: 64px;
+    min-height: 32px;
+    max-width: 64px;
+    min-width: 32px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 4vh;
+    transform:translate(-50%,0%);
+    z-index: 1;
+}
+
+.card-list{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100vw;
+}
+/* full screen image */
+.card-item{
+    /* position: sticky; */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow-x: hidden;
+    color: inherit;
+    filter: brightness(1);
+    padding: 5vw;
+}
+.card-item:hover{
+    filter: brightness(0.8);
+    /* opacity:0.8; */
+    transition: .5s;
+}
+.card-item:nth-child(1){
+    background-image: url('img/img_temp.png');
+}
+.card-item:nth-child(2){
+    background-image: url('img/img_temp2.png');
+}
+.card-half{
+    overflow-x: hidden;
+    color: inherit;
+    display: flex;
+    flex-direction: row;
+}
+.card-half a:nth-child(1){
+    background-image: url('img/img_temp3.png');
+}
+.card-half a:nth-child(2){
+    background-image: url('img/img_temp4.png');
+}
+
+.card-img{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+/* card text setting */
+.card-title{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 60%;
+} 
+.card-info{
+    justify-content:end;
+    text-align: left;
+}
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin: 8vw 4vw 4vw;
+    gap: 16px;
+}
+.footer-icons { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 3vw;
+}
+.footer-stretch{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.border{
+    width: 100%;
+    border: 0.75px solid #49495A;
+}
