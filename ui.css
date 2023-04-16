@@ -26,7 +26,7 @@ strong{
     height: 64px;
     border-radius: 32px;
     /* 반응형 코딩 필요 */
-    width: 794px;
+    width: 50vw;
     margin:16px 0;
     padding: 0 2vw 0 3vw;
     background-color: hsla(240, 10%, 94%, 0.8);
@@ -43,7 +43,7 @@ strong{
     /* 브레이크 포인트에서 갭 줄이도록 코딩해야 함!! */
  }
 /*Main Text*/
-.page{
+.main-page{
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
@@ -139,11 +139,13 @@ strong{
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 60%;
+    width: 50%;
+    color: #fff;
 } 
 .card-info{
     justify-content:end;
     text-align: left;
+    color: #fff;
 }
 /* footer */
 .footer{
@@ -168,4 +170,27 @@ strong{
 .border{
     width: 100%;
     border: 0.75px solid #49495A;
+}
+/* project page */
+.project-page{
+    margin: 0px 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 52px;
+}
+.project-info{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    gap: 16px;
+}
+.project-info-detail{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+.info-gap{
+    gap:8px;
+    flex: 1 1 auto;
 }

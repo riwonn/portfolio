@@ -9,6 +9,10 @@
     font-size: 40px;
     line-height:40px;
 }
+.title.project{
+    margin-top: 16vh;
+    text-align: -webkit-center;
+}
 .logo{
     font-weight: 600;
     font-size: 20px;
@@ -40,6 +44,9 @@
 }
 .gray700{
     color: #49495A;
+}
+.white{
+    color: #fff;
 }
 .main-color{
     color: #00AA50;
