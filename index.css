@@ -1,4 +1,8 @@
-/* 텍스트 */
+/* Background */
+.bg-black{
+    background-color: hsla(240, 17%, 15%);
+}
+/* Text */
 .bold{
     font-weight: 600;
 }
@@ -25,6 +29,23 @@
     font-size: 28px;
     line-height: 130%;
 }
+/* notWork page */
+.body1-btn{
+    font-family: 'pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 130%;
+}
+.body1-btn:hover{
+    transition: .3s;
+    border-bottom: 1px, solid, #fff;
+    font-weight: 600;
+}
+.body1-btn:visited{
+    font-weight: 600;
+}
+
 .body2{
     font-family: 'pretendard';
     font-style: normal;
@@ -55,6 +76,12 @@
     color: #00AA50;
     text-decoration: none;
 }
+.h1{
+    font-family: 'Kanit';
+    width: 400;
+    font-size: 24px;
+    line-height: 100%
+}
 
 /* H2 */
 .menu-link{
@@ -67,6 +94,9 @@
     font-size: 16px;
     line-height: 100%;
     font-weight: 400;
+}
+.menu-link.white{
+    color: #fff;
 }
 .menu-link:hover{
     color: #00AA50;
