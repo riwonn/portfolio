@@ -37,27 +37,28 @@
 .three-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fill,minmax(auto, auto));
-    gap: .4vw;
+    grid-template-rows: repeat(auto-fill,minmax(100, auto));
+	gap: 4vw;
     grid-template-areas: 
+	'nw nw nw'
 	'1 2 3'
 	'4 5 6';
 }
 /* grid 순서 */
+
 .item-notWork:nth-child(1) { 
-    grid-area: 1;
-	background-image: url('img/img_temp.png');
+    grid-area: nw;
  }
 .item-notWork:nth-child(2) { 
-    grid-area: 2; 
+    grid-area: 1; 
 	background-image: url('img/img_temp2.png');
 }
 .item-notWork:nth-child(3) { 
-    grid-area: 3; 
+    grid-area: 2; 
 	background-image: url('img/img_temp3.png');
 }
 .item-notWork:nth-child(4) { 
-    grid-area: 4; 
+    grid-area: 3; 
 	background-image: url('img/img_temp4.png');
 }
 
@@ -74,24 +75,6 @@
     'list1 list1'
 	'footer footer';
 }
-/* grid 순서 */
-.item-notWork:nth-child(1) { 
-    grid-area: info;
- }
-.item-notWork:nth-child(2) { 
-    grid-area: profile;
-}
-.item-notWork:nth-child(3) { 
-    grid-area: skills
-}
-.item-notWork:nth-child(4) { 
-    grid-area: 4; 
-}
-
-
-/* .item:nth-child(4) { 
-    grid-area: list2; 
-} */
 
 /* 
 @media (min-width: 1024px) {
