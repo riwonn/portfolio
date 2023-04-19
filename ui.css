@@ -277,3 +277,12 @@ strong{
     margin: 35vh 0 0;
     overflow-y: hidden;
 }
+
+/* about me */
+.img-profile{
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 50%;
+    width: 20%;
+}

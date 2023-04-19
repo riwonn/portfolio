@@ -33,6 +33,7 @@
 	white-space:nowrap;
 }
 
+/* notWork */
 .three-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -59,6 +60,34 @@
     grid-area: 4; 
 	background-image: url('img/img_temp4.png');
 }
+
+/* aboutMe */
+.container-aboutMe{
+	display: grid;
+    width: 100vw;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fill,minmax(100px, auto));
+    place-items: start stretch;
+
+    grid-template-areas: 
+    'main r'
+    'list1 list1'
+	'footer footer';
+}
+/* grid 순서 */
+.item-notWork:nth-child(1) { 
+    grid-area: info;
+ }
+.item-notWork:nth-child(2) { 
+    grid-area: profile;
+}
+.item-notWork:nth-child(3) { 
+    grid-area: skills
+}
+.item-notWork:nth-child(4) { 
+    grid-area: 4; 
+}
+
 
 /* .item:nth-child(4) { 
     grid-area: list2; 

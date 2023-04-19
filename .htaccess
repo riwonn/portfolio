@@ -1,0 +1,10 @@
+;새로운 규칙을 시작한다
+RewriteEngine On
+; 파일 이름이 들어올 거다
+RewriteCond %{REQUEST_FILENAME} !-f
+; html일 수도
+RewriteRule ^([^.]+)$ $1.html [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+; php일 수도 있다
+RewriteRule ^([^.]+)$ $1.php [NC,L]
