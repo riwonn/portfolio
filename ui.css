@@ -83,7 +83,6 @@ strong{
     margin: 0px 20vw;
     gap:32px;
 }
-
 /* Social network's buttons */
 .sidebar-r { 
     z-index: 1;
@@ -124,13 +123,7 @@ strong{
     height: 100vh;
     overflow-x: hidden;
     color: inherit;
-    filter: brightness(1);
-    padding: 5vw;
-}
-.card-item:hover{
-    filter: brightness(0.7);
-    /* opacity:0.8; */
-    transition: .5s;
+    /* filter: brightness(1); */
 }
 .card-item:nth-child(1){
     background-image: url('img/img_temp.png');
@@ -158,13 +151,6 @@ strong{
     background-position: center;
     overflow: hidden;
     color: inherit;
-    filter: brightness(1);
-    padding: 5vw;
-}
-.card-item-project:hover{
-    filter: brightness(0.7);
-    /* opacity:0.8; */
-    transition: .5s;
 }
 .card-triple{
     overflow: hidden;
@@ -187,6 +173,13 @@ strong{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    padding: 5vw;
+}
+.card-img:hover{
+    background-size: cover;
+    background-color: hsla(240, 17%, 15%, .5);
+    z-index: 1;
+    transition: .3s;
 }
 /* card text setting */
 .card-title{
@@ -199,6 +192,7 @@ strong{
     color: #fff;
 } 
 .card-info{
+
     justify-content:end;
     text-align: left;
     color: #fff;
@@ -259,11 +253,10 @@ strong{
 .notWork-page{
     display: flex;
     flex: 1 1 auto;
-    background-position: center;
+    background: linear-gradient(to top, hsla(240, 17%, 15%, 1), hsla(240, 17%, 15%, 0)),url('img/img_notwork_thumnail_photo.png') no-repeat center;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
-    background: linear-gradient(to top, hsla(240, 17%, 15%, 1), hsla(240, 17%, 15%, 0)), url('img/img_notwork_thumnail_photo.png');
 }
 .notWork-page.notWork-btns{
     display: flex;
@@ -274,7 +267,9 @@ strong{
     gap: .4vw;
     text-align: center;
 }
-
+.margin{
+    margin: 4vw;
+}
 /* about me */
 .img-profile{
     background-size: cover;

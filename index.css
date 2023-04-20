@@ -1,6 +1,7 @@
 /* Background */
 .bg-black{
-    background-color: hsla(240, 17%, 15%);
+    background-color: hsla(240, 17%, 15%, 1);
+    overflow: hidden;
 }
 /* Text */
 .bold{

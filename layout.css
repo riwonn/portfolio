@@ -1,3 +1,7 @@
+img {
+	width: 100%;
+	height: auto;
+  }
 /* Grid */
 .container-main{
 	display: grid;
@@ -35,14 +39,14 @@
 
 /* notWork */
 .three-grid{
+	overflow: hidden;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fill,minmax(300px, 1fr));
-	grid-gap: 1em;
+	grid-template-columns: repeat(3, minmax(300px, 1fr));
+	/* grid-gap: 1em; */
     grid-template-areas: 
 	'nw nw nw'
-	'1 2 3'
-	'4 5 6';
+	'p1 p2 p3'
+	'p4 p5 p6';
 }
 /* grid 순서 */
 
@@ -50,19 +54,46 @@
     grid-area: nw;
  }
 .item-notWork:nth-child(2) { 
-    grid-area: 1; 
+	grid-area: p1; 
+	background-position: center;
 	width: 100%;
 	height: auto;
+	padding: 0 0 1em 4vw;
 }
 .item-notWork:nth-child(3) { 
-    grid-area: 2; 
+    grid-area: p2; 
+	background-position: center;
 	width: 100%;
-  	height: auto;
+	height: auto;
+	padding: 0 1em 1em;
 }
 .item-notWork:nth-child(4) { 
-    grid-area: 3; 
+    grid-area: p3; 
+	background-position: center;
 	width: 100%;
-  	height: auto;
+	height: auto;
+	padding: 0 4vw 1em 0;
+}
+.item-notWork:nth-child(5) { 
+	grid-area: p4; 
+	background-position: center;
+	width: 100%;
+	height: auto;
+	padding: 0 0 1em 4vw;
+}
+.item-notWork:nth-child(6) { 
+    grid-area: p5; 
+	background-position: center;
+	width: 100%;
+	height: auto;
+	padding: 0 1em 1em;
+}
+.item-notWork:nth-child() { 
+    grid-area: p6; 
+	background-position: center;
+	width: 100%;
+	height: auto;
+	padding: 0 4vw 1em 0;
 }
 
 /* aboutMe */
