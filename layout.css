@@ -37,8 +37,8 @@
 .three-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fill,minmax(100, auto));
-	gap: 4vw;
+    grid-template-rows: repeat(auto-fill,minmax(300px, 1fr));
+	grid-gap: 1em;
     grid-template-areas: 
 	'nw nw nw'
 	'1 2 3'
@@ -51,15 +51,18 @@
  }
 .item-notWork:nth-child(2) { 
     grid-area: 1; 
-	background-image: url('img/img_temp2.png');
+	width: 100%;
+	height: auto;
 }
 .item-notWork:nth-child(3) { 
     grid-area: 2; 
-	background-image: url('img/img_temp3.png');
+	width: 100%;
+  	height: auto;
 }
 .item-notWork:nth-child(4) { 
     grid-area: 3; 
-	background-image: url('img/img_temp4.png');
+	width: 100%;
+  	height: auto;
 }
 
 /* aboutMe */
