@@ -282,7 +282,7 @@ strong{
     margin: 24px 20vw;
     gap:32px;
 }
-.column.moMargin{
+.column-moMargin{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
