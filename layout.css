@@ -111,7 +111,6 @@ img {
 }
 .item-aboutMe:nth-child(1){
 	grid-area: aboutMe;
-	height: 90vh;
 }
 .item-aboutMe:nth-child(2){
 	grid-area: skill;
