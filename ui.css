@@ -251,12 +251,11 @@ strong{
 /* notWork */
 /* main background image */
 .notWork-page{
-    display: flex;
-    flex: 1 1 auto;
     background: linear-gradient(to top, hsla(240, 17%, 15%, 1), hsla(240, 17%, 15%, 0)),url('img/img_notwork_thumnail_photo.png') no-repeat center;
     width: 100vw;
     height: 90vh;
     overflow: hidden;
+    background-size: cover;
 }
 .notWork-page.notWork-btns{
     display: flex;
