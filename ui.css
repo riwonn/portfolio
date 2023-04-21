@@ -274,8 +274,6 @@ strong{
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    height: 50%;
-    width: 20%;
 }
 .column{
     display: flex;
