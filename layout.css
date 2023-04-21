@@ -99,15 +99,23 @@ img {
 /* aboutMe */
 .container-aboutMe{
 	display: grid;
-    width: 100vw;
-	grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(auto-fill,minmax(100px, auto));
-    place-items: start stretch;
+   	width: 100vw;
+ 	grid-template-rows: repeat(auto-fill,minmax(100px, auto));
+  	place-items: start stretch;
 
-    grid-template-areas: 
-    'main r'
-    'list1 list1'
-	'footer footer';
+   	grid-template-areas: 
+  	'aboutMe'
+   	'skill'
+	'experience';
+}
+.item-aboutMe:nth-child(1){
+	grid-area: aboutMe;
+}
+.item-aboutMe:nth-child(2){
+	grid-area: skill;
+}
+.item-aboutMe:nth-child(3){
+	grid-area: experience;
 }
 
 /* 
