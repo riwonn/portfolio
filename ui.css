@@ -277,3 +277,10 @@ strong{
     height: 50%;
     width: 20%;
 }
+.column{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 24px 20vw;
+    gap:32px;
+}
