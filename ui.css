@@ -40,7 +40,7 @@ img {
     padding: 0 2vw 0 3vw;
     background-color: hsla(240, 10%, 94%, 0.8);
     border: 1px solid hsla(240, 19%, 86%, 0.8);
-    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
     z-index: 10;
 }
 .menu-black{
@@ -59,7 +59,7 @@ img {
     padding: 0 2vw 0 3vw; 
     background-color: hsla(240, 10%, 32%, 0.5);
     border: 1px solid hsla(240, 8%, 53%, 0.5);
-    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
     z-index: 10;
 }
 /* Menu buttons */
