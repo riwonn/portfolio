@@ -10,12 +10,16 @@ body{
     -webkit-user-select: none;
     -moz-user-select:none;
     -ms-user-select:none;
-    user-select:none
+    user-select:none;
     overflow: hidden;
 }
 strong{
     font-weight: 600;
 }
+img {
+	width: 100%;
+	height: auto;
+  }
 
 /* 이 파일에서는 layout.css의 그리드에 들어가는 ui 요소들을 정의한다. */
 
@@ -272,6 +276,9 @@ strong{
 }
 /* about me */
 .img-profile{
+    width: 70%;
+    /* min-width: 30%; */
+    position: relative;
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -281,12 +288,17 @@ strong{
     flex: 1 1 auto;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 24px 20vw;
     gap:32px;
+    padding: 24px 0 64px;
 }
-.column-moMargin{
+.flex{
+    flex: 1 1 0;
+}
+.flex:nth-child(1){
+    flex-grow: 0.8;
+}
+.height{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap:32px;
+    justify-content: column;
+    margin-bottom: 1em;
 }

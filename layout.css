@@ -1,7 +1,4 @@
-img {
-	width: 100%;
-	height: auto;
-  }
+
 /* Grid */
 .container-main{
 	display: grid;
@@ -99,7 +96,7 @@ img {
 /* aboutMe */
 .container-aboutMe{
 	display: grid;
-   	width: 100vw;
+
  	grid-template-rows: repeat(auto-fill,minmax(100px, auto));
   	place-items: start stretch;
 
@@ -107,11 +104,14 @@ img {
   	'aboutMe'
    	'skill'
 	'experience';
-	padding: 0 4vw 0;
+	margin: 4vw;
 	overflow: hidden;
 }
 .item-aboutMe:nth-child(1){
 	grid-area: aboutMe;
+	margin: 0 10vw;
+	align-items: center;
+	padding: 10% 0;
 }
 .item-aboutMe:nth-child(2){
 	grid-area: skill;
