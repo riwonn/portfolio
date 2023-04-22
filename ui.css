@@ -253,6 +253,7 @@ img {
 .big-image{
     margin: 20vw;
 }
+
 /* notWork */
 /* main background image */
 .notWork-page{
@@ -262,18 +263,29 @@ img {
     overflow: hidden;
     background-size: cover;
 }
+
+
 .notWork-page.notWork-btns{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     z-index: 2;
     gap: .4vw;
     text-align: center;
 }
+.body1-btn{
+    font-family: 'pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    background: none;
+    color: white;
+    border: none;
+}
 .margin{
     margin: 4vw;
 }
+
 /* about me */
 .img-profile{
     width: 70%;

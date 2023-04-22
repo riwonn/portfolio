@@ -30,14 +30,6 @@
     font-size: 28px;
     line-height: 130%;
 }
-/* notWork page */
-.body1-btn{
-    font-family: 'pretendard';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 130%;
-}
 .body1-btn:hover{
     transition: .3s;
     border-bottom: 1px, solid, #fff;
