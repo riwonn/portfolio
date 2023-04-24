@@ -30,14 +30,6 @@
     font-size: 28px;
     line-height: 130%;
 }
-.body1-btn:hover{
-    transition: .3s;
-    border-bottom: 1px, solid, #fff;
-    font-weight: 600;
-}
-.body1-btn:visited{
-    font-weight: 600;
-}
 
 .body2{
     font-family: 'pretendard';
@@ -87,15 +79,27 @@
     font-size: 16px;
     line-height: 100%;
     font-weight: 400;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.menu-link:hover{
+    -webkit-transition: .3s;
+    transition: .3s;
+    transform: translate(0, -20%);
+}
+.menu-link:active{
+    transition: .3s;
+    color: #A1F7CA;
 }
 .menu-link.white{
     color: #fff;
 }
-.menu-link:hover{
-    color: #00AA50;
-}
-
 .img-switch{
     width: 40px;
     height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+.img-switch:hover{
+    color: hsla(240, 17%, 15%, .5)
 }

@@ -17,8 +17,9 @@ strong{
     font-weight: 600;
 }
 img {
-	width: 100%;
-	height: auto;
+    background-size: cover;
+	/* width: 100%;
+	height: auto; */
   }
 
 /* 이 파일에서는 layout.css의 그리드에 들어가는 ui 요소들을 정의한다. */
@@ -41,6 +42,7 @@ img {
     background-color: hsla(240, 10%, 94%, 0.8);
     border: 1px solid hsla(240, 19%, 86%, 0.8);
     -webkit-backdrop-filter:blur(10px);
+    backdrop-filter:blur(10px);
     z-index: 10;
 }
 .menu-black{
@@ -60,6 +62,7 @@ img {
     background-color: hsla(240, 10%, 32%, 0.5);
     border: 1px solid hsla(240, 8%, 53%, 0.5);
     -webkit-backdrop-filter:blur(10px);
+    backdrop-filter:blur(10px);
     z-index: 10;
 }
 /* Menu buttons */
@@ -70,6 +73,7 @@ img {
     align-items: center;
     /* 브레이크 포인트에서 갭 줄이도록 코딩해야 함!! */
  }
+ 
 /*Main Text*/
 .main-page{
     display: flex;
@@ -207,8 +211,11 @@ img {
     display: flex;
     flex-direction: column;
     align-items: right;
-    margin: 8vw 4vw 4vw;
+    padding: 8vw 4vw 4vw;
     gap: 16px;
+}
+.footer.d{
+    background-color: hsla(240, 17%, 15%, 1);
 }
 .footer-icons { 
     display: flex;
@@ -226,7 +233,10 @@ img {
     width: 100%;
     border: 0.5px solid #A7A6BB;
 }
-
+.border-d{
+    width: 100%;
+    border: 0.5px solid #49495A;
+}
 /* project page */
 .project-page{
     margin: 0px 20vw;
@@ -254,36 +264,90 @@ img {
     margin: 20vw;
 }
 
+
 /* notWork */
 /* main background image */
-.notWork-page{
-    background: linear-gradient(to top, hsla(240, 17%, 15%, 1), hsla(240, 17%, 15%, 0)),url('img/img_notwork_thumnail_photo.png') no-repeat center;
-    width: 100vw;
-    height: 90vh;
-    overflow: hidden;
+.notWork-center{
+    position: fixed;
+    margin: 0px auto;
+    z-index: -1;
     background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
-
-
-.notWork-page.notWork-btns{
+.notWork-center img{
+    background-size: cover;
+    background-position: center;
+    vertical-align: middle;
+    height: auto;
+    width: 100%;
+}
+.notWork-btns{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 0 0 auto;
+    flex-direction: column;
+    position: absolute;
+    padding: 1em;
+    top: 30%;
+    /* left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    padding: 14px;
     z-index: 2;
-    gap: .4vw;
-    text-align: center;
+}
+.full-page{
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+}
+.gradient{
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    height: 200px;
+    background: linear-gradient(180deg, transparent,  hsla(240, 17%, 15%, 1) );
 }
 .body1-btn{
     font-family: 'pretendard';
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
+    text-align: left;
     background: none;
+    padding: .5m;
     color: white;
     border: none;
 }
+.body1-btn:hover{
+    transform: translate(5%, 0);
+    transition: .5s;
+    border-bottom: 1px, solid, #fff;
+    font-weight: 600;
+    text-shadow: 0 0 10px #49495A;
+}
+.body1-btn:visited{
+    font-weight: 600;
+}
 .margin{
     margin: 4vw;
+}
+.nav-area{
+    z-index: -1;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;    
+    width: 100%;
+    height: 100%;
+    padding:48px 4vw;
+    flex-direction: column;
+    -webkit-box-pack: justify;
 }
 
 /* about me */

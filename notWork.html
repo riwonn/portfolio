@@ -30,30 +30,67 @@
 			<a href="https://www.everiwon.com/#first" class="menu-link white">WORK</a>
 			<a href="notWork.html" class="menu-link white">NOT WORK</a>
 			<a href="aboutMe.html" class="menu-link white">ABOUT ME</a>
-			<img class="img-switch" src="img/btn_switch_light.svg">
+			<button class="img-switch"><image src="img/btn_switch_light.svg"></image></button>
 		</nav>
 	</nav>
 	<!-- Main Memu Finish -->
-    <section class="three-grid">
-        <div id="notWork-img" class="item-notWork notWork-page"> 
-            <div class="notWork-page notWork-btns white">
-                <button onclick="toggleImg()" class="body1-btn">UXUI</button>
-                <span class="body1">/</span>
-                <button class="body1-btn">3D Modeling</button>
-                <span class="body1">/</span>
-                <button class="body1-btn">Animation</button>
-                <span class="body1">/</span>
-                <button class="body1-btn">Graphic</button>
-                <span class="body1">/</span>
-                <button class="body1-btn">Photograph</button>
-            </div>
-        </div>
-        <img class="item-notWork" src="img/img_temp2.png">
-		<img class="item-notWork"  src="img/img_temp.png">
-		<img class="item-notWork"  src="img/img_temp4.png">
-		<img class="item-notWork"  src="img/img_temp3.png">
-		<img class="item-notWork"  src="img/img_temp2.png">
-	
-
+    <section>
+		<div class="notWork-btns white">
+			<button onclick="toggleImg1()" class="body1-btn">UXUI</button>
+			<button onclick="toggleImg2()" class="body1-btn">3D Modeling</button>
+			<button onclick="toggleImg3()" class="body1-btn">Animation</button>
+			<button onclick="toggleImg4()" class="body1-btn">Graphic</button>
+			<button onclick="toggleImg5()" class="body1-btn">Photograph</button>
+		</div>
+		<div class="notWork-center">
+				<img id="notWork-img" src="img/img_notwork_thumnail_photo.png"> 
+		</div>	
+		<div>
+			<div class="full-page">
+				<div class="nav-area"></div>
+				<div class="gradient"></div>
+			</div>
+				<div class="notWork-grid">
+					<div class="grid-row">
+						<img class="item-notWork" src="img/img_temp2.png">
+						<img class="item-notWork"  src="img/img_temp3.png">
+						<img class="item-notWork"  src="img/img_temp4.png">
+					</div>
+					<div class="grid-row">
+						<img class="item-notWork" src="img/img_temp5.png">
+						<img class="item-notWork"  src="img/img_temp2.png">
+						<img class="item-notWork"  src="img/img_temp4.png">
+					</div>
+					<div class="grid-row">
+						<img class="item-notWork" src="img/img_temp2.png">
+						<img class="item-notWork"  src="img/img_temp.png">
+						<img class="item-notWork"  src="img/img_temp3.png">
+					</div>
+			</div>	
+		</div>
+	</div>
     </section>
+	<!-- footer -->
+	<footer class="footer d">
+		<div class="footer-icons">
+			<a href="https://www.behance.net/everiwon" target='_blank'>
+				<img src="img/btn_main_behance_dark.svg">
+			</a>
+			<a href="https://www.linkedin.com/in/riwon-kwon-732a9a15b/" target='_blank'>
+				<img src="img/btn_main_linkedin_dark.svg">
+			</a>
+			<a href="https://www.instagram.com/designdotnote/" target='_blank'>
+			<img src="img/btn_main_instagram_dark.svg">
+			</a>
+		</div>
+		<div class="border-d"></div>
+		<div class="footer-stretch logo white">
+			<div>EVERiwon</div>
+			<div>Seoul, South Korea</div>
+		</div>
+		<div class="footer-stretch caption white">
+			<div>©Riwon Kwon 2023</div>
+			<div>Seoul, South Korea</div>
+		</div>
+	</footer>
 </body>

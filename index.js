@@ -110,6 +110,18 @@
 
 // 조건문
 
-function toggleImg() {
-    document.getElementById("notWork-img").url = "img/img_temp2";
+  function toggleImg1() {
+    document.getElementById("notWork-img").src = "img/img_temp2.png";
+  }
+  function toggleImg2() {
+    document.getElementById("notWork-img").src = "img/img_temp.png";
+  }
+  function toggleImg3() {
+    document.getElementById("notWork-img").src = "img/img_temp3.png";
+  }
+  function toggleImg4() {
+    document.getElementById("notWork-img").src = "img/img_temp4.png";
+  }
+  function toggleImg5() {
+    document.getElementById("notWork-img").src = "img/img_notwork_thumnail_photo.png";
   }

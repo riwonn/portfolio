@@ -33,73 +33,36 @@
 	text-align: center;
 	white-space:nowrap;
 }
-
 /* notWork */
-.three-grid{
+.notWork-grid{
 	overflow: hidden;
     display: grid;
-	grid-template-columns: repeat(3, minmax(300px, 1fr));
-	/* grid-gap: 1em; */
-    grid-template-areas: 
-	'nw nw nw'
-	'p1 p2 p3'
-	'p4 p5 p6';
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	-webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+	background-color: hsla(240, 17%, 15%, 1);
+	padding: 0 4vw;
 }
-/* grid 순서 */
+.grid-row{
+	margin: .5em;
 
-.item-notWork:nth-child(1) { 
-    grid-area: nw;
+}
+.item-notWork{ 
+	margin: .5em;
+	background-position: center;
+	width: 100%;
+	height: auto;
  }
-.item-notWork:nth-child(2) { 
-	grid-area: p1; 
-	background-position: center;
-	width: 100%;
-	height: auto;
-	padding: 0 0 1em 4vw;
-}
-.item-notWork:nth-child(3) { 
-    grid-area: p2; 
-	background-position: center;
-	width: 100%;
-	height: auto;
-	padding: 0 1em 1em;
-}
-.item-notWork:nth-child(4) { 
-    grid-area: p3; 
-	background-position: center;
-	width: 100%;
-	height: auto;
-	padding: 0 4vw 1em 0;
-}
-.item-notWork:nth-child(5) { 
-	grid-area: p4; 
-	background-position: center;
-	width: 100%;
-	height: auto;
-	padding: 0 0 1em 4vw;
-}
-.item-notWork:nth-child(6) { 
-    grid-area: p5; 
-	background-position: center;
-	width: 100%;
-	height: auto;
-	padding: 0 1em 1em;
-}
-.item-notWork:nth-child() { 
-    grid-area: p6; 
-	background-position: center;
-	width: 100%;
-	height: auto;
-	padding: 0 4vw 1em 0;
-}
 
 /* aboutMe */
 .container-aboutMe{
 	display: grid;
-
  	grid-template-rows: repeat(auto-fill,minmax(100px, auto));
   	place-items: start stretch;
-
+	z-index: 1;
    	grid-template-areas: 
   	'aboutMe'
    	'skill'
