@@ -153,7 +153,7 @@ img {
 .card-half a:nth-child(2){
     background-image: url('img/img_temp4.png');
 }
-@media(min-width: 300px){
+@media(max-width: 300px){
 	.card-half{flex-wrap: wrap;
 	}
 }
