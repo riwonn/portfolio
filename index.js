@@ -127,8 +127,32 @@
   }
 
   // notWork 이미지 확대
-  function imgWide(smallImg)
-						{
-							let fullImg = document.getElementById("imageBox");
-							fullImg.src = smallImg.src;
-						}
+  function imgWide(smallImg){
+    let fullImg = document.getElementById("imageBox");
+    fullImg.src = smallImg.src;
+
+    if(document.getElementById('fullImage').style.display==='none'){
+      document.getElementById('fullImage').style.display='block';
+  }else{
+      document.getElementById('fullImage').style.display='none';
+  }
+  }
+
+
+function viewImg(){
+  if(document.getElementById('fullImage').style.display==='block'){
+      document.getElementById('fullImage').style.display='none';
+  }else{
+      document.getElementById('fullImage').style.display='block';
+  }
+}
+
+// let display = true;
+// function doDisplay(){
+//     let con = document.getElementById("viewImg");
+//     if(con.style.display=='none'){
+//         con.style.display = 'block';
+//     }else{
+//         con.style.display = 'none';
+//     }
+// }

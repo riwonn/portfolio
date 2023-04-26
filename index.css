@@ -100,7 +100,8 @@ input.img-switch{
     height: 40px;
     border-radius: 20px;
     border: none;
+    cursor: pointer;
 }
-input:hover{
+input.img-switch:hover{
     color: hsla(240, 17%, 15%, .5);
 }

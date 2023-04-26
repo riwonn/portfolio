@@ -18,8 +18,8 @@ strong{
 }
 img {
     background-size: cover;
-	/* width: 100%;
-	height: auto; */
+	width: 100%;
+	height: auto;
   }
 
 /* 이 파일에서는 layout.css의 그리드에 들어가는 ui 요소들을 정의한다. */
@@ -309,10 +309,10 @@ img {
     /* left: 50%; */
     /* transform: translate(-50%,-50%); */
     padding: 14px;
-    z-index: 2;
+    z-index: 1;
 }
 .full-page{
-	height: 90vh;
+	height: 60vh;
 	display: flex;
 	flex-direction: column;
 }
