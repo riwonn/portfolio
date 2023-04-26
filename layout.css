@@ -50,11 +50,27 @@
 	padding: 0 .5em;
 
 }
-.item-notWork{ 
+.item-notWork img{ 
 	margin: .5em;
 	background-position: center;
 	width: 100%;
 	height: auto;
+	cursor: pointer;
+ }
+ .item-notWork img:hover{
+	filter: brightness(.7);
+	transition: .3s;
+ }
+
+.big-img-page{
+	background-color: black;
+	opacity: .5;
+}
+ .img-container img{
+	width: 40px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
  }
 
 /* aboutMe */

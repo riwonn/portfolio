@@ -153,10 +153,19 @@ img {
 .card-half a:nth-child(2){
     background-image: url('img/img_temp4.png');
 }
-@media(max-width: 800px){
-	.card-half{flex-wrap: wrap;
+@media(max-width: 834px){
+	.card-half{
+        flex-wrap: wrap;
 	}
 }
+@media(max-width: 390px){
+	.card-item{
+        flex-wrap: wrap;
+        height: 50vh;
+	}
+}
+
+
 /* 카드 1/3 */
 .card-item-project{
     /* position: sticky; */

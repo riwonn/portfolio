@@ -2,7 +2,7 @@
 // /*세미콜론 안 붙여도 올라감.
 // 여러 줄 주석*/
 // //ES6, ECMA 2015 : 모던 자바스크립트(현재 사용하고 있는 문법)
-// //예전 버전 자바스크립트에서는 변수를 var로 선언했었음. (let, const와 혼용하지 않는 것이 좋음)
+// //예전 버전 자바스크립트에서는 변수를 let로 선언했었음. (let, const와 혼용하지 않는 것이 좋음)
 // console.log('start java script');
 // document.write('안녕!');
 
@@ -125,3 +125,10 @@
   function toggleImg5() {
     document.getElementById("notWork-img").src = "img/img_notwork_thumnail_photo.png";
   }
+
+  // notWork 이미지 확대
+  function imgWide(smallImg)
+						{
+							let fullImg = document.getElementById("imageBox");
+							fullImg.src = smallImg.src;
+						}
