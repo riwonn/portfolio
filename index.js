@@ -131,14 +131,15 @@
     let fullImg = document.getElementById("imageBox");
     fullImg.src = smallImg.src;
 
-    if(document.getElementById('fullImage').style.display==='none'){
+    if(document.getElementById('fullImage').style.display=='none'){
       document.getElementById('fullImage').style.display='block';
+     document.getElementById('fullImage').style.display='none';
   }
   }
 
 
 function viewImg(){
-  if(document.getElementById('fullImage').style.display==='block'){
+  if(document.getElementById('fullImage').style.display=='block'){
       document.getElementById('fullImage').style.display='none';
   }else{
       document.getElementById('fullImage').style.display='block';
