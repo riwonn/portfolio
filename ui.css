@@ -77,7 +77,7 @@ img {
     display: flex;
 }
 #bigMenu{
-    display: flex;
+    display: none;
 }
 /* #menu{
     display: flex;
