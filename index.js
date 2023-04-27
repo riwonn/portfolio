@@ -117,14 +117,12 @@
     document.getElementById("notWork-img").src = "img/img_temp.png";
   }
   function toggleImg3() {
-    document.getElementById("notWork-img").src = "img/img_temp3.png";
+    document.getElementById("notWork-img").src = "img/img_notwork_thumnail_photo.png";
   }
   function toggleImg4() {
     document.getElementById("notWork-img").src = "img/img_temp4.png";
   }
-  function toggleImg5() {
-    document.getElementById("notWork-img").src = "img/img_notwork_thumnail_photo.png";
-  }
+
 
   // notWork 이미지 확대
   function imgWide(smallImg){
