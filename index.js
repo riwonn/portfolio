@@ -133,7 +133,8 @@
 
     if(document.getElementById('fullImage').style.display==='none'){
       document.getElementById('fullImage').style.display='block';
-     document.getElementById('fullImage').style.display='none';
+  }else{
+      document.getElementById('fullImage').style.display='none';
   }
   }
 
