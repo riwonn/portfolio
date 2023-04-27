@@ -122,6 +122,9 @@ input.img-menu{
     border: none;
     cursor: pointer;
 }
+input.img-menu.light{
+    background: url(img/btn_GNBmenu_dark.svg) no-repeat center;
+}
  
 /*Main Text*/
 .main-page{
