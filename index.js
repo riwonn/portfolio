@@ -147,12 +147,73 @@ function viewImg(){
   }
 }
 
-// let display = true;
-// function doDisplay(){
-//     let con = document.getElementById("viewImg");
-//     if(con.style.display=='none'){
-//         con.style.display = 'block';
-//     }else{
-//         con.style.display = 'none';
-//     }
+// menu 반응형
+// let body = document.getElementById("body")[0];
+// window.onresize = function(event){
+//   let innerWidth = window.innerWidth;
+//   innerWidth = window.innerWidth;
+//   innerWidth <= "800"?
+//   document.getElementById('smallMenu').style.display='none':
+//   document.getElementById('bigMenu').style.display='flex';
 // }
+
+// let body = document.getElementsByTagName("body")[0];
+// window.onresize = function(event){
+//   let innerWidth = window.innerWidth;
+//   innerWidth <= "800" ?  document.getElementById('smallMenu').style.display='none': document.getElementById('bigMenu').style.display='flex';
+//   innerWidth > "800" ?  document.getElementById('bigMenu').style.display='none' : document.getElementById('smallMenu').style.display='flex';
+// }
+
+// $(window).resize(function (){
+//   // width값을 가져오기
+//   var width_size = window.innerWidth;
+//   // 800 이하인지 if문으로 확인
+//   if (width_size <= 800) {
+//     console.log('현재 브라우저 크기가 <= 800px');
+//   }
+// })
+
+// $(window).resize(function(){ 
+//   if (window.innerWidth > 800) {  // 다바이스 크기가 800이상일때 
+//     document.getElementById('smallMenu').style.display='none';
+//     document.getElementById('bigMenu').style.display='flex';
+//   } else {
+//     document.getElementById('smallMenu').style.display='flex';
+//     document.getElementById('bigMenu').style.display='none';
+//   }
+  
+//   }).resize(); 
+
+// const smallMenu = window.matchMedia("(max-width: 800px)");
+// const bigMenu = window.matchMedia("(min-width: 800px)");
+
+// function x(samllMenu){
+//   if (smallMenu.matches){
+//     document.getElementById('smallMenu').style.display='flex';
+//   }
+// }
+// function y(bigMenu){
+//   if (bigMenu.matches){
+//     document.getElementById('bigMenu').style.display='flex';
+//   }
+// }
+
+// smallMenu.addEventListener(x);
+// bigMenu.addEventListener(y);
+
+const body = document.querySelector("body");
+
+function handleWindowSize() {
+  const windowWidth = window.innerWidth;
+  if (windowWidth <= 800) {
+    document.getElementById("bigMenu").style.display ='none';		
+    document.getElementById("smallMenu").style.display ='flex';
+    console.log('800 이하!');
+  } else {
+    document.getElementById("smallMenu").style.display ='none';		
+    document.getElementById("bigMenu").style.display ='flex';
+    console.log('800 초과!');
+  }
+}
+
+window.addEventListener("resize", handleWindowSize);

@@ -65,6 +65,23 @@ img {
     backdrop-filter:blur(10px);
     z-index: 10;
 }
+.menu-black.small{
+    margin:0;
+    width: 100%;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#smallMenu{
+    display: flex;
+}
+#bigMenu{
+    display: flex;
+}
+/* #menu{
+    display: flex;
+} */
 /* Menu buttons */
 .btn_group{
     display: flex;
@@ -73,6 +90,30 @@ img {
     align-items: center;
     /* 브레이크 포인트에서 갭 줄이도록 코딩해야 함!! */
  }
+ .btn_group.small{
+    display: flex;
+    flex: 0 0 auto;
+    gap: 1em;
+    justify-content: left;
+ }
+ input.img-switch{
+    background: #D6D6E3 url(img/btn_switch_light.svg) no-repeat center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+input.img-switch:hover{
+    color: hsla(240, 17%, 15%, .5);
+}
+input.img-menu{
+    background: url(img/btn_GNBmenu.svg) no-repeat center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
  
 /*Main Text*/
 .main-page{
