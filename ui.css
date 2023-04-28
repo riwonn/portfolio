@@ -81,12 +81,28 @@ img {
     border-left: none;
     border-right: none;
 }
-#smallMenu{
+@media(max-width: 834px){
+	.menu-light{
+		opacity: 0;
+	}
+	.menu-light.small{
+		opacity: 1;
+	}
+}
+@media(min-width: 834px){
+	.menu-light{
+		opacity: 1;
+	}
+	.menu-light.small{
+		opacity: 0;
+	}
+}
+/* #smallMenu{
     display: none;
 }
 #bigMenu{
     display: flex;
-}
+} */
 /* #menu{
     display: flex;
 } */
