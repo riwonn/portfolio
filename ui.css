@@ -82,10 +82,10 @@ img {
     border-right: none;
 }
 #smallMenu{
-    display: flex;
+    display: none;
 }
 #bigMenu{
-    display: none;
+    display: flex;
 }
 /* #menu{
     display: flex;
