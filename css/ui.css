@@ -84,10 +84,10 @@ img {
     /* filter: brightness(1); */
 }
 .card-item:nth-child(1){
-    background-image: url('img/img_temp.png');
+    background-image: url('/img/img_temp.png');
 }
 .card-item:nth-child(2){
-    background-image: url('img/img_temp2.png');
+    background-image: url('/img/img_temp2.png');
 }
 /* 카드 1/2 */
 .card-half{
@@ -97,10 +97,10 @@ img {
     flex-direction: row;
 }
 .card-half a:nth-child(1){
-    background-image: url('img/img_temp3.png');
+    background-image: url('/img/img_temp3.png');
 }
 .card-half a:nth-child(2){
-    background-image: url('img/img_temp4.png');
+    background-image: url('/img/img_temp4.png');
 }
 @media(max-width: 834px){
 	.card-half{
@@ -131,13 +131,13 @@ img {
     height: 60vh;
 }
 .card-triple a:nth-child(1){
-    background-image: url('img/img_temp.png');
+    background-image: url('/img/img_temp.png');
 }
 .card-triple a:nth-child(2){
-    background-image: url('img/img_temp2.png');
+    background-image: url('/img/img_temp2.png');
 }
 .card-triple a:nth-child(3){
-    background-image: url('img/img_temp3.png');
+    background-image: url('/img/img_temp3.png');
 }
 .card-img{
     height: 100%;
@@ -193,7 +193,7 @@ img {
 }
 .border{
     width: 100%;
-    border: 0.5px solid #A7A6BB;
+    border: 0.5px solid #C0C0CE;
 }
 .border-d{
     width: 100%;

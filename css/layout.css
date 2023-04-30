@@ -76,7 +76,7 @@
 	right: 1vw;
 	width: 64px;
 	height: 64px;
-	background-image: url("img/btn_cancel.svg");
+	background-image: url("/img/btn_cancel.svg");
 	z-index: 21;
 	cursor: pointer;
 	border: none;

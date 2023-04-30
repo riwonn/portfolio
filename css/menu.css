@@ -120,12 +120,12 @@
 		opacity: 0;
 	}
 }
-#smallMenu{
+/* #smallMenu{
     display: none;
 }
 #bigMenu{
     display: flex;
-}
+} */
 /* #menu{
     display: flex;
 } */
@@ -145,7 +145,7 @@
     justify-content: left;
  }
  input.img-switch{
-    background: #D6D6E3 url("img/btn_switch_light.svg") no-repeat center;
+    background: #D6D6E3 url("/img/btn_switch_light.svg") no-repeat center;
     width: 40px;
     height: 40px;
     border-radius: 20px;
@@ -156,34 +156,86 @@ input.img-switch:hover{
     color: hsla(240, 17%, 15%, .5);
 }
 input.img-menu{
-    background: url("img/btn_GNBmenu.svg") no-repeat center;
+    background: url("/img/btn_GNBmenu.svg") no-repeat center;
     width: 40px;
     height: 40px;
     border: none;
     cursor: pointer;
 }
 input.img-menu.light{
-    background: url("img/btn_GNBmenu_dark.svg") no-repeat center;
+    background: url("/img/btn_GNBmenu_dark.svg") no-repeat center;
 }
-.menu-pannel{
-    /* width: 80%; */
+.cover-panel{
+    display: fixed;
+    left: 0;
+    top:0;
+    width: 100vw;
     height: 100vh;
+    transform: translateX(-100%);
+    transform-origin: left;
+    transition: .3s;
+    will-change: transform;
     background-color: #EEEEF1;
+    z-index: 1000;
+}
+.cover-panel.active{
+    transform: translateX(0);
+}
+.menu-flex{
     display: flex;
     flex-direction: column;
     padding: 16px;
 }
 .menu-title{
-    display: flex;
     /* flex: 1 1 auto; */
     flex-direction: row;
-    padding: 0 40px 0 0;
+    padding: 20px 40px 20px 0;
     gap: 8px;
     align-items: center;
 }
-.img-back{
-    background: url("img/btn_back.svg") no-repeat center;
+.btn-back{
+    content: '';
+    position: fixed;
     width: 32px;
     height: 32px;
     border: none;
+    padding: 7px;
+    top: 28px;
+}
+.btn-back span{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background: #20202D;
+    pointer-events: none;
+    border-radius: 2px;
+}
+.btn-back::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 60%;
+    height: 2px;
+    background: #20202D;
+    transform: rotate(-45deg);
+    transform-origin: left;
+    border-radius: 2px;
+}
+.btn-back::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 60%;
+    height: 2px;
+    background: #20202D;
+    transform: rotate(45deg);
+    transform-origin: left;
+    border-radius: 2px;
+}
+button{
+    background: none;
 }

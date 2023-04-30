@@ -1,17 +1,19 @@
-new ProjectViwe();
+// import { imgList } from './imgList.js';
+import { ProjectView } from './ProjectView.js';
+new ProjectView();
 
 
 function toggleImg1() {
-  document.getElementById("notWork-img").src = "img/img_temp2.png";
+  document.getElementById("notWork-img").src = "/img/img_temp2.png";
 }
 function toggleImg2() {
-  document.getElementById("notWork-img").src = "img/img_temp.png";
+  document.getElementById("notWork-img").src = "/img/img_temp.png";
 }
 function toggleImg3() {
-  document.getElementById("notWork-img").src = "img/img_notwork_thumnail_photo.png";
+  document.getElementById("notWork-img").src = "/img/img_notwork_thumnail_photo.png";
 }
 function toggleImg4() {
-  document.getElementById("notWork-img").src = "img/img_temp4.png";
+  document.getElementById("notWork-img").src = "/img/img_temp4.png";
 }
 
 
@@ -39,14 +41,20 @@ function viewImg(){
 // 윈도우 사이즈에 따른 메뉴 스타일 변경
 function handleWindowSize() {
   const windowWidth = window.innerWidth;
-  if (windowWidth <= 800) {
+  if (windowWidth <= 834) {
     document.getElementById("bigMenu").style.display ='none';		
     document.getElementById("smallMenu").style.display ='flex';
-    console.log('800 이하!');
+    console.log('834 이하!');
   } else {
     document.getElementById("smallMenu").style.display ='none';		
     document.getElementById("bigMenu").style.display ='flex';
-    console.log('800 초과!');
+    console.log('834 초과!');
   }
 }
 window.addEventListener("resize", handleWindowSize);
+
+//menu pannel 불러오기
+// let projectMenuElem
+// projectMenuElem.addEventListener('click', e => {
+//   console.log(e.target);
+// });
