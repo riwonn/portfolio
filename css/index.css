@@ -67,30 +67,3 @@
     font-size: 24px;
     line-height: 100%
 }
-
-/* H2 */
-.menu-link{
-    display: flex;
-    flex: 1 1 auto;
-    text-decoration: none;
-    color: #20202D;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    font-weight: 400;
-    -webkit-transition: .3s;
-    transition: .3s;
-}
-.menu-link:hover{
-    -webkit-transition: .3s;
-    transition: .3s;
-    transform: translate(0, -20%);
-}
-.menu-link:active{
-    transition: .3s;
-    color: #A1F7CA;
-}
-.menu-link.white{
-    color: #fff;
-}

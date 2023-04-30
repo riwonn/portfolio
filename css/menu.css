@@ -1,0 +1,189 @@
+/* H2 */
+.menu-link{
+    display: flex;
+    flex: 1 1 auto;
+    text-decoration: none;
+    color: #20202D;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.menu-link:hover{
+    -webkit-transition: .3s;
+    transition: .3s;
+    transform: translate(0, -20%);
+}
+.menu-link:active{
+    transition: .3s;
+    color: #A1F7CA;
+}
+.menu-link.white{
+    color: #fff;
+}
+.menu-link-logo{
+    text-decoration: none;
+    color: #20202D;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+}
+.menu-link-smallBtn{
+    text-align: left;
+    text-decoration: none;
+    color: #20202D;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 400;
+    padding: 22px 0;
+}
+.title-center{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+}
+/* Menu */
+.menu-light{
+    /* 메뉴 상단 고정 */
+    display: flex;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    transform:translate(-50%,0%);
+    align-items: center;
+    height: 64px;
+    border-radius: 32px;
+    /* 반응형 코딩 필요 */
+    width: 50vw;
+    margin:16px 0;
+    padding: 0 2vw 0 3vw;
+    background-color: hsla(240, 10%, 94%, 0.8);
+    border: 1px solid hsla(240, 19%, 86%, 0.8);
+    -webkit-backdrop-filter:blur(10px);
+    backdrop-filter:blur(10px);
+    z-index: 10;
+}
+.menu-light.small{
+    margin:0;
+    width: 100%;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.menu-black{
+    /* 메뉴 상단 고정 */
+    display: flex;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    transform:translate(-50%,0%);
+    align-items: center;
+    height: 64px;
+    border-radius: 32px;
+    /* 반응형 코딩 필요 */
+    width: 50vw;
+    margin:16px 0;
+    padding: 0 2vw 0 3vw; 
+    background-color: hsla(240, 10%, 32%, 0.5);
+    border: 1px solid hsla(240, 8%, 53%, 0.5);
+    -webkit-backdrop-filter:blur(10px);
+    backdrop-filter:blur(10px);
+    z-index: 2;
+}
+.menu-black.small{
+    margin:0;
+    width: 100%;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+@media(max-width: 834px){
+	.menu-light{
+		opacity: 0;
+	}
+	.menu-light.small{
+		opacity: 1;
+	}
+}
+@media(min-width: 834px){
+	.menu-light{
+		opacity: 1;
+	}
+	.menu-light.small{
+		opacity: 0;
+	}
+}
+#smallMenu{
+    display: none;
+}
+#bigMenu{
+    display: flex;
+}
+/* #menu{
+    display: flex;
+} */
+/* Menu buttons */
+
+.btn_group{
+    display: flex;
+    flex: 1 1 auto;
+    text-align: center;
+    align-items: center;
+    /* 브레이크 포인트에서 갭 줄이도록 코딩해야 함!! */
+ }
+ .btn_group.small{
+    display: flex;
+    flex: 0 0 auto;
+    gap: 1em;
+    justify-content: left;
+ }
+ input.img-switch{
+    background: #D6D6E3 url("img/btn_switch_light.svg") no-repeat center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+input.img-switch:hover{
+    color: hsla(240, 17%, 15%, .5);
+}
+input.img-menu{
+    background: url("img/btn_GNBmenu.svg") no-repeat center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+input.img-menu.light{
+    background: url("img/btn_GNBmenu_dark.svg") no-repeat center;
+}
+.menu-pannel{
+    /* width: 80%; */
+    height: 100vh;
+    background-color: #EEEEF1;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+.menu-title{
+    display: flex;
+    /* flex: 1 1 auto; */
+    flex-direction: row;
+    padding: 0 40px 0 0;
+    gap: 8px;
+    align-items: center;
+}
+.img-back{
+    background: url("img/btn_back.svg") no-repeat center;
+    width: 32px;
+    height: 32px;
+    border: none;
+}
