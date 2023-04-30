@@ -22,11 +22,11 @@ function imgWide(smallImg){
   let fullImg = document.getElementById("imageBox");
   fullImg.src = smallImg.src;
 
-  if(document.getElementById('fullImage').style.display==='none'){
-    document.getElementById('fullImage').style.display='block';
-}else{
-    document.getElementById('fullImage').style.display='none';
-}
+//   if(document.getElementById('fullImage').style.display==='none'){
+//     document.getElementById('fullImage').style.display='block';
+// }else{
+//     document.getElementById('fullImage').style.display='none';
+// }
 }
 
 // notwork 이미지 보이기
@@ -39,19 +39,19 @@ function viewImg(){
 }
 
 // 윈도우 사이즈에 따른 메뉴 스타일 변경
-function handleWindowSize() {
-  const windowWidth = window.innerWidth;
-  if (windowWidth <= 834) {
-    document.getElementById("bigMenu").style.display ='none';		
-    document.getElementById("smallMenu").style.display ='flex';
-    console.log('834 이하!');
-  } else {
-    document.getElementById("smallMenu").style.display ='none';		
-    document.getElementById("bigMenu").style.display ='flex';
-    console.log('834 초과!');
-  }
-}
-window.addEventListener("resize", handleWindowSize);
+// function handleWindowSize() {
+//   const windowWidth = window.innerWidth;
+//   if (windowWidth <= 834) {
+//     document.getElementById("bigMenu").style.display ='none';		
+//     document.getElementById("smallMenu").style.display ='flex';
+//     console.log('834 이하!');
+//   } else {
+//     document.getElementById("smallMenu").style.display ='none';		
+//     document.getElementById("bigMenu").style.display ='flex';
+//     console.log('834 초과!');
+//   }
+// }
+// window.addEventListener("resize", handleWindowSize);
 
 //menu pannel 불러오기
 // let projectMenuElem

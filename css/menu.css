@@ -106,17 +106,45 @@
 }
 @media(max-width: 834px){
 	.menu-light{
+        transition: .3s;
+        display: none;
 		opacity: 0;
 	}
 	.menu-light.small{
+        transition: .3s;
+        display: flex;
+		opacity: 1;
+	}
+    .menu-dark{
+        transition: .3s;
+        display: none;
+		opacity: 0;
+	}
+	.menu-dark.small{
+        transition: .3s;
+        display: flex;
 		opacity: 1;
 	}
 }
 @media(min-width: 834px){
 	.menu-light{
+        transition: .3s;
+        display: flex;
 		opacity: 1;
 	}
 	.menu-light.small{
+        transition: .3s;
+        display: none;
+		opacity: 0;
+	}
+    .menu-dark{
+        transition: .3s;
+        display: flex;
+		opacity: 1;
+	}
+	.menu-dark.small{
+        transition: .3s;
+        display: none;
 		opacity: 0;
 	}
 }
