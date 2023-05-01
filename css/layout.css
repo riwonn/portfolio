@@ -1,31 +1,29 @@
 
 /* Grid */
+/* index */
+
 .container-main{
 	display: grid;
-    width: 100vw;
-	grid-template-columns: 90% 10%;
-    grid-template-rows: repeat(auto-fill,minmax(100px, auto));
-    place-items: start stretch;
-
-    grid-template-areas: 
-    'main r'
-    'list1 list1'
-	'footer footer';
+	width: 100vw;
+	grid-template-rows: repeat(auto-fill,minmax(100px, auto));
+	place-items: start stretch;
+	grid-template-areas: 
+	'main'
+	'list1'
+	'footer';
 }
 
 /* grid 순서 */
 .item:nth-child(1) { 
-    grid-area: main;
- }
+	grid-area: main;
+}
 .item:nth-child(2) { 
-    grid-area: r; 
+	grid-area: list1; 
 }
 .item:nth-child(3) { 
-    grid-area: list1; 
+	grid-area: footer; 
 }
-.item:nth-child(4) { 
-    grid-area: footer; 
-}
+
 .center{
 	position:absolute;
 	left: 50%;
@@ -47,11 +45,19 @@
 	margin: 4vw;
 	overflow: hidden;
 }
-.item-aboutMe:nth-child(1){
-	grid-area: aboutMe;
-	margin: 0 10vw;
-	align-items: center;
-	padding: 10% 0;
+@media(max-width: 390px){
+	.item-aboutMe:nth-child(1){
+		grid-area: aboutMe;
+		align-items: center;
+		padding: 72px 0 4vw;
+	}
+}
+@media(min-width: 390px){
+	.item-aboutMe:nth-child(1){
+		grid-area: aboutMe;
+		align-items: center;
+		padding: 10vw;
+	}
 }
 .item-aboutMe:nth-child(2){
 	grid-area: skill;

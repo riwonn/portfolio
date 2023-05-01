@@ -7,28 +7,52 @@
 .bold{
     font-weight: 600;
 }
-.title{
-    font-family: 'Kanit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height:40px;
+@media(max-width: 390px){
+    .title{
+        font-family: 'Kanit';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height:32px;
+    }
+    .title.project{
+        margin-top: 16vh;
+        text-align: -webkit-center;
+    }
+    .body1{
+        font-family: 'pretendard';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 130%;
+    }   
 }
-.title.project{
-    margin-top: 16vh;
-    text-align: -webkit-center;
+@media(min-width: 390px){
+    .title{
+        font-family: 'Kanit';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height:40px;
+    }
+    .title.project{
+        margin-top: 16vh;
+        text-align: -webkit-center;
+    }
+    .body1{
+        font-family: 'pretendard';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 130%;
+    }
+ 
 }
+
 .logo{
     font-weight: 600;
     font-size: 20px;
     line-height: 100%;
-}
-.body1{
-    font-family: 'pretendard';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 130%;
 }
 
 .body2{
