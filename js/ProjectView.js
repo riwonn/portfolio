@@ -5,18 +5,22 @@ export class ProjectView{
         // 끝 부분에 자식을 추가하는 메서드 appendChild
         document.body.appendChild(this.bodyElem);
 
-        this.show();
+        this.bodyElem.addEventListener('click', e => {
+			if (e.target.classList.contains('btn-back')) {
+				this.hide();
+			}
+		});
     }
 
     show(){
         this.bodyElem.innerHTML = `
         <section class="menu-flex">
-            <div class="menu-title">
+            <header class="menu-title">
                 <button class="btn-back"><span></span></button>
                 <div class="title-center">
                     <a href="https://www.everiwon.com/" class="menu-link-logo">EVERiwon</a>
                 </div>
-            </div>
+            </header>
             <a href="https://www.everiwon.com/#first" class="menu-link-smallBtn">WORK</a>
             <div class="border"></div>
             <a href="notWork.html" class="menu-link-smallBtn">NOT WORK</a>
@@ -25,6 +29,19 @@ export class ProjectView{
             <div class="border"></div>
         </section>
         `;
-      this.bodyElem.classList.add('active');
+
+        const timerId = setTimeout(() => {
+            this.bodyElem.classList.add('active');
+            clearTimeout(timerId);
+        }, 10);
+    }
+
+    hide() {
+        this.bodyElem.classList.add('close');
+
+        const timerId = setTimeout (() => {
+            this.bodyElem.classList.remove('active', 'close');
+            clearTimeout(timerId);
+        }, 10);
     }
 }

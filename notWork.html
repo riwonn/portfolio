@@ -9,8 +9,12 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/ui.css">
+	<link rel="stylesheet" href="css/notWork.css">
 	<link rel="stylesheet" href="css/menu.css">
-	<script type="module" src="/js/main.js"></script>
+	<script type="module" src="js/main.js"></script>
+	<script src="js/norWork.js"></script>
+	
+
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BY6WDX2LR"></script>
@@ -28,6 +32,13 @@
 		<div id="fullImage" class="wide-img-page">
 			<div class="imageBox">
 				<button onclick="viewImg()" class="btn-cancel"></button>
+				<div class="notWork-txt">
+					<div class="notWork-title">
+						<div class="body1 white">ProjectName</div>
+						<div class="body2 white">ProjectCaption</div>
+					</div>
+					<div class="body2 white">location</div>
+				</div>
 				<img id="imageBox" src="img/img_temp3.png">
 			</div>
 			<div class="img-bg"></div>
@@ -35,21 +46,21 @@
 	</div> 
 
 	<!-- Big Menu Start -->
-	<nav id="bigMenu" class="menu-light">
-		<a href="https://www.everiwon.com/" class="menu-link logo">EVERiwon</a>
+	<nav id="bigMenu" class="menu-dark">
+		<a href="https://www.everiwon.com/" class="menu-link white logo">EVERiwon</a>
 		<nav class="btn_group">
-			<a href="https://www.everiwon.com/#first" class="menu-link">WORK</a>
-			<a href="notWork.html" class="menu-link">NOT WORK</a>
-			<a href="aboutMe.html" class="menu-link">ABOUT ME</a>
+			<a href="https://www.everiwon.com/#first" class="menu-link white">WORK</a>
+			<a href="notWork.html" class="menu-link white">NOT WORK</a>
+			<a href="aboutMe.html" class="menu-link white">ABOUT ME</a>
 			<input type="button" class="img-switch">
 		</nav>
 	</nav>
 	<!-- Big Memu Finish -->
 	<!-- Small Menu Start -->
-	<nav id="smallMenu" class="menu-light small">
-		<a href="https://www.everiwon.com/" class="menu-link logo">EVERiwon</a>
+	<nav id="smallMenu" class="menu-dark small">
+		<a href="https://www.everiwon.com/" class="menu-link white logo">EVERiwon</a>
 		<nav class="btn_group small">
-			<input type="button" class="img-menu">
+			<button class="btn-menu light"><span></span></button>
 			<input type="button" class="img-switch">
 		</nav>
 	</nav>

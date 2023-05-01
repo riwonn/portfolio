@@ -76,7 +76,7 @@
     border-left: none;
     border-right: none;
 }
-.menu-black{
+.menu-dark{
     /* 메뉴 상단 고정 */
     display: flex;
     position: fixed;
@@ -96,7 +96,7 @@
     backdrop-filter:blur(10px);
     z-index: 2;
 }
-.menu-black.small{
+.menu-dark.small{
     margin:0;
     width: 100%;
     border-radius: 0;
@@ -148,17 +148,8 @@
 		opacity: 0;
 	}
 }
-/* #smallMenu{
-    display: none;
-}
-#bigMenu{
-    display: flex;
-} */
-/* #menu{
-    display: flex;
-} */
-/* Menu buttons */
 
+/* Menu buttons */
 .btn_group{
     display: flex;
     flex: 1 1 auto;
@@ -170,10 +161,10 @@
     display: flex;
     flex: 0 0 auto;
     gap: 1em;
-    justify-content: left;
+    justify-content: right;
  }
  input.img-switch{
-    background: #D6D6E3 url("/img/btn_switch_light.svg") no-repeat center;
+    background: #D6D6E3 url("../img/btn_switch_light.svg") no-repeat center;
     width: 40px;
     height: 40px;
     border-radius: 20px;
@@ -183,37 +174,133 @@
 input.img-switch:hover{
     color: hsla(240, 17%, 15%, .5);
 }
-input.img-menu{
-    background: url("/img/btn_GNBmenu.svg") no-repeat center;
+.btn-menu{
+    content: '';
+    position: relative;
+    border: none;
+    padding: 8px 6px;
     width: 40px;
     height: 40px;
     border: none;
     cursor: pointer;
 }
-input.img-menu.light{
-    background: url("/img/btn_GNBmenu_dark.svg") no-repeat center;
+.btn-menu span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 24px;
+    height: 2px;
+    background: #20202D;
+    border-radius: 2px;
+    transform: translate(-50%,0);
 }
+.btn-menu::before{
+    content:'';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width:24px;
+    height: 2px;
+    background: #20202D;
+    transform: translate(-50%,-8px);
+    border-radius: 2px;
+}
+.btn-menu::after{
+    content:'';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width:24px;
+    height: 2px;
+    background: #20202D;
+    transform: translate(-50%,8px);
+    border-radius: 2px;
+}
+.btn-menu.light{
+    content: '';
+    position: relative;
+    border: none;
+    padding: 8px 6px;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+.btn-menu.light span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    pointer-events:none;
+    border-radius: 2px;
+    transform: translate(-50%,0);
+}
+.btn-menu.light::before{
+    content:'';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width:24px;
+    height: 2px;
+    background: #fff;
+    transform: translate(-50%,-8px);
+    border-radius: 2px;
+}
+.btn-menu.light::after{
+    content:'';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width:24px;
+    height: 2px;
+    background: #fff;
+    transform: translate(-50%,8px);
+    border-radius: 2px;
+}
+
+input.img-menu.light{
+    background: url("../img/btn_GNBmenu_dark.svg") no-repeat center;
+}
+/* js panel */
 .cover-panel{
-    display: fixed;
+    position: fixed;
     left: 0;
     top:0;
     width: 100vw;
     height: 100vh;
-    transform: translateX(-100%);
-    transform-origin: left;
-    transition: .3s;
+    transform: translateX(100%);
+    transform-origin: right;
+    transition: .4s;
     will-change: transform;
     background-color: #EEEEF1;
     z-index: 1000;
+    opacity: 0;
 }
 .cover-panel.active{
+    opacity: 1;
     transform: translateX(0);
 }
-.menu-flex{
+.cover-panel.close{
+    opacity: 0;
+    transform: translateX(100%);
+}
+.cover-panel .menu-flex{
     display: flex;
     flex-direction: column;
     padding: 16px;
+    transform: translateY(10%);
+    transition: .4s;
+    transition-delay: .2s;
+    opacity: 0;
 }
+.cover-panel.active .menu-flex{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .4s;
+}
+
+
 .menu-title{
     /* flex: 1 1 auto; */
     flex-direction: row;
@@ -229,6 +316,7 @@ input.img-menu.light{
     border: none;
     padding: 7px;
     top: 28px;
+    cursor: pointer;
 }
 .btn-back span{
     position: absolute;

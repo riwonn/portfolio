@@ -1,60 +1,44 @@
-// import { imgList } from './imgList.js';
+
+// html 파일에서 module로 불러오면 함수 바깥에다가 변수 선언을 해도 전역변수가 아님.
+// import { data } from './imgList.js';
 import { ProjectView } from './ProjectView.js';
-new ProjectView();
+
+let projectMenuElem;
+let projectView;
 
 
-function toggleImg1() {
-  document.getElementById("notWork-img").src = "/img/img_temp2.png";
-}
-function toggleImg2() {
-  document.getElementById("notWork-img").src = "/img/img_temp.png";
-}
-function toggleImg3() {
-  document.getElementById("notWork-img").src = "/img/img_notwork_thumnail_photo.png";
-}
-function toggleImg4() {
-  document.getElementById("notWork-img").src = "/img/img_temp4.png";
+function setElems() {
+    projectMenuElem = document.querySelector('.btn-menu');
+    // console.log(projectMenuElem);
 }
 
+window.addEventListener('load', () => {
+	setElems();
+    // menu pannel
+    projectMenuElem.addEventListener('click', e => {
+    console.log(e.target);
+    if (e.target.classList.contains('btn-menu')) {
+        projectView.show();
+    }
+    }); 
 
-// notWork 이미지 확대
-function imgWide(smallImg){
-  let fullImg = document.getElementById("imageBox");
-  fullImg.src = smallImg.src;
+    // 이 변수를 활용하여 projectView 인스턴스 객체 사용하기
+    projectView = new ProjectView();
+});
 
-//   if(document.getElementById('fullImage').style.display==='none'){
-//     document.getElementById('fullImage').style.display='block';
-// }else{
-//     document.getElementById('fullImage').style.display='none';
-// }
-}
-
-// notwork 이미지 보이기
-function viewImg(){
-  if(document.getElementById('fullImage').style.display==='block'){
-      document.getElementById('fullImage').style.display='none';
-  }else{
-      document.getElementById('fullImage').style.display='block';
-  }
-}
-
-// 윈도우 사이즈에 따른 메뉴 스타일 변경
+// 윈도우 크기 알아내기
 // function handleWindowSize() {
 //   const windowWidth = window.innerWidth;
 //   if (windowWidth <= 834) {
 //     document.getElementById("bigMenu").style.display ='none';		
 //     document.getElementById("smallMenu").style.display ='flex';
-//     console.log('834 이하!');
+//     console.log('834 under!');
 //   } else {
 //     document.getElementById("smallMenu").style.display ='none';		
 //     document.getElementById("bigMenu").style.display ='flex';
-//     console.log('834 초과!');
+//     console.log('834 up!');
 //   }
 // }
 // window.addEventListener("resize", handleWindowSize);
 
-//menu pannel 불러오기
-// let projectMenuElem
-// projectMenuElem.addEventListener('click', e => {
-//   console.log(e.target);
-// });
+
