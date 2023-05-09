@@ -242,11 +242,13 @@ img {
 }
 .border{
     width: 100%;
-    border: 0.5px solid #C0C0CE;
+    height: .5px;
+    background-color: #C0C0CE;
 }
 .border-d{
     width: 100%;
-    border: 0.5px solid #49495A;
+    height: .5px;
+    background-color: #49495A;
 }
 /* project page */
 .project-page{
