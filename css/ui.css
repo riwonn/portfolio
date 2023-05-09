@@ -74,7 +74,7 @@ img {
         transition: .4s;
     }
 }
-@media(min-width: +400px){
+@media(min-width: 400px){
     .main-text{
         display: flex;
         flex-direction: column;
