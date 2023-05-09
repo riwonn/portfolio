@@ -7,48 +7,25 @@
 .bold{
     font-weight: 600;
 }
-@media(max-width: 390px){
-    .title{
-        font-family: 'Kanit';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height:32px;
+.title{
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height:40px;
     }
-    .title.project{
-        margin-top: 16vh;
-        text-align: -webkit-center;
-    }
-    .body1{
-        font-family: 'pretendard';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 130%;
-    }   
-}
-@media(min-width: 390px){
-    .title{
-        font-family: 'Kanit';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 40px;
-        line-height:40px;
-    }
-    .title.project{
-        margin-top: 16vh;
-        text-align: -webkit-center;
-    }
-    .body1{
+.body1{
         font-family: 'pretendard';
         font-style: normal;
         font-weight: 400;
         font-size: 28px;
         line-height: 130%;
+        color: #20202D;
+    }   
+.title.project{
+        margin-top: 16vh;
+        text-align: -webkit-center;
     }
- 
-}
-
 .logo{
     font-weight: 600;
     font-size: 20px;
@@ -92,4 +69,12 @@
     width: 400;
     font-size: 24px;
     line-height: 100%
+}
+@media(max-width: 390px){
+    .title{
+        font-size: 32px;
+        line-height:32px;
+    .body1{
+        font-size: 24px;
+    }   
 }
