@@ -58,14 +58,14 @@
 .body2{
     font-family: 'pretendard';
     font-style: normal;
-    font-weight: '400';
+    font-weight: 300;
     font-size: 18px;
     line-height: 130%;
 }
 .caption{
     font-family: 'Pretendard';
     font-style: normal;
-    font-weight: 400px;
+    font-weight: 300;
     font-size: 14px;
     line-height: 18px; 
 }
