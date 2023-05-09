@@ -41,6 +41,7 @@
 	right: 1vw;
 	width: 64px;
 	height: 64px;
+	background-size: cover;
 	background-image: url("/img/btn_cancel.svg");
 	z-index: 21;
 	cursor: pointer;
@@ -65,11 +66,11 @@
 
 @media(max-width:400px){
 	.btn-cancel{
-		width: 32px;
-		height: 32px;
+		width: 40px;
+		height: 40px;
 	}
-	.imgBox{
-		width: 100%;
+	.imageBox{
+		width: 90%;
 	}
 }
 
