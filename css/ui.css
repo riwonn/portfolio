@@ -35,7 +35,7 @@ img {
     justify-content: center;
     align-items: center;
 }
-@media(max-width: 390px){
+@media(max-width: 400px){
     .main-text{
         display: flex;
         flex-direction: column;
@@ -74,7 +74,7 @@ img {
         transition: .4s;
     }
 }
-@media(min-width: 390px){
+@media(min-width: +400px){
     .main-text{
         display: flex;
         flex-direction: column;
