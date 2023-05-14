@@ -15,17 +15,21 @@
     line-height:40px;
     }
 .body1{
-        font-family: 'pretendard';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 28px;
-        line-height: 130%;
-        color: #20202D;
+    font-family: 'pretendard';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 130%;
+    color: #20202D;
     }   
 .title.project{
-        margin-top: 16vh;
-        text-align: -webkit-center;
+    margin-top: 16vh;
+    text-align: -webkit-center;
     }
+.title.otherProject{
+    margin: 114px 0 40px 0;
+    text-align: -webkit-center;
+}
 .logo{
     font-weight: 600;
     font-size: 20px;

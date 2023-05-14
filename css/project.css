@@ -1,0 +1,51 @@
+/* project page */
+.project-page{
+    /* margin: 0px 20vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 64px;
+}
+.project-margin{
+    margin: 0px 20vw;
+}
+.project-info{
+    margin: 0px 20vw;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    gap: 16px;
+}
+.project-info-detail{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+.info-gap{
+    gap:8px;
+    flex: 1 1 auto;
+}
+.image-margin{
+    background-size: cover;
+    margin: 0px 10vw;
+}
+.sub-title{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sub-title-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+.sub-bg{
+    padding: 64px 0;
+    background-color: #EEEEF1;
+}
+.sub-title-flex{
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+

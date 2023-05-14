@@ -250,30 +250,3 @@ img {
     height: .75px;
     background-color: #49495A;
 }
-/* project page */
-.project-page{
-    margin: 0px 20vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 52px;
-}
-.project-info{
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    gap: 16px;
-}
-.project-info-detail{
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-between; */
-}
-.info-gap{
-    gap:8px;
-    flex: 1 1 auto;
-}
-.big-image{
-    margin: 20vw;
-}
-
