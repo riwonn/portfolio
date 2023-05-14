@@ -52,6 +52,9 @@
     font-size: 14px;
     line-height: 18px; 
 }
+.caption.bold{
+    font-weight: 600;
+}
 .gray900{
     color: #20202D;
 }
