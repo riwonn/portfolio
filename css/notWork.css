@@ -36,7 +36,7 @@ main {
 }
   
 /* 이전 코드 */
-.notWork-grid{
+/* .notWork-grid{
 	overflow: hidden;
     display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -50,7 +50,7 @@ main {
 }
 .grid-row{
 	padding: 0 .5em;
-}
+} */
 
  /* 이미지 크게 보기 */
 #fullImage{
@@ -87,10 +87,15 @@ main {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
-	width: 60%;
+    height: 60vh;
+	/* width: 60%; */
 	/* padding: 5%; */
 	z-index: 20;
  }
+#imageBox{
+    height: 100%;
+    width: auto;
+}
 
 @media(max-width:400px){
 	.btn-cancel{
