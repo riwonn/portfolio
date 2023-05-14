@@ -1,4 +1,41 @@
 /* notWork */
+main {
+    background-color: hsla(240, 17%, 15%, 1);;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(0, max-content);
+  background-color: hsla(240, 17%, 15%, 1);
+  gap: 20px;
+  padding: 4vw;
+  /* max-width: 1200px; */
+}
+.image-list li{
+    cursor: pointer;
+}
+.image-list li:hover{
+    filter: brightness(.7);
+	transition: .3s;
+}
+
+@media (min-width: 390px) {
+  .image-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 800px) {
+  .image-list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+  
+/* 이전 코드 */
 .notWork-grid{
 	overflow: hidden;
     display: grid;
@@ -9,22 +46,13 @@
     -ms-flex-direction: column;
     flex-direction: column;
 	background-color: hsla(240, 17%, 15%, 1);
-	padding: 0 4vw;
+	padding: 4vw 4vw 0 4vw;
 }
 .grid-row{
 	padding: 0 .5em;
 }
-.item-notWork img{ 
-	margin: .5em 0;
-	background-position: center;
-	width: 100%;
-	height: auto;
-	cursor: pointer;
- }
- .item-notWork img:hover{
-	filter: brightness(.7);
-	transition: .3s;
- }
+
+ /* 이미지 크게 보기 */
 #fullImage{
 	display: none;
 	transition: .3s;
@@ -139,27 +167,37 @@
     height: 200px;
     background: linear-gradient(180deg, transparent,  hsla(240, 17%, 15%, 1) );
 }
-.body1-btn{
+
+/* 버튼 스타일 */
+.category-btn {
     font-family: 'pretendard';
-    font-style: normal;
     font-weight: 400;
     font-size: 28px;
     text-align: left;
-    background: none;
     padding: .4em;
-    color: white;
     border: none;
-}
-.body1-btn:hover{
-    transform: translate(5%, 0);
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .category-btn.active {
+    font-weight: 600;
+    text-decoration-line: underline;
+  }
+
+/* .body1-btn:hover{
+    transform: translate(0, -5%);
     transition: .5s;
     border-bottom: 1px, solid, #fff;
     font-weight: 600;
     text-shadow: 0 0 10px #49495A;
 }
-.body1-btn:visited{
+.body1-btn:active{
     font-weight: 600;
-}
+    text-decoration-line: underline;
+} */
+
 .margin{
     margin: 4vw;
 }

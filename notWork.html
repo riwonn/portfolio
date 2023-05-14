@@ -12,7 +12,8 @@
 	<link rel="stylesheet" href="css/notWork.css">
 	<link rel="stylesheet" href="css/menu.css">
 	<script type="module" src="js/main.js"></script>
-	<script src="js/norWork.js"></script>
+	<script src="js/notWork.js"></script>
+	<script type="module" src="js/imgList.js"></script>
 	
 
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
@@ -68,10 +69,10 @@
 
     <section>
 		<div class="notWork-btns white">
-			<button onclick="toggleImg1()" class="body1-btn">UXUI</button>
-			<button onclick="toggleImg2()" class="body1-btn">Graphic</button>
-			<button onclick="toggleImg3()" class="body1-btn">Photograph</button>
-			<button onclick="toggleImg4()" class="body1-btn">3D Modeling</button>
+			<button data-category="uxui" class="category-btn active">UXUI</button>
+			<button data-category="graphic" class="category-btn">Graphic</button>
+			<button data-category="photographs" class="category-btn">Photograph</button>
+			<button data-category="3d" class="category-btn">3D Modeling</button>
 		</div>
 		<div class="notWork-center">
 				<img id="notWork-img" src="img/img_notwork_thumnail_photo.png"> 
@@ -81,7 +82,28 @@
 				<div class="nav-area"></div>
 				<div class="gradient"></div>
 			</div>
-				<div class="notWork-grid">
+			<ul class="image-list"></ul>
+			<div id="fullImage" onclick="viewImg()">
+			  <img id="imageBox" />
+			</div>
+
+
+			<!-- <main>
+				<ul class="image-list"></ul>
+				<div id="fullImage" onclick="viewImg()" style="display:none;">
+					<img id="imageBox" src="">
+				</div>
+			</main> -->
+
+			<!-- <div class="notWork-grid">
+				<div class="grid-row item-notWork">
+					<ul id="image-list" onclick="imgWide(this)"></ul>
+				</div>
+			</div> -->
+
+			<!-- <ul id="image-list"></ul> -->
+
+				<!-- <div class="notWork-grid">
 					<div class="grid-row item-notWork">
 						<img src="img/img_temp.png" onclick="imgWide(this)">
 						<img src="img/img_temp.png" onclick="imgWide(this)">
@@ -96,7 +118,7 @@
 						<img src="img/img_temp.png" onclick="imgWide(this)">
 						<img src="img/img_temp.png" onclick="imgWide(this)">
 						<img src="img/img_temp.png" onclick="imgWide(this)">
-					</div>
+					</div> -->
 			</div>	
 		</div>
 	</div>
