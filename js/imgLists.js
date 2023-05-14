@@ -3,80 +3,128 @@ const images = [
     {
       src: 'img/notWork/photo_1.jpg',
       alt: 'UX/UI design 1',
-      category: 'uxui'
+      category: 'uxui',
+      projectName: 'uxui',
+      projectCaption : 'project',
+      location: 'Seoul'
     },
     {
       src: 'img/notWork/photo_2.jpg',
       alt: 'UX/UI design 2',
-      category: 'uxui'
+      category: 'uxui',
+      projectName: 'uxui',
+      projectCaption : 'project',
+      location: 'Seoul'
     },
     {
       src: 'img/notWork/photo_3.jpg',
       alt: 'UX/UI design 2',
-      category: 'uxui'
+      category: 'uxui',
+      projectName: 'uxui',
+      projectCaption : 'project',
+      location: 'Seoul'
     },
     {
       src: 'img/notWork/photo_4.jpg',
       alt: 'UX/UI design 2',
-      category: 'uxui'
+      category: 'uxui',
+      projectName: 'uxui',
+      projectCaption : 'project',
+      location: 'Seoul'
     },
     {
       src: 'img/notWork/photo_9.jpg',
       alt: 'Graphic design 1',
-      category: 'graphic'
+      category: 'graphic',
+      projectName: 'uxui',
+      projectCaption : 'project',
+      location: 'Seoul'
     },
     {
       src: 'img/notWork/photo_10.jpg',
       alt: 'Graphic design 2',
-      category: 'graphic'
+      category: 'graphic',
+      projectName: 'uxui',
+      projectCaption : 'project',
+      location: 'Seoul'
     },
     {
       src: 'img/notWork/photo_11.jpg',
       alt: 'Graphic design 2',
-      category: 'graphic'
+      category: 'graphic',
+      projectName: 'uxui',
+      projectCaption : 'project',
+      location: 'Seoul'
     },
     {
       src: 'img/notWork/photo_12.jpg',
       alt: 'Graphic design 2',
-      category: 'graphic'
+      category: 'graphic',
+      projectName: 'uxui',
+      projectCaption : 'project',
+      location: 'Seoul'
     },
     {
       src: 'img/notWork/photo_5.jpg',
       alt: 'Photograph 1',
-      category: 'photographs'
+      category: 'photographs',
+      projectName: 'uxui',
+      projectCaption : 'project',
+      location: 'Seoul'
     },
     {
       src: 'img/notWork/photo_6.jpg',
       alt: 'Photograph 2',
-      category: 'photographs'
+      category: 'photographs',
+      projectName: 'uxui',
+      projectCaption : 'project',
+      location: 'Seoul'
     },
     {
       src: 'img/notWork/photo_7.jpg',
       alt: 'Photograph 2',
-      category: 'photographs'
+      category: 'photographs',
+      projectName: 'uxui',
+      projectCaption : 'project',
+      location: 'Seoul'
     },
     {
       src: 'img/notWork/photo_8.jpg',
       alt: 'Photograph 2',
-      category: 'photographs'
+      category: 'photographs',
+      projectName: 'uxui',
+      projectCaption : 'project',
+      location: 'Seoul'
     },
     {
       src: 'img/notWork/photo_13.jpg',
       alt: '3D design 1',
-      category: '3d'
+      category: '3d',
+      projectName: 'uxui',
+      projectCaption : 'project',
+      location: 'Seoul'
     },
     {
       src: 'img/notWork/photo_14.jpg',
       alt: '3D design 1',
-      category: '3d'
+      category: '3d',
+      projectName: 'uxui',
+      projectCaption : 'project',
+      location: 'Seoul'
     }, {
       src: 'img/notWork/photo_15.jpg',
       alt: '3D design 1',
-      category: '3d'
+      category: '3d',
+      projectName: 'uxui',
+      projectCaption : 'project',
+      location: 'Seoul'
     }, {
       src: 'img/notWork/photo_16.jpg',
       alt: '3D design 1',
-      category: '3d'
+      category: '3d',
+      projectName: 'uxui',
+      projectCaption : 'project',
+      location: 'Seoul'
     }
   ];
   
@@ -84,6 +132,7 @@ const images = [
   
   function initImageList() {
     filterImages(currentCategory);
+    // document.getElementById('fullImage').style.display = 'block'; // 추가된 코드
   }
   
   const categoryBtns = document.querySelectorAll('.category-btn');
@@ -111,34 +160,50 @@ const images = [
         const img = document.createElement('img');
         img.src = image.src;
         img.alt = image.alt;
-        img.addEventListener('click', () => imgWide(img));
+        img.addEventListener('click', () => imgWide(img, image));
         li.appendChild(img);
         li.classList.add('image-item');
         imageList.appendChild(li);
       }
     });
   }
-  
-  function imgWide(image){
+
+  function imgWide(image, data){
     let fullImg = document.getElementById("imageBox");
     fullImg.src = image.src;
   
-    if(document.getElementById('fullImage').style.display==='none'){
-      document.getElementById('fullImage').style.display='block';
-    }else{
-      document.getElementById('fullImage').style.display='none';
+    let projectName = document.getElementById("projectName");
+    projectName.textContent = data.projectName;
+  
+    let projectCaption = document.getElementById("projectCaption");
+    projectCaption.textContent = data.projectCaption;
+  
+    let location = document.getElementById("location");
+    location.textContent = data.location;
+  
+    let fullImage = document.getElementById('fullImage');
+    if(fullImage.style.display === 'block'){
+      fullImage.style.display='none';
+    } else {
+      fullImage.style.opacity = '0';
+      fullImage.style.display='block';
+      setTimeout(function() {
+        fullImage.style.opacity = '1';
+      }, 100);
     }
   }
   
-  function viewImg(){
-    if(document.getElementById('fullImage').style.display==='block'){
-        document.getElementById('fullImage').style.display='none';
-    }else{
-      document.getElementById('fullImage').style.display='block';
-    } 
-  }
-  
-  window.addEventListener('load', () => {
-    initImageList();
-  });
+function viewImg() {
+  const fullImage = document.getElementById('fullImage');
+  fullImage.style.opacity = 0; // 이미지가 서서히 사라지는 효과
+  setTimeout(() => {
+    fullImage.style.display = 'none';
+    fullImage.style.opacity = 1; // 다시 보이는 효과
+  }, 100); // 0.1초 후에 실행됨 (100ms)
+}
+document.querySelector('.btn-cancel').addEventListener('click', viewImg);
+
+window.addEventListener('load', () => {
+  initImageList();
+});
   
