@@ -157,7 +157,7 @@ const images = [
     images.forEach(image => {
       if (category === image.category) {
         const li = document.createElement('li');
-        const img = document.createElement('img');
+        const img = document.creㅇㅂateElement('img');
         img.src = image.src;
         img.alt = image.alt;
         img.addEventListener('click', () => imgWide(img, image));
