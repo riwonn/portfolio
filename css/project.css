@@ -50,4 +50,29 @@
     flex-direction: row;
     gap: 36px;
 }
+/* 반응형 */
+@media(max-width: 843px){
+    .project-page{
+        gap: 40px;
+    }
+    .project-margin{
+        margin: 0 10vw;
+    }
+    .project-info{
+        margin: 0 10vw;
+        gap: 12px;
+    }
+    .image-margin{
+        margin: 0 5vw;
+    }
+    .sub-title{
+        gap: 10px;
+    }
+    .sub-bg{
+        padding: 40px 0;
+    }
+    .sub-title-flex{
+        gap: 24px;
+    }
+}
 
