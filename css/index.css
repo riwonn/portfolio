@@ -8,7 +8,7 @@
     font-weight: 600;
 }
 .title{
-    font-family: 'Kanit';
+    font-family: 'Staatliches', cursive;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -72,7 +72,7 @@
     text-decoration: none;
 }
 .h1{
-    font-family: 'Kanit';
+    font-family: 'Staatliches', cursive;
     width: 400;
     font-size: 24px;
     line-height: 100%
