@@ -53,6 +53,9 @@
     flex-direction: row;
     gap: 36px;
 }
+.sub-title-flex img{
+    width: 50%;
+}
 /* 반응형 */
 @media(max-width: 843px){
     .project-page{
