@@ -53,7 +53,7 @@
     flex-direction: row;
     gap: 36px;
 }
-.sub-title-flex img{
+.sub-title-flex.half{
     width: 50%;
 }
 /* 반응형 */
