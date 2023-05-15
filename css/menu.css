@@ -1,5 +1,6 @@
 /* H2 */
 .menu-link{
+    font-family: 'Staatliches', cursive;
     display: flex;
     flex: 1 1 auto;
     text-decoration: none;
@@ -24,10 +25,11 @@
     color: #fff;
 }
 .menu-link-logo{
+    font-family: 'Staatliches', cursive;
     text-decoration: none;
     color: #20202D;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 20px;
     line-height: 100%;
 }
