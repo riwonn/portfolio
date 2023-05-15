@@ -85,5 +85,8 @@
     .sub-title-flex{
         flex-wrap: wrap;
     }
+    .sub-title-flex.half{
+    width: 100%;
+}
 }
     
