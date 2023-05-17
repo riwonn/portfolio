@@ -1,6 +1,6 @@
 /* H2 */
 .menu-link{
-    font-family: 'Staatliches', cursive;
+    font-family: 'Space Mono', monospace;
     display: flex;
     flex: 1 1 auto;
     text-decoration: none;
@@ -25,7 +25,7 @@
     color: #fff;
 }
 .menu-link-logo{
-    font-family: 'Staatliches', cursive;
+    font-family: 'Space Mono', monospace;
     text-decoration: none;
     color: #20202D;
     font-style: normal;
