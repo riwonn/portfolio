@@ -6,7 +6,7 @@ html {
 body{
     background:#F8F8FB;
     margin: 0px;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Encode Sans Condensed', sans-serif;
     -webkit-user-select: none;
     -moz-user-select:none;
     -ms-user-select:none;
@@ -31,9 +31,9 @@ img {
     font-weight: 600;
 }
 .title{
-    font-family: 'Space Mono', monospace;
+    font-family: 'Encode Sans Condensed', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 40px;
     line-height:40px;
     }
@@ -88,8 +88,8 @@ img {
     text-decoration: none;
 }
 .h1{
-    font-family: 'Space Mono', monospace;
-    width: 400;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    width: 600;
     font-size: 24px;
     line-height: 100%
 }

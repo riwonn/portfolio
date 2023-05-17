@@ -1,12 +1,12 @@
 /* H2 */
 .menu-link{
-    font-family: 'Space Mono', monospace;
+    font-family: 'Encode Sans Condensed', sans-serif;
     display: flex;
     flex: 1 1 auto;
     text-decoration: none;
     color: #20202D;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 100%;
     -webkit-transition: .3s;
@@ -25,11 +25,11 @@
     color: #fff;
 }
 .menu-link-logo{
-    font-family: 'Space Mono', monospace;
+    font-family: 'Encode Sans Condensed', sans-serif;
     text-decoration: none;
     color: #20202D;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
     line-height: 100%;
 }
