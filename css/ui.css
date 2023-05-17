@@ -21,7 +21,7 @@ img {
 	width: 100%;
 	height: auto;
   }
-div{
+article{
     opacity: 0;
     transition: all .5s;
 }

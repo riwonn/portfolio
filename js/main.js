@@ -31,11 +31,13 @@ let observer = new IntersectionObserver((e)=>{
     e.forEach((box)=>{
         if (box.isIntersecting){
             box.target.style.opacity = 1;
-        } 
+        } else {
+            box.target.style.opacity = 0;
+        }
     })
 })
 //html 요소가 화면에 등장하는지 감시
-let opacityTrans = document.querySelectorAll('div');
+let opacityTrans = document.querySelectorAll('article');
 
 for(let index in opacityTrans){
     observer.observe(opacityTrans[index]);
