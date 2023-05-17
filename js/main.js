@@ -26,19 +26,17 @@ window.addEventListener('load', () => {
     projectView = new ProjectView();
 });
 
-// 윈도우 크기 알아내기
-// function handleWindowSize() {
-//   const windowWidth = window.innerWidth;
-//   if (windowWidth <= 834) {
-//     document.getElementById("bigMenu").style.display ='none';		
-//     document.getElementById("smallMenu").style.display ='flex';
-//     console.log('834 under!');
-//   } else {
-//     document.getElementById("smallMenu").style.display ='none';		
-//     document.getElementById("bigMenu").style.display ='flex';
-//     console.log('834 up!');
-//   }
-// }
-// window.addEventListener("resize", handleWindowSize);
+// 스크롤 애니메이션
+let observer = new IntersectionObserver((e)=>{
+    e.forEach((box)=>{
+        if (box.isIntersecting){
+            box.target.style.opacity = 1;
+        } 
+    })
+})
+//html 요소가 화면에 등장하는지 감시
+let opacityTrans = document.querySelectorAll('div');
 
-
+for(let index in opacityTrans){
+    observer.observe(opacityTrans[index]);
+}

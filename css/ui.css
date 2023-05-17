@@ -6,7 +6,7 @@ html {
 body{
     background:#F8F8FB;
     margin: 0px;
-    font-family: 'Encode Sans Condensed', sans-serif;
+    font-family: 'Finlandica', sans-serif;
     -webkit-user-select: none;
     -moz-user-select:none;
     -ms-user-select:none;
@@ -21,6 +21,10 @@ img {
 	width: 100%;
 	height: auto;
   }
+div{
+    opacity: 0;
+    transition: all .5s;
+}
 /* Background */
 .bg-black{
     background-color: hsla(240, 17%, 15%, 1);
@@ -31,7 +35,7 @@ img {
     font-weight: 600;
 }
 .title{
-    font-family: 'Encode Sans Condensed', sans-serif;
+    font-family: 'Finlandica', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
@@ -88,7 +92,7 @@ img {
     text-decoration: none;
 }
 .h1{
-    font-family: 'Encode Sans Condensed', sans-serif;
+    font-family: 'Finlandica', sans-serif;
     width: 600;
     font-size: 24px;
     line-height: 100%
