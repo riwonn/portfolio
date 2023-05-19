@@ -209,13 +209,11 @@ article{
 }
 /* full screen image */
 .card-item{
-    /* position: sticky; */
     background-size: cover;
     background-position: center;
     height: 100vh;
     overflow-x: hidden;
     color: inherit;
-    /* filter: brightness(1); */
 }
 .card-item:nth-child(1){
     background-image: url('/img/img_temp.png');
@@ -302,7 +300,7 @@ article{
     font-size: 18px;
   }
 .card-info{
-    width: 100%;
+    width: 100%; 
     justify-content:end;
     text-align: left;
     color: #fff;
