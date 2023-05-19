@@ -6,22 +6,7 @@ main {
     justify-content: center;
     align-items: center;
 }
-.image-list {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-auto-rows: minmax(0, max-content);
-  background-color: hsla(240, 17%, 15%, 1);
-  gap: 20px;
-  padding: 4vw;
-  /* max-width: 1200px; */
-}
-.image-list li{
-    cursor: pointer;
-}
-.image-list li:hover{
-    filter: brightness(.7);
-	transition: .3s;
-}
+
 
 @media (min-width: 390px) {
   .image-list {
@@ -52,50 +37,75 @@ main {
 	padding: 0 .5em;
 } */
 
+.btn-cancel{
+	position: absolute;
+	bottom: 4vw;
+	right: 4vw;
+	width: 64px;
+	height: 64px;
+    background-color: hsla(240, 10%, 32%, 0.5);
+    border: 1px solid hsla(240, 8%, 53%, 0.5);
+    -webkit-backdrop-filter:blur(10px);
+    backdrop-filter:blur(10px);
+    border-radius: 32px;
+	z-index: 100;
+	cursor: pointer;
+    padding: 0;
+}
+.btn-cancel:hover{
+    transition: .3s;
+    transform:scale(108%);
+    border-radius: 34px;
+    transform-origin: center;
+}
+.btn-cancel span{
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 3px;
+    background: #D6D6E3;
+    pointer-events: none;
+    transform: rotate(-45deg);
+}
+.btn-cancel::before{
+    content: '';
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 3px;
+    background: #D6D6E3;
+    pointer-events: none;
+    transform: rotate(45deg);
+}
+
  /* 이미지 크게 보기 */
 #fullImage{
 	display: none;
 	transition: .3s;
+    overflow: hidden;
  }
 .wide-img-page{
-	position: fixed;
+    position: absolute;
+    top: 0;
 	z-index: 20;
 	width: 100%;
 	height: 100%;
 }
-.btn-cancel{
-	position: absolute;
-	top: 1vw;
-	right: 1vw;
-	width: 64px;
-	height: 64px;
-	background-size: cover;
-	background-image: url("/img/btn_cancel.svg");
-	z-index: 21;
-	cursor: pointer;
-	border: none;
-	background-color: hsla(240, 17%, 15%, 0);
-}	
 .img-bg{
 	width: 100%;	
 	height: 100%;
 	background-color: black;
 	opacity: .6;
 }
-.imageBox{
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-    height: 60vh;
-	/* width: 60%; */
-	/* padding: 5%; */
-	z-index: 20;
- }
-#imageBox{
-    height: 100%;
-    width: auto;
-}
+.imageBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 4em 4em 4em; /* 상하좌우 여백을 4em으로 설정 */
+    z-index: 20;
+  }
 
 @media(max-width:400px){
 	.btn-cancel{
@@ -106,18 +116,18 @@ main {
 
 .notWork-txt{
     position: absolute;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
-    padding: 1.5em;
+    margin: auto 1.5em 1.5em;
+    bottom: 4em;
+    text-shadow: #49495A;
 }
 .notWork-title{
     display: flex;
-    flex-direction: column;
-    gap: .5em;
-    margin: 0 0 auto;
+    flex-direction: row;
+    gap: 16px;
+    margin: auto 0 0;
+    align-items: center;
 }
 
 /* main background image */
@@ -144,10 +154,10 @@ main {
 .notWork-btns{
     display: flex;
     flex: 0 0 auto;
-    flex-direction: column;
+    flex-direction: row;
     position: absolute;
     padding: 1em;
-    top: 30%;
+    top: 50%;
     margin: 0 2vw;
     /* left: 50%; */
     /* transform: translate(-50%,-50%); */
@@ -173,7 +183,7 @@ main {
 /* 버튼 스타일 */
 .category-btn {
     font-family: 'pretendard';
-    font-weight: 400;
+    font-weight: 300;
     font-size: 28px;
     text-align: left;
     padding: .4em;
@@ -183,22 +193,17 @@ main {
     outline: none;
   }
   
-  .category-btn.active {
-    font-weight: 600;
-    text-decoration-line: underline;
-  }
+.category-btn.active {
+font-weight: 600;
+text-decoration-line: underline;
+}
 
-/* .body1-btn:hover{
+.category-btn:hover{
     transform: translate(0, -5%);
     transition: .5s;
     border-bottom: 1px, solid, #fff;
-    font-weight: 600;
     text-shadow: 0 0 10px #49495A;
 }
-.body1-btn:active{
-    font-weight: 600;
-    text-decoration-line: underline;
-} */
 
 .margin{
     margin: 4vw;
@@ -215,4 +220,43 @@ main {
     padding:48px 4vw;
     flex-direction: column;
     -webkit-box-pack: justify;
+}
+
+
+/* 그리드 */
+.notWork-grid{
+	overflow: hidden;
+    display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	-webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+	background-color: hsla(240, 17%, 15%, 1);
+	padding: 0 4vw;
+}
+.grid-row{
+	padding: 0 .5em;
+}
+.item-notWork img{ 
+	margin: .5em;
+	background-position: center;
+	width: 100%;
+	height: auto;
+	cursor: pointer;
+ }
+ .item-notWork img:hover{
+	filter: brightness(.7);
+	transition: .3s;
+ }
+#fullImage{
+	display: none;
+	transition: .3s;
+ }
+.wide-img-page{
+	position: fixed;
+	z-index: 20;
+	width: 100%;
+	height: 100%;
 }
