@@ -41,7 +41,10 @@ article{
     font-weight: 600;
     font-size: 40px;
     line-height:40px;
-    }
+}
+.title.main-project{
+    line-height: 150%;
+}
 .body1{
     font-family: 'pretendard';
     font-style: normal;
@@ -49,6 +52,7 @@ article{
     font-size: 28px;
     line-height: 130%;
     color: #20202D;
+    transition: .3s;
     }   
 .title.project{
     margin-top: 16vh;
@@ -98,15 +102,6 @@ article{
     font-size: 24px;
     line-height: 100%
 }
-@media(max-width: 400px){
-    .title{
-        font-size: 32px;
-        line-height:32px;
-    }
-    .body1{
-        font-size: 24px;
-    }   
-}
 
 /* 이 파일에서는 layout.css의 그리드에 들어가는 ui 요소들을 정의한다. */
 /*Main Text*/
@@ -122,6 +117,13 @@ article{
     align-items: center;
 }
 @media(max-width: 400px){
+    .title{
+        font-size: 32px;
+        line-height:32px;
+    }
+    .body1{
+        font-size: 16px;
+    }   
     .main-text{
         display: flex;
         flex-direction: column;
@@ -159,6 +161,11 @@ article{
         opacity: 0;
         transition: .4s;
     }
+}
+@media(min-width: 400px) and (max-width: 800px){
+    .body1{
+        font-size: 22px;
+    }  
 }
 @media(min-width: 400px){
     .main-text{

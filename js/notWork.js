@@ -104,6 +104,19 @@ function viewImg() {
   enableScroll();
 }
 
+// 이미지 돌리기
+function rotateImgLeft() {
+  const imgLoading = document.querySelector('.img-loading');
+  imgLoading.style.transition = '0.6s';
+  imgLoading.style.transform += ' rotate(-180deg)';
+}
+
+function rotateImgRight() {
+  const imgLoading = document.querySelector('.img-loading');
+  imgLoading.style.transition = '0.6s';
+  imgLoading.style.transform += ' rotate(180deg)';
+}
+
 document
   .querySelector('.btn-project-details.cancel')
   .addEventListener('click', viewImg);
@@ -112,12 +125,15 @@ document
   .querySelector('.btn-project-details.left')
   .addEventListener('click', () => {
     changeImage(-1);
-  });
-
+    rotateImgLeft();
+  }
+  );
+  
 document
   .querySelector('.btn-project-details.right')
   .addEventListener('click', () => {
     changeImage(1);
+    rotateImgRight();
   });
 
 function changeImage(direction) {
@@ -144,23 +160,59 @@ window.addEventListener('load', () => {
   initImageList();
 });
 
-// 이미지 돌아가기
-document
-  .querySelector('.btn-project-details.left')
-  .addEventListener('click', rotateImgLeft);
+const projectImg = document.querySelector('.imageBox');
+projectImg.addEventListener('load', () => {
+  adjustImageSize(projectImg);
+});
 
-document
-  .querySelector('.btn-project-details.right')
-  .addEventListener('click', rotateImgRight);
+// 이미지 비율에 따라 보이는 크기가 달라지는 코드
+function adjustImageSize(img) {
+  const maxWidth = 300; // 최대 너비 설정
+  const maxHeight = 300; // 최대 높이 설정
 
-function rotateImgLeft() {
-  const imgLoading = document.querySelector('.img-loading');
-  imgLoading.style.transition = '0.6s';
-  imgLoading.style.transform += ' rotate(-180deg)';
+  const width = img.naturalWidth;
+  const height = img.naturalHeight;
+
+  let newWidth, newHeight;
+
+  // 이미지의 비율을 계산하여 크기를 조정
+  if (width > height) {
+    newWidth = maxWidth;
+    newHeight = Math.floor((height / width) * maxWidth);
+  } else {
+    newHeight = maxHeight;
+    newWidth = Math.floor((width / height) * maxHeight);
+  }
+
+  // 이미지 크기 조정
+  projectImg.style.width = `${95}%`;
+  projectImg.style.height = `${95}%`;
 }
 
-function rotateImgRight() {
-  const imgLoading = document.querySelector('.img-loading');
-  imgLoading.style.transition = '0.6s';
-  imgLoading.style.transform += ' rotate(180deg)';
-}
+// 버튼 그룹 위치 조절
+const targetElement = document.querySelector('.notWork-btns');
+const bgTrans = document.querySelector('.bg-trans');
+const targetPosition = 360; // 고정할 위치의 y 좌표
+
+window.addEventListener('scroll', () => {
+  const currentPosition = window.pageYOffset || document.documentElement.scrollTop;
+  console.log(window.pageYOffset);
+
+  if (currentPosition >= targetPosition) {
+    targetElement.style.position = 'fixed';
+    targetElement.style.top = '9%';
+    targetElement.style.background = 'hsla(240, 17%, 15%, 1)';
+    targetElement.style.borderBottom = '1px solid rgba(125, 125, 144, 0.6)';
+    targetElement.style.transition = 'background .3s ease-in-out, border-bottom .3s ease-in-out';
+    bgTrans.style.background = 'hsla(240, 17%, 15%, 1)';
+    bgTrans.style.transition = 'background .3s ease-in-out';
+  } else {
+    targetElement.style.position = 'absolute';
+    targetElement.style.top = '50%';
+    targetElement.style.background = 'none';
+    targetElement.style.borderBottom = 'none';
+    targetElement.style.transition = 'background .2s ease-in-out, border-bottom .2s ease-in-out';
+    bgTrans.style.background = 'none';
+    bgTrans.style.transition = 'background .2s';
+  }
+});
