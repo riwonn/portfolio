@@ -80,6 +80,9 @@ article{
 .caption.bold{
     font-weight: 600;
 }
+.gray200{
+    color: #D6D6E3;
+}
 .gray900{
     color: #20202D;
 }
@@ -101,6 +104,14 @@ article{
     width: 600;
     font-size: 24px;
     line-height: 100%
+}
+.h2{
+    font-family: 'Finlandica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display : none;
 }
 
 /* 이 파일에서는 layout.css의 그리드에 들어가는 ui 요소들을 정의한다. */

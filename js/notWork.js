@@ -118,11 +118,11 @@ function rotateImgRight() {
 }
 
 document
-  .querySelector('.btn-project-details.cancel')
+  .querySelector('.btn-details.cancel')
   .addEventListener('click', viewImg);
 
 document
-  .querySelector('.btn-project-details.left')
+  .querySelector('.btn-details.left')
   .addEventListener('click', () => {
     changeImage(-1);
     rotateImgLeft();
@@ -130,7 +130,7 @@ document
   );
   
 document
-  .querySelector('.btn-project-details.right')
+  .querySelector('.btn-details.right')
   .addEventListener('click', () => {
     changeImage(1);
     rotateImgRight();
@@ -194,9 +194,42 @@ const targetElement = document.querySelector('.notWork-btns');
 const bgTrans = document.querySelector('.bg-trans');
 const targetPosition = 360; // 고정할 위치의 y 좌표
 
+// 페이지 최상단 버튼
+const btnTop = document.querySelector('.btn-details.go-top');
+
+btnTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+// 이미지 최상단 버튼 트렌지션
+const h2 = document.querySelector('.h2');
+
+btnTop.addEventListener('mouseenter', () => {
+  h2.style.display = 'block';
+});
+
+btnTop.addEventListener('mouseleave', () => {
+  h2.style.display = 'none';
+});
+
+
+
 window.addEventListener('scroll', () => {
   const currentPosition = window.pageYOffset || document.documentElement.scrollTop;
   console.log(window.pageYOffset);
+  const btnTop = document.querySelector('.btn-details.ic-go-top');
+
+  if (currentPosition > 300) {
+    setTimeout(function () {
+      btnTop.style.display = 'block';
+    }, 300); // 0.3초 후에 실행됨 (300ms)
+  } else {
+    setTimeout(function () {
+      btnTop.style.display = 'none';
+    }, 300); // 0.3초 후에 실행됨 (300ms)
+  }
 
   if (currentPosition >= targetPosition) {
     targetElement.style.position = 'fixed';
@@ -216,3 +249,4 @@ window.addEventListener('scroll', () => {
     bgTrans.style.transition = 'background .2s';
   }
 });
+
