@@ -7,19 +7,6 @@ main {
     align-items: center;
 }
 
-
-@media (min-width: 390px) {
-  .image-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 800px) {
-  .image-list {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-}
-  
 /* 이전 코드 */
 /* .notWork-grid{
 	overflow: hidden;
@@ -37,10 +24,22 @@ main {
 	padding: 0 .5em;
 } */
 
-.btn-cancel{
+.img-loading{
+    background-image: url('/img/img_loading.png');
+    width: 64px;
+    height: 64px;
+    z-index: 100;
+    transform-origin: center;
+}
+.btn-project-loading{
+    position: absolute;
+    bottom: 4vw;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%, 0);
+}
+.btn-project-details{
 	position: absolute;
-	bottom: 4vw;
-	right: 4vw;
 	width: 64px;
 	height: 64px;
     background-color: hsla(240, 10%, 32%, 0.5);
@@ -52,13 +51,34 @@ main {
 	cursor: pointer;
     padding: 0;
 }
-.btn-cancel:hover{
+.btn-project-details:hover{
     transition: .3s;
     transform:scale(108%);
     border-radius: 34px;
     transform-origin: center;
 }
-.btn-cancel span{
+.btn-project-details{
+    bottom: 4vw;
+}
+.btn-project-details.cancel{
+	right: 4vw;
+}
+.btn-project-details.left{
+    left: 35%;
+}
+.btn-project-details.right{
+    right: 35%;
+}
+/* .bottom-btnList{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 132px;
+    position: absolute;
+    left: 50%;
+} */
+.btn-project-details.cancel span{
     position: absolute;
     left: 20%;
     width: 60%;
@@ -67,7 +87,7 @@ main {
     pointer-events: none;
     transform: rotate(-45deg);
 }
-.btn-cancel::before{
+.btn-project-details.cancel::before{
     content: '';
     position: absolute;
     left: 20%;
@@ -77,6 +97,56 @@ main {
     pointer-events: none;
     transform: rotate(45deg);
 }
+
+.btn-project-details.left span{
+    position: absolute;
+    left: 30%;
+    top: 51%;
+    width: 35%;
+    height: 3px;
+    background: #D6D6E3;
+    pointer-events: none;
+    transform: rotate(-45deg);
+    transform-origin: left;
+}
+.btn-project-details.left::before{
+    content: '';
+    position: absolute;
+    left: 30%;
+    top: 49%;
+    width: 35%;
+    height: 3px;
+    background: #D6D6E3;
+    pointer-events: none;
+    transform: rotate(45deg);
+    transform-origin: left;
+}
+
+.btn-project-details.right span{
+    position: absolute;
+    left: 65%;
+    top: 51%;
+    width: 35%;
+    height: 3px;
+    background: #D6D6E3;
+    pointer-events: none;
+    transform: rotate(-135deg);
+    transform-origin: left;
+}
+.btn-project-details.right::before{
+    content: '';
+    position: absolute;
+    left: 65%;
+    top: 49%;
+    width: 35%;
+    height: 3px;
+    background: #D6D6E3;
+    pointer-events: none;
+    transform: rotate(135deg);
+    transform-origin: left;
+
+}
+
 
  /* 이미지 크게 보기 */
 #fullImage{
@@ -106,13 +176,6 @@ main {
     padding: 4em 4em 4em; /* 상하좌우 여백을 4em으로 설정 */
     z-index: 20;
   }
-
-@media(max-width:400px){
-	.btn-cancel{
-		width: 40px;
-		height: 40px;
-	}
-}
 
 .notWork-txt{
     position: absolute;
@@ -153,14 +216,12 @@ main {
 }
 .notWork-btns{
     display: flex;
+    width: 100%;
     flex: 0 0 auto;
     flex-direction: row;
     position: absolute;
     padding: 1em;
     top: 50%;
-    margin: 0 2vw;
-    /* left: 50%; */
-    /* transform: translate(-50%,-50%); */
     padding: 14px;
     z-index: 1;
 }
@@ -245,6 +306,7 @@ text-decoration-line: underline;
 	width: 100%;
 	height: auto;
 	cursor: pointer;
+    transition: all .3s;
  }
  .item-notWork img:hover{
 	filter: brightness(.7);
@@ -259,4 +321,29 @@ text-decoration-line: underline;
 	z-index: 20;
 	width: 100%;
 	height: 100%;
+}
+
+@media (min-width: 400px) and (max-width: 800px){
+    .image-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .btn-cancel{
+      width: 40px;
+      height: 40px;
+  }
+    .category-btn {
+        font-size: 24px;
+    }
+  }
+
+@media (max-width: 400px) {
+    .category-btn {
+        font-size: 16px;
+    }
+}
+  
+@media (min-width: 800px) {
+    .image-list {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
 }

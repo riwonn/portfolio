@@ -1,11 +1,10 @@
-
 import images from './imgList.js';
-  
+
 let currentCategory = 'uxui';
+let currentIndex = 0;
 
 function initImageList() {
   filterImages(currentCategory);
-  // document.getElementById('fullImage').style.display = 'block'; // 추가된 코드
 }
 
 const categoryBtns = document.querySelectorAll('.category-btn');
@@ -20,16 +19,7 @@ categoryBtns.forEach(btn => {
   });
 });
 
-
-//  그리드 수정
 function filterImages(category) {
-  const imageItems = document.querySelectorAll('.image-item');
-  imageItems.forEach(item => {
-    if (item.parentNode) {
-      item.parentNode.removeChild(item);
-    }
-  });
-
   const grid = document.querySelector('.notWork-grid');
   grid.innerHTML = '';
 
@@ -49,8 +39,16 @@ function filterImages(category) {
         const img = document.createElement('img');
         img.src = image.src;
         img.alt = image.alt;
-        img.addEventListener('click', () => imgWide(img, image));
+        img.style.opacity = '0'; // 초기에 투명도 0으로 설정
         row.appendChild(img);
+
+        // 이미지가 로드되었을 때 투명도 트랜지션 효과 적용
+        img.addEventListener('load', () => {
+          img.style.transition = 'opacity 0.3s ease-in-out';
+          img.style.opacity = '1';
+        });
+
+        img.addEventListener('click', () => imgWide(img, image));
       }
     }
   }
@@ -62,44 +60,35 @@ let scrollPosition = 0;
 function disableScroll() {
   scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
   document.body.style.overflow = 'hidden';
-  document.body.style.position = 'fixed';
-  document.body.style.top = `-${scrollPosition}px`;
 }
 
 // 스크롤 활성화
 function enableScroll() {
   document.body.style.overflow = 'auto';
-  document.body.style.position = 'static';
-  document.body.style.top = 'auto';
   window.scrollTo(0, scrollPosition);
 }
 
 function imgWide(image, data) {
-  let fullImg = document.getElementById("imageBox");
+  let fullImg = document.getElementById('imageBox');
   fullImg.src = image.src;
 
-  let projectName = document.getElementById("projectName");
+  let projectName = document.getElementById('projectName');
   projectName.textContent = data.projectName;
 
-  let projectCaption = document.getElementById("projectCaption");
+  let projectCaption = document.getElementById('projectCaption');
   projectCaption.textContent = data.projectCaption;
 
   let fullImage = document.getElementById('fullImage');
-  let imgBg = document.querySelector('.img-bg');
   if (fullImage.style.display === 'block') {
     fullImage.style.opacity = '0';
-    imgBg.style.opacity = '0';
     setTimeout(function () {
       fullImage.style.display = 'none';
-      imgBg.style.display = 'none';
     }, 300); // 0.3초 후에 실행됨 (300ms)
-    enableScroll();
+    disableScroll();
   } else {
     fullImage.style.display = 'block';
-    imgBg.style.display = 'block';
     setTimeout(function () {
       fullImage.style.opacity = '1';
-      imgBg.style.opacity = '0.6';
     }, 100); // 0.1초 후에 실행됨 (100ms)
     disableScroll();
   }
@@ -107,20 +96,71 @@ function imgWide(image, data) {
 
 function viewImg() {
   const fullImage = document.getElementById('fullImage');
-  const imgBg = document.querySelector('.img-bg');
   fullImage.style.opacity = 0; // 이미지가 서서히 사라지는 효과
-  imgBg.style.opacity = 0; // 배경이 서서히 사라지는 효과
   setTimeout(() => {
     fullImage.style.display = 'none';
-    imgBg.style.display = 'none';
     fullImage.style.opacity = 1; // 다시 보이는 효과
-    imgBg.style.opacity = 0.6; // 다시 보이는 효과
   }, 300); // 0.3초 후에 실행됨 (300ms)
   enableScroll();
 }
 
-document.querySelector('.btn-cancel').addEventListener('click', viewImg);
+document
+  .querySelector('.btn-project-details.cancel')
+  .addEventListener('click', viewImg);
+
+document
+  .querySelector('.btn-project-details.left')
+  .addEventListener('click', () => {
+    changeImage(-1);
+  });
+
+document
+  .querySelector('.btn-project-details.right')
+  .addEventListener('click', () => {
+    changeImage(1);
+  });
+
+function changeImage(direction) {
+  currentIndex += direction;
+
+  if (currentIndex < 0) {
+    currentIndex = images.length - 1;
+  } else if (currentIndex >= images.length) {
+    currentIndex = 0;
+  }
+
+  const image = images[currentIndex];
+  const img = document.getElementById('imageBox');
+  img.src = image.src;
+
+  let projectName = document.getElementById('projectName');
+  projectName.textContent = image.projectName;
+
+  let projectCaption = document.getElementById('projectCaption');
+  projectCaption.textContent = image.projectCaption;
+}
 
 window.addEventListener('load', () => {
   initImageList();
 });
+
+// 이미지 돌아가기
+document
+  .querySelector('.btn-project-details.left')
+  .addEventListener('click', rotateImgLeft);
+
+document
+  .querySelector('.btn-project-details.right')
+  .addEventListener('click', rotateImgRight);
+
+function rotateImgLeft() {
+  const imgLoading = document.querySelector('.img-loading');
+  imgLoading.style.transition = '0.6s';
+  imgLoading.style.transform += ' rotate(-180deg)';
+}
+
+function rotateImgRight() {
+  const imgLoading = document.querySelector('.img-loading');
+  imgLoading.style.transition = '0.6s';
+  imgLoading.style.transform += ' rotate(180deg)';
+}
