@@ -195,7 +195,7 @@ const bgTrans = document.querySelector('.bg-trans');
 const targetPosition = 360; // 고정할 위치의 y 좌표
 
 // 페이지 최상단 버튼
-const btnTop = document.querySelector('.btn-details.go-top');
+const btnTop = document.querySelector('.btn-go-top');
 
 btnTop.addEventListener('click', () => {
   window.scrollTo({
@@ -203,15 +203,21 @@ btnTop.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+
 // 이미지 최상단 버튼 트렌지션
 const h2 = document.querySelector('.h2');
 
 btnTop.addEventListener('mouseenter', () => {
   h2.style.display = 'block';
+  h2.style.opacity = '1';
+  btnTop.style.padding = '14px 24px';
 });
 
 btnTop.addEventListener('mouseleave', () => {
   h2.style.display = 'none';
+  h2.style.opacity = '0';
+  btnTop.style.padding = '14px';
 });
 
 
@@ -219,11 +225,11 @@ btnTop.addEventListener('mouseleave', () => {
 window.addEventListener('scroll', () => {
   const currentPosition = window.pageYOffset || document.documentElement.scrollTop;
   console.log(window.pageYOffset);
-  const btnTop = document.querySelector('.btn-details.ic-go-top');
+  const btnTop = document.querySelector('.btn-go-top');
 
   if (currentPosition > 300) {
     setTimeout(function () {
-      btnTop.style.display = 'block';
+      btnTop.style.display = 'fixed';
     }, 300); // 0.3초 후에 실행됨 (300ms)
   } else {
     setTimeout(function () {

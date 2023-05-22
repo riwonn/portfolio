@@ -42,3 +42,4 @@ let opacityTrans = document.querySelectorAll('article');
 for(let index in opacityTrans){
     observer.observe(opacityTrans[index]);
 }
+
