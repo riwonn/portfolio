@@ -195,64 +195,28 @@ const bgTrans = document.querySelector('.bg-trans');
 const targetPosition = 360; // 고정할 위치의 y 좌표
 
 // 페이지 최상단 버튼
-const btnTop = document.querySelector('.btn-go-top');
+// const btnTop = document.querySelector('.btn-go-top');
 
-btnTop.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
-
-
-// 이미지 최상단 버튼 트렌지션
-const h2 = document.querySelector('.h2');
-
-btnTop.addEventListener('mouseenter', () => {
-  h2.style.display = 'block';
-  h2.style.opacity = '1';
-  btnTop.style.padding = '14px 24px';
-});
-
-btnTop.addEventListener('mouseleave', () => {
-  h2.style.display = 'none';
-  h2.style.opacity = '0';
-  btnTop.style.padding = '14px';
-});
+// btnTop.addEventListener('click', () => {
+//   window.scrollTo({
+//     top: 0,
+//     behavior: 'smooth'
+//   });
+// });
 
 
+// // 이미지 최상단 버튼 트렌지션
+// const h2 = document.querySelector('.h2');
 
-window.addEventListener('scroll', () => {
-  const currentPosition = window.pageYOffset || document.documentElement.scrollTop;
-  console.log(window.pageYOffset);
-  const btnTop = document.querySelector('.btn-go-top');
+// btnTop.addEventListener('mouseenter', () => {
+//   h2.style.display = 'block';
+//   h2.style.opacity = '1';
+//   btnTop.style.padding = '14px 24px';
+// });
 
-  if (currentPosition > 300) {
-    setTimeout(function () {
-      btnTop.style.display = 'fixed';
-    }, 300); // 0.3초 후에 실행됨 (300ms)
-  } else {
-    setTimeout(function () {
-      btnTop.style.display = 'none';
-    }, 300); // 0.3초 후에 실행됨 (300ms)
-  }
-
-  if (currentPosition >= targetPosition) {
-    targetElement.style.position = 'fixed';
-    targetElement.style.top = '9%';
-    targetElement.style.background = 'hsla(240, 17%, 15%, 1)';
-    targetElement.style.borderBottom = '1px solid rgba(125, 125, 144, 0.6)';
-    targetElement.style.transition = 'background .3s ease-in-out, border-bottom .3s ease-in-out';
-    bgTrans.style.background = 'hsla(240, 17%, 15%, 1)';
-    bgTrans.style.transition = 'background .3s ease-in-out';
-  } else {
-    targetElement.style.position = 'absolute';
-    targetElement.style.top = '50%';
-    targetElement.style.background = 'none';
-    targetElement.style.borderBottom = 'none';
-    targetElement.style.transition = 'background .2s ease-in-out, border-bottom .2s ease-in-out';
-    bgTrans.style.background = 'none';
-    bgTrans.style.transition = 'background .2s';
-  }
-});
+// btnTop.addEventListener('mouseleave', () => {
+//   h2.style.display = 'none';
+//   h2.style.opacity = '0';
+//   btnTop.style.padding = '14px';
+// });
 

@@ -27,19 +27,44 @@ window.addEventListener('load', () => {
 });
 
 // 스크롤 애니메이션
-let observer = new IntersectionObserver((e)=>{
-    e.forEach((box)=>{
-        if (box.isIntersecting){
-            box.target.style.opacity = 1;
-        } else {
-            box.target.style.opacity = 0;
-        }
-    })
-})
-//html 요소가 화면에 등장하는지 감시
-let opacityTrans = document.querySelectorAll('article');
+let observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = 1;
+      } else {
+        entry.target.style.opacity = 0;
+      }
+    });
+  });
+  
+  let opacityTrans = document.querySelectorAll('article');
+  
+  for (let element of opacityTrans) {
+    observer.observe(element);
+  }
+// 페이지 최상단 버튼
+const btnTop = document.querySelector('.btn-go-top');
 
-for(let index in opacityTrans){
-    observer.observe(opacityTrans[index]);
-}
+btnTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
 
+
+// 이미지 최상단 버튼 트렌지션
+const h2 = document.querySelector('.h2');
+
+btnTop.addEventListener('mouseenter', () => {
+  h2.style.display = 'block';
+  h2.style.opacity = '1';
+  btnTop.style.padding = '14px 24px';
+});
+
+btnTop.addEventListener('mouseleave', () => {
+  h2.style.display = 'none';
+  h2.style.opacity = '0';
+  btnTop.style.padding = '14px';
+});
+  

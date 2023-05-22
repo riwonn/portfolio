@@ -1,7 +1,7 @@
 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_506_1215)">
-<path d="M34 18L18 2L2 18" stroke="#D6D6E3" stroke-width="3" stroke-linejoin="bevel"/>
-<path d="M18 2L18 36" stroke="#D6D6E3" stroke-width="3"/>
+<path d="M34 18L18 2L2 18" stroke="white" stroke-width="3" stroke-linejoin="bevel"/>
+<path d="M18 2L18 36" stroke="white" stroke-width="3"/>
 </g>
 <defs>
 <clipPath id="clip0_506_1215">
