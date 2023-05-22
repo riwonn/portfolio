@@ -35,6 +35,13 @@ article{
 .bold{
     font-weight: 600;
 }
+.main{
+    font-family: 'Finlandica', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 130px;
+    line-height: 100%;
+}
 .title{
     font-family: 'Finlandica', sans-serif;
     font-style: normal;
@@ -357,4 +364,16 @@ article{
     width: 100%;
     height: .75px;
     background-color: #49495A;
+}
+.btn-cv{
+    width: 161px;
+    height: 48px;
+    border: none;
+    background: #49495A;
+    cursor: pointer;
+}
+.btn-cv:hover{
+    transition: .3s;
+    transform:scale(108%);
+    transform-origin: center;
 }
