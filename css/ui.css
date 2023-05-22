@@ -41,6 +41,7 @@ article{
     font-weight: 600;
     font-size: 130px;
     line-height: 100%;
+    transition: .3s;
 }
 .title{
     font-family: 'Finlandica', sans-serif;
@@ -181,10 +182,30 @@ article{
         transition: .4s;
     }
 }
-@media(min-width: 400px) and (max-width: 800px){
+@media(min-width: 400px) and (max-width: 843px){
     .body1{
         font-size: 22px;
     }  
+}
+@media(min-width: 843px) and (max-width: 1000px){
+    .main{
+        font-size: 110px;
+    }
+}
+@media(min-width: 700px) and (max-width: 843px){
+    .main{
+        font-size: 91px;
+    }
+}
+@media(min-width: 520px) and (max-width: 700px){
+    .main{
+        font-size: 68px;
+    }
+}
+@media(max-width: 520px){
+    .main{
+        font-size: 52px;
+    }
 }
 @media(min-width: 400px){
     .main-text{
