@@ -166,9 +166,12 @@ projectImg.addEventListener('load', () => {
 });
 
 // 이미지 비율에 따라 보이는 크기가 달라지는 코드
+const imageElement = document.getElementById('imageBox');
+adjustImageSize(imageElement);
+
 function adjustImageSize(img) {
-  const maxWidth = 300; // 최대 너비 설정
-  const maxHeight = 300; // 최대 높이 설정
+  const maxWidth = `${95}%`;// 최대 너비 설정
+  const maxHeight = `${85}%`;// 최대 높이 설정
 
   const width = img.naturalWidth;
   const height = img.naturalHeight;
@@ -178,45 +181,44 @@ function adjustImageSize(img) {
   // 이미지의 비율을 계산하여 크기를 조정
   if (width > height) {
     newWidth = maxWidth;
-    newHeight = Math.floor((height / width) * maxWidth);
+    newHeight = 'auto';
   } else {
     newHeight = maxHeight;
-    newWidth = Math.floor((width / height) * maxHeight);
+    newWidth = 'auto';
   }
 
   // 이미지 크기 조정
-  projectImg.style.width = `${95}%`;
-  projectImg.style.height = `${95}%`;
+  const projectImg = document.querySelector('.imageBox img');
+  projectImg.style.width = newWidth;
+  projectImg.style.height = newHeight;
 }
+
+
 
 // 버튼 그룹 위치 조절
 const targetElement = document.querySelector('.notWork-btns');
-const bgTrans = document.querySelector('.bg-trans');
 const targetPosition = 360; // 고정할 위치의 y 좌표
 
-// 페이지 최상단 버튼
-// const btnTop = document.querySelector('.btn-go-top');
+// 트랜지션 속성 추가
+targetElement.style.transition = 'background 0.3s ease-in-out, borderBottom 0.3s ease-in-out';
 
-// btnTop.addEventListener('click', () => {
-//   window.scrollTo({
-//     top: 0,
-//     behavior: 'smooth'
-//   });
-// });
+window.addEventListener('scroll', () => {
+  const currentPosition = window.pageYOffset || document.documentElement.scrollTop;
+  console.log(window.pageYOffset);
 
+  if (currentPosition >= targetPosition) {
+    targetElement.style.position = 'fixed';
+    targetElement.style.top = '7%';
 
-// // 이미지 최상단 버튼 트렌지션
-// const h2 = document.querySelector('.h2');
+    // 스타일 변경
+    targetElement.style.background = 'hsla(240, 17%, 15%, 1)';
+    targetElement.style.borderBottom = '1px solid rgba(125, 125, 144, 0.6)';
+  } else {
+    targetElement.style.position = 'absolute';
+    targetElement.style.top = '50%';
 
-// btnTop.addEventListener('mouseenter', () => {
-//   h2.style.display = 'block';
-//   h2.style.opacity = '1';
-//   btnTop.style.padding = '14px 24px';
-// });
-
-// btnTop.addEventListener('mouseleave', () => {
-//   h2.style.display = 'none';
-//   h2.style.opacity = '0';
-//   btnTop.style.padding = '14px';
-// });
-
+    // 스타일 변경
+    targetElement.style.background = 'none';
+    targetElement.style.borderBottom = 'none';
+  }
+});

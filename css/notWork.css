@@ -31,6 +31,7 @@ main {
     height: 64px;
     z-index: 100;
     transform-origin: center;
+    background-size: cover;
 }
 .btn-loading{
     position: absolute;
@@ -54,6 +55,7 @@ main {
 	z-index: 100;
 	cursor: pointer;
     padding: 0;
+    transition: .3s;
 }
 .btn-details:hover{
     transition: .3s;
@@ -161,19 +163,33 @@ main {
 }
 .imageBox {
     margin: auto;
-    display: block;
+    display: flex;
+    height: 100%;
+    width: 100%;
     position: absolute;
     z-index: 20;
+    padding-top: 3%;
+    justify-content: center;
   }
 
-.notWork-txt{
+/* .notWork-txt{
     position: absolute;
     display: flex;
     flex-direction: column;
     margin: auto 1.5em 1.5em;
     bottom: 0;
     text-shadow: #49495A;
-}
+} */
+.notWork-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    text-shadow: 0 1px 10px #49495A;
+    bottom: 20%;
+  }
+  
+
 .notWork-title{
     display: flex;
     flex-direction: row;
@@ -252,8 +268,8 @@ main {
   }
   
 .category-btn.active {
-font-weight: 600;
-text-decoration-line: underline;
+    font-weight: 600;
+    text-decoration-line: underline;
 }
 .category-btn:hover{
     transform: translate(0, -5%);
@@ -278,7 +294,6 @@ text-decoration-line: underline;
     flex-direction: column;
     -webkit-box-pack: justify;
 }
-
 
 /* 그리드 */
 .notWork-grid{
@@ -319,13 +334,13 @@ text-decoration-line: underline;
 	height: 100%;
 }
 
-@media (min-width: 400px) and (max-width: 800px){
+@media (min-width: 400px) and (max-width: 834px){
     .image-list {
       grid-template-columns: repeat(2, 1fr);
     }
     .btn-cancel{
-      width: 40px;
-      height: 40px;
+      width: 48px;
+      height: 48px;
   }
     .category-btn {
         font-size: 22px;
@@ -337,8 +352,19 @@ text-decoration-line: underline;
         font-size: 16px;
     }
 }
+
+@media (max-width: 834px){
+    .btn-details{
+        width: 48px;
+        height: 48px;
+    }
+    .img-loading{
+        width: 48px;
+        height: 48px;
+    }
+}
   
-@media (min-width: 800px) {
+@media (min-width: 834px) {
     .image-list {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }

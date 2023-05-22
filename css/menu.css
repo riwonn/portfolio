@@ -106,50 +106,6 @@
     border-left: none;
     border-right: none;
 }
-@media(max-width: 834px){
-	.menu-light{
-        transition: .3s;
-        display: none;
-		opacity: 0;
-	}
-	.menu-light.small{
-        transition: .3s;
-        display: flex;
-		opacity: 1;
-	}
-    .menu-dark{
-        transition: .3s;
-        display: none;
-		opacity: 0;
-	}
-	.menu-dark.small{
-        transition: .3s;
-        display: flex;
-		opacity: 1;
-	}
-}
-@media(min-width: 834px){
-	.menu-light{
-        transition: .3s;
-        display: flex;
-		opacity: 1;
-	}
-	.menu-light.small{
-        transition: .3s;
-        display: none;
-		opacity: 0;
-	}
-    .menu-dark{
-        transition: .3s;
-        display: flex;
-		opacity: 1;
-	}
-	.menu-dark.small{
-        transition: .3s;
-        display: none;
-		opacity: 0;
-	}
-}
 
 /* Menu buttons */
 .btn_group{
@@ -378,8 +334,8 @@ button{
     gap: 16px;
     transition: .3s;
     transform-origin: right;
-    min-width: 64px;
-    height: 64px;
+    min-width: 48px;
+    max-height: 64px;
     background-color: hsla(240, 10%, 32%, 0.5);
     border: 1px solid hsla(240, 8%, 53%, 0.5);
     box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.1);
@@ -395,4 +351,59 @@ button{
     padding: 0;
     background-image: url('/img/icon_toTop.svg');
     background-size: cover;
+}
+
+/* 반응형 */
+@media(max-width: 400px){
+    .btn-go-top{
+        padding: 8px;
+    }
+}
+@media(max-width: 834px){
+	.menu-light{
+        transition: .3s;
+        display: none;
+		opacity: 0;
+	}
+	.menu-light.small{
+        transition: .3s;
+        display: flex;
+		opacity: 1;
+	}
+    .menu-dark{
+        transition: .3s;
+        display: none;
+		opacity: 0;
+	}
+	.menu-dark.small{
+        transition: .3s;
+        display: flex;
+		opacity: 1;
+	}
+    .ic-go-top{
+        width: 24px;
+        height: 24px;
+    }
+}
+@media(min-width: 834px){
+	.menu-light{
+        transition: .3s;
+        display: flex;
+		opacity: 1;
+	}
+	.menu-light.small{
+        transition: .3s;
+        display: none;
+		opacity: 0;
+	}
+    .menu-dark{
+        transition: .3s;
+        display: flex;
+		opacity: 1;
+	}
+	.menu-dark.small{
+        transition: .3s;
+        display: none;
+		opacity: 0;
+	}
 }

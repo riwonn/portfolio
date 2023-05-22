@@ -42,6 +42,7 @@ let observer = new IntersectionObserver((entries) => {
   for (let element of opacityTrans) {
     observer.observe(element);
   }
+  
 // 페이지 최상단 버튼
 const btnTop = document.querySelector('.btn-go-top');
 
@@ -57,14 +58,38 @@ btnTop.addEventListener('click', () => {
 const h2 = document.querySelector('.h2');
 
 btnTop.addEventListener('mouseenter', () => {
-  h2.style.display = 'block';
-  h2.style.opacity = '1';
-  btnTop.style.padding = '14px 24px';
+    if(window.innerWidth < 843){
+        h2.style.display = 'block';
+        h2.style.opacity = '1';
+        btnTop.style.padding = '14px 24px';
+    }else{
+        h2.style.display = 'block';
+        h2.style.opacity = '1';
+        btnTop.style.padding = '12px 20px';
+    }
 });
 
 btnTop.addEventListener('mouseleave', () => {
-  h2.style.display = 'none';
-  h2.style.opacity = '0';
-  btnTop.style.padding = '14px';
+    if(window.innerWidth < 843){
+        h2.style.display = 'none';
+        h2.style.opacity = '0';
+        btnTop.style.padding = '14px';
+    }else{
+        h2.style.display = 'none';
+        h2.style.opacity = '0';
+        btnTop.style.padding = '12px';
+    }
 });
   
+// 스크롤 이벤트 핸들러
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+      btnTop.style.display = 'flex';
+      btnTop.style.opacity = '1';
+    } else {
+      btnTop.style.opacity = '0';
+      setTimeout(function () {
+        btnTop.style.display = 'none';
+      }, 300);
+    }
+  });
