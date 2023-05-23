@@ -148,3 +148,29 @@ $(document).ready(function() {
     })(i);
   }
 });
+
+// 설정한 비밀번호
+var password = "1234";
+
+// 비밀번호 입력 함수
+function enterPassword() {
+  var input = document.getElementById("passwordInput").value;
+  if (input === password) {
+    unlockPage();
+  } else {
+    alert("The password is incorrect.");
+  }
+}
+
+// 페이지 잠금 해제 함수
+function unlockPage() {
+  document.getElementById("lockedContent").style.display = "none";
+  document.getElementById("unlockedContent").style.display = "block";
+}
+
+// 비밀번호 입력 요소 가져오기
+var passwordInput = document.getElementById("passwordInput");
+var enterButton = document.getElementById("enterButton");
+
+// 버튼에 클릭 이벤트 추가
+enterButton.addEventListener('click', enterPassword);
