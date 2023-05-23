@@ -42,6 +42,7 @@ article{
     font-size: 130px;
     line-height: 100%;
     transition: .3s;
+    z-index: 1;
 }
 .title{
     font-family: 'Finlandica', sans-serif;
@@ -128,13 +129,38 @@ article{
 .main-page{
     display: flex;
     flex: 1 1 auto;
-    padding: 10vw 0;
+    padding: 5vw 0 10vw;
     flex-direction: column;
     justify-content: flex-start;
     width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
+}
+.main-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px 16px;
+    gap:32px;
+}
+.sidebar-r img{
+    width: auto;
+    height: auto;
+    transition: .3s;
+}
+.footer-icons img {
+    width: auto;
+    height: auto;
+    transition: .3s;
+}
+.sidebar-r img:hover{
+    transform: scale(110%);
+    transform-origin: center;
+}
+.footer-icons img:hover{
+    transform: scale(110%);
+    transform-origin: center;
 }
 @media(max-width: 400px){
     .title{
@@ -144,13 +170,6 @@ article{
     .body1{
         font-size: 16px;
     }   
-    .main-text{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin: 0px 16px;
-        gap:32px;
-    }
     /* Social network's buttons */
     .sidebar-r { 
         position: absolute;
@@ -187,9 +206,19 @@ article{
         font-size: 22px;
     }  
 }
-@media(min-width: 843px) and (max-width: 1000px){
+@media(min-width: 1300px){
     .main{
-        font-size: 110px;
+        font-size: 140px;
+    }
+}
+@media(min-width: 1100px) and (max-width: 1300px){
+    .main{
+        font-size: 120px;
+    }
+}
+@media(min-width: 843px) and (max-width: 1100px){
+    .main{
+        font-size: 103px;
     }
 }
 @media(min-width: 700px) and (max-width: 843px){
@@ -199,21 +228,17 @@ article{
 }
 @media(min-width: 520px) and (max-width: 700px){
     .main{
-        font-size: 68px;
+        font-size: 58px;
     }
 }
 @media(max-width: 520px){
     .main{
-        font-size: 52px;
+        font-size: 44px;
     }
 }
 @media(min-width: 400px){
     .main-text{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
         margin: 0px 20vw;
-        gap:32px;
     }
     /* Social network's buttons */
     .sidebar-r { 
@@ -243,9 +268,6 @@ article{
         opacity: 1;
         transition: .4s;
     }
-}
-.sidebar-r img {
-    width: 32px;
 }
 
 .card-list{
@@ -332,6 +354,7 @@ article{
     text-align: center;
     margin: auto 0 auto;
     color: #fff;
+    text-shadow: 0 0 10px #20202D;
   }
   
   .card-title .h1 {
@@ -352,6 +375,7 @@ article{
     justify-content:end;
     text-align: left;
     color: #fff;
+    text-shadow: 0 0 10px #20202D;
 }
 /* footer */
 .footer{
@@ -385,16 +409,4 @@ article{
     width: 100%;
     height: .75px;
     background-color: #49495A;
-}
-.btn-cv{
-    width: 161px;
-    height: 48px;
-    border: none;
-    background: #49495A;
-    cursor: pointer;
-}
-.btn-cv:hover{
-    transition: .3s;
-    transform:scale(108%);
-    transform-origin: center;
 }

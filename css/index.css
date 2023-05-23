@@ -1,0 +1,82 @@
+
+/* Grid */
+
+.container-main{
+	display: grid;
+	width: 100vw;
+	grid-template-rows: repeat(auto-fill,minmax(100px, auto));
+	place-items: start stretch;
+	grid-template-areas: 
+	'main'
+	'list1'
+	'footer';
+	background: none;
+}
+
+/* grid 순서 */
+.item:nth-child(1) { 
+	grid-area: main;
+}
+.item:nth-child(2) { 
+	grid-area: list1; 
+}
+.item:nth-child(3) { 
+	grid-area: footer; 
+}
+
+.center{
+	position:absolute;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	text-align: center;
+	white-space:nowrap;
+}
+
+/* 요소 디자인 */
+.btn-cv{
+    width: 161px;
+    height: 48px;
+    border: none;
+    background: #49495A;
+    cursor: pointer;
+}
+.btn-cv:hover{
+    transition: .3s;
+    transform:scale(108%);
+    transform-origin: center;
+}
+
+.img-persona img{
+	position: absolute;
+	width: 70px;
+	height: 250px;
+	transition: .3s;
+	transform-origin: center;
+}
+.img-persona img:hover{
+	transform: scale(110%);
+}
+.persona{
+	position: absolute;
+}
+.persona:nth-child(1){
+	left: 8%;
+	bottom: 20%;
+	transform: translate(-20%, -8%);
+}
+.persona:nth-child(2){
+	left: 15%;
+	top: 30%;
+	transform: translate(-20%, -10%);
+}
+.persona:nth-child(3){
+	z-index: 2;
+	right: 30%;
+	top: 22%;
+	transform: translate(-30%, -30%);
+}
+.persona:nth-child(4){
+	right: 20%;
+	bottom: 40%;
+	transform: translate(-20%, -40%);
+}

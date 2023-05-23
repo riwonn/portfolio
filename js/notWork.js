@@ -198,9 +198,11 @@ function adjustImageSize(img) {
 // 버튼 그룹 위치 조절
 const targetElement = document.querySelector('.notWork-btns');
 const targetPosition = 360; // 고정할 위치의 y 좌표
+const bgTrans = document.querySelector('.bg-trans');
 
 // 트랜지션 속성 추가
-targetElement.style.transition = 'background 0.3s ease-in-out, borderBottom 0.3s ease-in-out';
+targetElement.style.transition = 'background .3s ease-in-out, borderBottom .3s ease-in-out';
+bgTrans.style.transition = 'opacity .3s ease-in-out'
 
 window.addEventListener('scroll', () => {
   const currentPosition = window.pageYOffset || document.documentElement.scrollTop;
@@ -209,6 +211,7 @@ window.addEventListener('scroll', () => {
   if (currentPosition >= targetPosition) {
     targetElement.style.position = 'fixed';
     targetElement.style.top = '7%';
+    bgTrans.style.opacity = 1;
 
     // 스타일 변경
     targetElement.style.background = 'hsla(240, 17%, 15%, 1)';
@@ -216,6 +219,7 @@ window.addEventListener('scroll', () => {
   } else {
     targetElement.style.position = 'absolute';
     targetElement.style.top = '50%';
+    bgTrans.style.opacity = 0;
 
     // 스타일 변경
     targetElement.style.background = 'none';

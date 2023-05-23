@@ -6,14 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Riwon Kwon</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/ui.css">
 	<link rel="stylesheet" href="css/menu.css">
 	<link rel="shortcut icon" href="img/favicon.png" type="image/icon">
 	<link rel="icon" href="img/favicon.png" type="image/icon">
 	<link rel="apple-touch-icon-precomposed" href="img/favicon.png">
 	<script type="module" src="/js/main.js"></script>
-	<script type="module" src="/js/notWork.js"></script>
 
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BY6WDX2LR"></script>
@@ -52,7 +51,7 @@
 	<a href="#first">
 		<img class="down" src="img/btn_scrollDown.svg">
 	</a>
-	<div class="sidebar-r">
+	<aside class="sidebar-r">
 		<a href="https://www.behance.net/everiwon" target='_blank'>
 			<img src="img/btn_main_behance_light.svg">
 		</a>
@@ -62,24 +61,53 @@
 		<a href="https://www.instagram.com/designdotnote/" target='_blank'>
 		<img src="img/btn_main_instagram_light.svg">
 		</a>
-	</div>
+	</aside>
 	<!-- Information Text Start -->
-		<main class="container-main">
-			<div class="item main-page">
-				<div class="main-text">
-					<span class="main gray900">Design for everyone!</span>
-					<span class="body1">Hello! This is Riwon, I am a <strong>Product Desinger</strong>.<br>I’m interested in user experience, technology, society.</span>
-					<button class="btn-cv" onclick="window.open('etc/riwon_kwon_cv.pdf');"><span class="h1 white">Read CV</span></button>
-				</div>
-			</div>
-			<!-- 카드 리스트 시작 -->
+	<main class="container-main">
+		<div class="img-persona">
+			<a class="persona" href="project1.html"><img src="img/img_persona_01.svg"></a>
+			<a class="persona" href="project2.html"><img src="img/img_persona_02.svg"></a>
+			<a class="persona" href="project3.html"><img src="img/img_persona_03.svg"></a>
+			<a class="persona" href="project4.html"><img src="img/img_persona_04.svg"></a>
+		</div>
+		<div class="item main-page">
+			<article class="main-text">
+				<span class="main gray900">DESIGN FOR EVERYONE!</span>
+				<span class="body1">Hello! This is Riwon, I am a <strong>Product Designer</strong>. I’m interested in user experience, technology, society.</span>
+				<button class="btn-cv" onclick="window.open('etc/riwon_kwon_cv.pdf');"><span class="h1 white">Read CV</span></button>
+			</article>
+		</div>
 			
-			<div class="item card-list" >
-				<!-- 카드 아이템 한 개 -->
-				<a href="project1.html" class="card-item" id="first">
+		<!-- 카드 리스트 시작 -->
+		
+		<div class="item card-list" >
+			<!-- 카드 아이템 한 개 -->
+			<a href="project1.html" class="card-item" id="first">
+				<article class="card-img">
+					<div class="card-title">
+						<span class="title main-project">Title</span>
+						<span class="body2 white">Immersive AR Hangul learning app for non-Koreans Immersive AR Hangul learning app  for non-Koreans Koreans.</span>
+					</div>
+					<span class="card-info body2 white">2023<br>Location, Company</span>
+				</article>
+			</a>
+			<!-- 카드 아이템 한 개 -->
+			<a href="#" class="card-item">
+				<article class="card-img">
+					<div class="card-title">
+						<span class="title">Title</span>
+						<span class="body2 white">Immersive AR Hangul learning app for non-Koreans Immersive AR Hangul learning app  for non-Koreans Koreans.</span>
+					</div>
+					<span class="card-info body2 white">2023<br>Location, Company</span>
+				</article>
+			</a>
+			<!-- 카드 반반 -->
+			<!-- 카드 아이템 한 개 -->
+			<article class="card-half">
+				<a href="#" class="card-item">
 					<div class="card-img">
 						<div class="card-title">
-							<span class="title main-project">Title</span>
+							<span class="title">Title</span>
 							<span class="body2 white">Immersive AR Hangul learning app for non-Koreans Immersive AR Hangul learning app  for non-Koreans Koreans.</span>
 						</div>
 						<span class="card-info body2 white">2023<br>Location, Company</span>
@@ -95,41 +123,19 @@
 						<span class="card-info body2 white">2023<br>Location, Company</span>
 					</div>
 				</a>
-				<!-- 카드 반반 -->
-				<!-- 카드 아이템 한 개 -->
-				<div class="card-half">
-					<a href="#" class="card-item">
-						<div class="card-img">
-							<div class="card-title">
-								<span class="title">Title</span>
-								<span class="body2 white">Immersive AR Hangul learning app for non-Koreans Immersive AR Hangul learning app  for non-Koreans Koreans.</span>
-							</div>
-							<span class="card-info body2 white">2023<br>Location, Company</span>
-						</div>
-					</a>
-					<!-- 카드 아이템 한 개 -->
-					<a href="#" class="card-item">
-						<div class="card-img">
-							<div class="card-title">
-								<span class="title">Title</span>
-								<span class="body2 white">Immersive AR Hangul learning app for non-Koreans Immersive AR Hangul learning app  for non-Koreans Koreans.</span>
-							</div>
-							<span class="card-info body2 white">2023<br>Location, Company</span>
-						</div>
-					</a>
-				</div>
-			</div>
+			</article>
+		</div>
 		<!-- footer -->
 		<footer class="item footer">
 			<div class="footer-icons">
 				<a href="https://www.behance.net/everiwon" target='_blank'>
-					<img src="img/btn_main_behance_light.svg">
+					<img  src="img/btn_main_behance_light.svg">
 				</a>
 				<a href="https://www.linkedin.com/in/riwon-kwon-732a9a15b/" target='_blank'>
 					<img src="img/btn_main_linkedin_light.svg">
 				</a>
 				<a href="https://www.instagram.com/designdotnote/" target='_blank'>
-				<img src="img/btn_main_instagram_light.svg">
+					<img src="img/btn_main_instagram_light.svg">
 				</a>
 			</div>
 			<div class="border"></div>
