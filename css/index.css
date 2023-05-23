@@ -58,6 +58,7 @@
 }
 .persona{
 	position: absolute;
+	transition: .3s;
 }
 .persona:nth-child(1){
 	left: 8%;
