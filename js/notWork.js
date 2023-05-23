@@ -23,36 +23,35 @@ function filterImages(category) {
   const grid = document.querySelector('.notWork-grid');
   grid.innerHTML = '';
 
-  const rows = Math.ceil(images.length / 3);
+  const filteredImages = images.filter(image => category === image.category);
+
+  const rows = Math.ceil(filteredImages.length / 3);
   for (let i = 0; i < rows; i++) {
     const row = document.createElement('div');
     row.classList.add('grid-row', 'item-notWork');
     grid.appendChild(row);
 
-    for (let j = i * 3; j < i * 3 + 3; j++) {
-      if (j >= images.length) {
-        break;
-      }
+    const startIndex = i * rows;
+    const endIndex = Math.min(startIndex + rows, filteredImages.length);
+    for (let j = startIndex; j < endIndex; j++) {
+      const image = filteredImages[j];
+      const img = document.createElement('img');
+      img.src = image.src;
+      img.alt = image.alt;
+      img.style.opacity = '0'; // 초기에 투명도 0으로 설정
+      row.appendChild(img);
 
-      const image = images[j];
-      if (category === image.category) {
-        const img = document.createElement('img');
-        img.src = image.src;
-        img.alt = image.alt;
-        img.style.opacity = '0'; // 초기에 투명도 0으로 설정
-        row.appendChild(img);
+      // 이미지가 로드되었을 때 투명도 트랜지션 효과 적용
+      img.addEventListener('load', () => {
+        img.style.transition = 'opacity 0.3s ease-in-out';
+        img.style.opacity = '1';
+      });
 
-        // 이미지가 로드되었을 때 투명도 트랜지션 효과 적용
-        img.addEventListener('load', () => {
-          img.style.transition = 'opacity 0.3s ease-in-out';
-          img.style.opacity = '1';
-        });
-
-        img.addEventListener('click', () => imgWide(img, image));
-      }
+      img.addEventListener('click', () => imgWide(img, image));
     }
   }
 }
+
 
 let scrollPosition = 0;
 

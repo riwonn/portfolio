@@ -195,9 +195,11 @@ main {
     flex-direction: row;
     gap: 16px;
     margin: auto 0 0;
-    align-items: center;
+    align-items: end;
 }
-
+.notWork-title div{
+    line-height: 100%;
+}
 /* main background image */
 .notWork-center{
     position: fixed;
@@ -300,8 +302,7 @@ main {
 .notWork-grid{
 	overflow: hidden;
     display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	-webkit-box-orient: vertical;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));	-webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
