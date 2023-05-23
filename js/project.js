@@ -174,3 +174,27 @@ var enterButton = document.getElementById("enterButton");
 
 // 버튼에 클릭 이벤트 추가
 enterButton.addEventListener('click', enterPassword);
+
+
+// 비밀번호 입력 요소 가져오기
+var passwordInput = document.getElementById("passwordInput");
+var enterButton = document.getElementById("enterButton");
+
+// 입력값이 변경될 때마다 버튼 상태 업데이트
+passwordInput.addEventListener('input', function() {
+  var input = passwordInput.value;
+  if (input.trim().length > 0) {
+    enterButton.disabled = false;
+  } else {
+    enterButton.disabled = true;
+  }
+});
+
+// 페이지 로드 시 버튼 상태 업데이트
+window.addEventListener('load', function() {
+  enterButton.disabled = true;
+});
+
+function goBack() {
+  window.history.back();
+}
