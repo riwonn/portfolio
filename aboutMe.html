@@ -10,9 +10,8 @@
 	<link rel="stylesheet" href="css/aboutMe.css">
 	<link rel="stylesheet" href="css/menu.css">
 	<script type="module" src="js/main.js"></script>
-	<script type="module" src="js/language.js"></script>
+	<!-- <script type="module" src="js/switchColor.js"></script> -->
 	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
-	<!-- <script src="index.js"></script> -->
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BY6WDX2LR"></script>
 	<script>
@@ -28,23 +27,23 @@
 	<!-- Big Menu Start -->
 	<nav id="bigMenu" class="menu-light">
 		<nav class="btn_group">
-			<a href="https://www.everiwon.com/" class="menu-link" id="content">EVERiwon</a>
-			<a href="https://www.everiwon.com/#first" class="menu-link">WORK</a>
-			<a href="archive.html" class="menu-link">ARCHIVE</a>
-			<a href="aboutMe.html" class="menu-link">ABOUT ME</a>
-			<!-- <input type="button" class="img-switch" id="languageButton"> -->
+		  <a href="https://www.everiwon.com/" class="menu-link" id="content">EVERiwon</a>
+		  <a href="https://www.everiwon.com/#first" class="menu-link">WORK</a>
+		  <a href="archive.html" class="menu-link">ARCHIVE</a>
+		  <a href="aboutMe.html" class="menu-link">ABOUT ME</a>
+		  <button class="img-switch" onclick="changeColor()"></button>
 		</nav>
-	</nav>
-	<!-- Big Memu Finish -->
-	<!-- Small Menu Start -->
-	<nav id="smallMenu" class="menu-light small">
+	  </nav>
+	
+	  <nav id="smallMenu" class="menu-light small">
 		<a href="https://www.everiwon.com/" class="menu-link logo">EVERiwon</a>
 		<nav class="btn_group small">
-			<button class="btn-menu"><span></span></button>
-			<!-- <input type="button" class="img-switch"> -->
+		  <button class="btn-menu"><span></span></button>
+		  <input type="button" class="img-switch" onclick="changeColor()">
 		</nav>
-	</nav>
+	  </nav>
 	<!-- Small Memu Finish -->
+	<script src="js/switchColor.js"></script>
 
 	<main class="container-aboutMe">
 		<article class="item-aboutMe column">
@@ -123,11 +122,11 @@
 				</a>
 			</div>
 			<div class="border"></div>
-			<div class="footer-stretch logo gray900">
+			<div class="footer-stretch logo">
 				<div>EVERiwon</div>
 				<div>Seoul, South Korea</div>
 			</div>
-			<div class="footer-stretch caption gray900">
+			<div class="footer-stretch caption">
 				<div>©Riwon Kwon 2023</div>
 				<a href="mailto:everiwon0@gmail.com">everiwon0@gmail.com</a>
 			</div>

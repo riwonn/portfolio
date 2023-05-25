@@ -4,15 +4,16 @@ html {
     overflow: scroll;
   }
 body{
-    background:#F8F8FB;
+    background-color: #F8F8FB;
     margin: 0px;
     font-family: 'Finlandica', sans-serif;
     -webkit-user-select: none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     overflow-y: auto;
     overflow-x: hidden;
+    transition: background-color 0.3s ease;
 }
 strong{
     font-weight: 600;
@@ -60,7 +61,6 @@ article{
     font-weight: 400;
     font-size: 28px;
     line-height: 130%;
-    color: #20202D;
     transition: .3s;
     }   
 .title.project{
@@ -77,7 +77,7 @@ article{
     font-weight: 400;
     font-size: 18px;
     line-height: 130%;
-    color: #20202D;
+    /* color: #20202D; */
 }
 .caption{
     font-family: 'Pretendard';

@@ -29,23 +29,23 @@
 	<!-- Big Menu Start -->
 	<nav id="bigMenu" class="menu-light">
 		<nav class="btn_group">
-			<a href="https://www.everiwon.com/" class="menu-link">EVERiwon</a>
-			<a href="https://www.everiwon.com/#first" class="menu-link">WORK</a>
-			<a href="archive.html" class="menu-link">ARCHIVE</a>
-			<a href="aboutMe.html" class="menu-link">ABOUT ME</a>
-			<!-- <input type="button" class="img-switch"> -->
+		  <a href="https://www.everiwon.com/" class="menu-link" id="content">EVERiwon</a>
+		  <a href="https://www.everiwon.com/#first" class="menu-link">WORK</a>
+		  <a href="archive.html" class="menu-link">ARCHIVE</a>
+		  <a href="aboutMe.html" class="menu-link">ABOUT ME</a>
+		  <button class="img-switch" onclick="changeColor()"></button>
 		</nav>
-	</nav>
-	<!-- Big Memu Finish -->
-	<!-- Small Menu Start -->
-	<nav id="smallMenu" class="menu-light small">
+	  </nav>
+	
+	  <nav id="smallMenu" class="menu-light small">
 		<a href="https://www.everiwon.com/" class="menu-link logo">EVERiwon</a>
 		<nav class="btn_group small">
-			<button class="btn-menu"><span></span></button>
-			<!-- <input type="button" class="img-switch"> -->
+		  <button class="btn-menu"><span></span></button>
+		  <input type="button" class="img-switch" onclick="changeColor()">
 		</nav>
-	</nav>
+	  </nav>
 	<!-- Small Memu Finish -->
+	<script src="js/switchColor.js"></script>
 
 	<!-- scroll ddown btn/icon -->
 	<a href="#first">
@@ -72,7 +72,7 @@
 		</div>
 		<div class="item main-page">
 			<article class="main-text">
-				<span class="main gray900">DESIGN FOR EVERYONE!</span>
+				<span class="main">DESIGN FOR EVERYONE!</span>
 				<span class="body1">Hello! This is Riwon, I am a <strong>Product Designer</strong>.<br> I’m interested in user experience, technology, society.</span>
 				<button class="btn-cv" onclick="window.open('etc/riwon_kwon_cv.pdf');"><span class="h1 white">Read CV</span></button>
 			</article>
@@ -143,11 +143,11 @@
 				</a>
 			</div>
 			<div class="border"></div>
-			<div class="footer-stretch logo gray900">
+			<div class="footer-stretch logo">
 				<div>EVERiwon</div>
 				<div>Seoul, South Korea</div>
 			</div>
-			<div class="footer-stretch caption gray900">
+			<div class="footer-stretch caption">
 				<div>©Riwon Kwon 2023</div>
 				<a href="mailto:everiwon0@gmail.com">everiwon0@gmail.com</a>
 			</div>
