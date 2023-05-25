@@ -11,13 +11,35 @@ const categoryBtns = document.querySelectorAll('.category-btn');
 
 categoryBtns.forEach(btn => {
   btn.addEventListener('click', () => {
-    categoryBtns.forEach(btn => btn.classList.remove('active'));
+    categoryBtns.forEach(btn => {
+      btn.classList.remove('active');
+      btn.querySelector('.selected').style.display = 'none'; // 모든 버튼의 selected-line을 숨김
+    });
+
     btn.classList.add('active');
+    const selectedLine = btn.querySelector('.selected');
+    if (selectedLine) {
+      selectedLine.style.display = 'block'; // 선택된 버튼의 selected-line을 표시
+    }
+
     const category = btn.getAttribute('data-category');
     currentCategory = category;
     filterImages(category);
   });
 });
+
+// 맨 처음에 선택된 카테고리 버튼 처리
+const initialCategoryBtn = document.querySelector('.category-btn.active');
+if (initialCategoryBtn) {
+  const initialSelectedLine = initialCategoryBtn.querySelector('.selected');
+  if (initialSelectedLine) {
+    initialSelectedLine.style.display = 'block'; // 처음에 선택된 카테고리의 selected-line을 표시
+  }
+}
+
+
+
+
 
 // 그리드 
 function filterImages(category) {
@@ -35,7 +57,6 @@ function filterImages(category) {
   });
 
   // const columnCount = Math.min(3, uniqueImages.length); // 최대 3개의 열(column)
-  
   const columnCount = Math.min(3, uniqueImages.length); // 최대 3개의 열(column)
   const rowCount = Math.ceil(uniqueImages.length / columnCount); // 행(row)은 갯수의 제한 없음
 
@@ -225,7 +246,7 @@ window.addEventListener('scroll', () => {
 
   if (currentPosition >= targetPosition) {
     targetElement.style.position = 'fixed';
-    targetElement.style.top = '7%';
+    targetElement.style.top = '10%';
     bgTrans.style.opacity = 1;
 
     // 스타일 변경

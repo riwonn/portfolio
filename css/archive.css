@@ -219,7 +219,7 @@ main {
     flex: 0 0 auto;
     flex-direction: row;
     position: absolute;
-    padding: 1em;
+    padding: .5em 1em;
     top: 50%;
     z-index: 1;
 }
@@ -228,7 +228,7 @@ main {
     top: 0;
     z-index: 1;
     width: 100%;
-    height: 7%;
+    height: 10%;
     background: hsla(240, 17%, 15%, 1);
     opacity: 0;
 }
@@ -250,21 +250,32 @@ main {
 
 /* 버튼 스타일 */
 .category-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'pretendard';
     font-weight: 300;
     font-size: 26px;
     text-align: left;
-    padding: .4em;
+    padding: .5em;
     border: none;
     color: #fff;
     cursor: pointer;
     outline: none;
     transition: .3s;
   }
+.selected{
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #D6D6E3;
+    display: none;
+}
   
 .category-btn.active {
     font-weight: 600;
-    text-decoration-line: underline;
+    transform: translate(0, -8%);
+    transition: .5s;
 }
 .category-btn:hover{
     transform: translate(0, -5%);
