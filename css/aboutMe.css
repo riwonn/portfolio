@@ -11,47 +11,53 @@
 	margin: 4vw;
 	overflow: hidden;
 }
-
+.img-profile{
+    width: 60%;
+    border-radius: 200px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.column{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:32px;
+    padding: 24px 0 64px;
+}
+.flex{
+    flex: 1 1 0;
+}
+.logo{
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 130%;
+}
+.height{
+    display: flex;
+    justify-content: column;
+    margin-bottom: 1em;
+}
 @media(min-width: 500px){
     .item-aboutMe:nth-child(1){
 		grid-area: aboutMe;
 		align-items: center;
 		padding: 72px 0 4vw;
 	}
-    .img-profile{
-        width: 60%;
-        /* min-width: 30%; */
-        position: relative;
-        background-size: cover;
-        background-position: center;
-        overflow: hidden;
-    }
-    .column{
-        display: flex;
-        flex: 1 1 auto;
-        flex-direction: row;
-        justify-content: flex-start;
-        gap:32px;
-        padding: 24px 0 64px;
-    }
     .column span{
         width: 100%;
-    }
-    .height{
-        display: flex;
-        justify-content: column;
-        margin-bottom: 1em;
     }
     .flex:nth-child(1){
         flex-grow: 0.8;
     }
-    
 }
 @media(max-width: 500px){
     .item-aboutMe:nth-child(1){
 		grid-area: aboutMe;
 		align-items: center;
-		padding: 72px 10vw 10vw;
+		padding: 72px 0 10vw;
 	}
     .item-aboutMe:nth-child(2){
         grid-area: skill;
@@ -61,27 +67,15 @@
         grid-area: experience;
         padding: 0 2vw;
     }
-    .img-profile{
-        width: 60%;
-        position: relative;
-        background-size: cover;
-        background-position: center;
-        overflow: hidden;
-    }
     .column{
-        display: flex;
         flex-direction: column-reverse;
-        justify-content: flex-start;
         padding: 24px 0 32px;
-        gap: 32px;
     }
     .column.reverse{
         flex-direction: column;
         gap: 0;
     }
     .height{
-        display: flex;
-        justify-content: column;
         margin-bottom: .7em;
     }
     .flex:nth-child(1){
@@ -98,7 +92,4 @@
         grid-area: experience;
         padding: 0;
     }
-}
-.flex{
-    flex: 1 1 0;
 }
