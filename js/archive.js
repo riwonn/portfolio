@@ -262,3 +262,8 @@ window.addEventListener('scroll', () => {
     targetElement.style.borderBottom = 'none';
   }
 });
+
+
+// 영상 자동 재생
+var video = document.querySelector('video');
+video.muted = true;
