@@ -23,7 +23,7 @@ export class ProjectView{
             </header>
             <a href="https://www.everiwon.com/#first" class="menu-link-smallBtn">WORK</a>
             <div class="border"></div>
-			<a href="archive.html" class="menu-link">ARCHIVE</a>
+			<a href="archive.html" class="menu-link-smallBtn">ARCHIVE</a>
             <div class="border"></div>
             <a href="aboutMe.html" class="menu-link-smallBtn">ABOUT ME</a>
             <div class="border"></div>
