@@ -195,6 +195,9 @@ window.addEventListener('load', function() {
   enterButton.disabled = true;
 });
 
-function goBack() {
-  window.history.back();
-}
+
+const backButton = document.querySelector('.btn-back');
+
+backButton.addEventListener('click', () => {
+  history.back();
+});
