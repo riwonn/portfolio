@@ -335,7 +335,6 @@ button{
     transition: .3s;
     transform-origin: right;
     min-width: 48px;
-    max-height: 64px;
     background-color: hsla(240, 10%, 32%, 0.5);
     border: 1px solid hsla(240, 8%, 53%, 0.5);
     box-shadow: 0 0 10px 5px rgb(0, 0, 0, 0.1);
