@@ -19,22 +19,35 @@ categoryBtns.forEach(btn => {
   });
 });
 
+// 그리드 
 function filterImages(category) {
   const grid = document.querySelector('.notWork-grid');
   grid.innerHTML = '';
 
   const filteredImages = images.filter(image => category === image.category);
+  const uniqueImages = [];
 
-  const rows = Math.ceil(filteredImages.length / 3);
-  for (let i = 0; i < rows; i++) {
+  filteredImages.forEach(image => {
+    const isDuplicate = uniqueImages.some(uniqueImage => uniqueImage.src === image.src);
+    if (!isDuplicate) {
+      uniqueImages.push(image);
+    }
+  });
+
+  // const columnCount = Math.min(3, uniqueImages.length); // 최대 3개의 열(column)
+  
+  const columnCount = Math.min(3, uniqueImages.length); // 최대 3개의 열(column)
+  const rowCount = Math.ceil(uniqueImages.length / columnCount); // 행(row)은 갯수의 제한 없음
+
+  for (let i = 0; i < rowCount; i++) {
     const row = document.createElement('div');
     row.classList.add('grid-row', 'item-notWork');
     grid.appendChild(row);
 
-    const startIndex = i * rows;
-    const endIndex = Math.min(startIndex + rows, filteredImages.length);
+    const startIndex = i * columnCount;
+    const endIndex = Math.min(startIndex + columnCount, uniqueImages.length);
     for (let j = startIndex; j < endIndex; j++) {
-      const image = filteredImages[j];
+      const image = uniqueImages[j];
       const img = document.createElement('img');
       img.src = image.src;
       img.alt = image.alt;
@@ -51,6 +64,9 @@ function filterImages(category) {
     }
   }
 }
+
+
+
 
 
 let scrollPosition = 0;
