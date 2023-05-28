@@ -47,7 +47,7 @@
 }
 .sub-bg{
     padding: 64px 0;
-    background-color: #EEEEF1;
+    background: rgba(125, 125, 144, 0.1);
 }
 .sub-title-flex{
     display: flex;

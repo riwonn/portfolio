@@ -25,6 +25,17 @@
 </head>
 
 <body>
+	<!-- 잠금 -->
+	<div id="lockedContent">
+		<button class="back-position btn-back" onclick="goBack()"><span></span></button>
+		<div class="password">
+		  <img class="ic-32px" src="img/ic_locked.svg">
+		  <input type="password" class="body2" id="passwordInput" placeholder="Password">
+		  <button id="enterButton" class="btn-enter"><span class="h1 white">Enter</span></button>
+		</div>
+	</div>
+
+	<div id="unlockedContent" style="display: none;">
 		<div class="btn-go-top"><div class="ic-go-top"></div><div class="h2 white">Go to Top</div></div>
 		<!-- Big Menu Start -->
 	<nav id="bigMenu" class="menu-light">
@@ -136,6 +147,7 @@
 			</article>
 		</section>
 		<!-- Project Info Finish -->
+	</div> 
 
 	<article class="otherProject-group">
 		<div class="title otherProject">Other Projects</div>

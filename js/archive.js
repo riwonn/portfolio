@@ -238,7 +238,7 @@ function adjustImageSize(img) {
 
 
 
-// 버튼 그룹 위치 조절
+// 버튼 그룹 위치 조절(위치 상단 고정)
 const targetElement = document.querySelector('.notWork-btns');
 const targetPosition = 360; // 고정할 위치의 y 좌표
 const bgTrans = document.querySelector('.bg-trans');
@@ -249,7 +249,7 @@ bgTrans.style.transition = 'opacity .3s ease-in-out'
 
 window.addEventListener('scroll', () => {
   const currentPosition = window.pageYOffset || document.documentElement.scrollTop;
-  console.log(window.pageYOffset);
+  // console.log(window.pageYOffset);
 
   if (currentPosition >= targetPosition) {
     targetElement.style.position = 'fixed';
