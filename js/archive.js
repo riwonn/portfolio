@@ -157,14 +157,13 @@ document
   .querySelector('.btn-details.cancel')
   .addEventListener('click', viewImg);
 
-document
+  document
   .querySelector('.btn-details.left')
   .addEventListener('click', () => {
     changeImage(-1);
     rotateImgLeft();
-  }
-  );
-  
+  });
+
 document
   .querySelector('.btn-details.right')
   .addEventListener('click', () => {
@@ -172,26 +171,34 @@ document
     rotateImgRight();
   });
 
-function changeImage(direction) {
-  currentIndex += direction;
 
-  if (currentIndex < 0) {
-    currentIndex = images.length - 1;
-  } else if (currentIndex >= images.length) {
-    currentIndex = 0;
+  function changeImage(direction) {
+    const filteredImages = images.filter(image => currentCategory === image.category);
+    const imageCount = filteredImages.length;
+  
+    if (imageCount === 0) {
+      return; // No images in the current category
+    }
+  
+    currentIndex += direction;
+  
+    if (currentIndex < 0) {
+      currentIndex = imageCount - 1;
+    } else if (currentIndex >= imageCount) {
+      currentIndex = 0;
+    }
+  
+    const image = filteredImages[currentIndex];
+    const img = document.getElementById('imageBox');
+    img.src = image.src;
+  
+    let projectName = document.getElementById('projectName');
+    projectName.textContent = image.projectName;
+  
+    let projectCaption = document.getElementById('projectCaption');
+    projectCaption.textContent = image.projectCaption;
   }
-
-  const image = images[currentIndex];
-  const img = document.getElementById('imageBox');
-  img.src = image.src;
-
-  let projectName = document.getElementById('projectName');
-  projectName.textContent = image.projectName;
-
-  let projectCaption = document.getElementById('projectCaption');
-  projectCaption.textContent = image.projectCaption;
-}
-
+  
 window.addEventListener('load', () => {
   initImageList();
 });

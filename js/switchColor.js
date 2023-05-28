@@ -48,7 +48,7 @@
 
 
 // 컬러 스위치 버튼
-// script.js
+// light
 function changeColor() {
   var body = document.querySelector('body');
   var btn = document.querySelector('.img-switch');
