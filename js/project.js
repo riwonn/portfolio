@@ -22,15 +22,15 @@ $(document).ready(function() {
         company: "Company 3",
         url: "project3.html"
       },
-      {
-        src: '../img/notWork/photo_4.jpg',
-        title: "Project Title 4",
-        desc: "Description of Project 4",
-        year: "2025",
-        location: "Location 4",
-        company: "Company 4",
-        url: "project4.html"
-      }
+      // {
+      //   src: '../img/notWork/photo_4.jpg',
+      //   title: "Project Title 4",
+      //   desc: "Description of Project 4",
+      //   year: "2025",
+      //   location: "Location 4",
+      //   company: "Company 4",
+      //   url: "project4.html"
+      // }
     ];
   } else if (window.location.href.indexOf("project2.html") > -1) {
     projects = [
@@ -52,15 +52,15 @@ $(document).ready(function() {
         company: "Company 3",
         url: "project3.html"
       },
-      {
-        src: '../img/notWork/photo_4.jpg',
-        title: "Project Title 4",
-        desc: "Description of Project 4",
-        year: "2025",
-        location: "Location 4",
-        company: "Company 4",
-        url: "project4.html"
-      }
+      // {
+      //   src: '../img/notWork/photo_4.jpg',
+      //   title: "Project Title 4",
+      //   desc: "Description of Project 4",
+      //   year: "2025",
+      //   location: "Location 4",
+      //   company: "Company 4",
+      //   url: "project4.html"
+      // }
     ];
   } else if (window.location.href.indexOf("project3.html") > -1) {
     projects = [
@@ -82,47 +82,48 @@ $(document).ready(function() {
         company: "Company 2",
         url: "project2.html"
       },
-      {
-        src: '../img/notWork/photo_4.jpg',
-        title: "Project Title 4",
-        desc: "Description of Project 4",
-        year: "2025",
-        location: "Location 4",
-        company: "Company 4",
-        url: "project4.html"
-      }
+      // {
+      //   src: '../img/notWork/photo_4.jpg',
+      //   title: "Project Title 4",
+      //   desc: "Description of Project 4",
+      //   year: "2025",
+      //   location: "Location 4",
+      //   company: "Company 4",
+      //   url: "project4.html"
+      // }
     ];
-  } else if (window.location.href.indexOf("project4.html") > -1) {
-    projects = [
-      {
-        src: '../img/notWork/photo_1.jpg',
-        title: "Project Title 1",
-        desc: "Description of Project 1",
-        year: "2023",
-        location: "Location 1",
-        company: "Company 1",
-        url: "project1.html"
-      },
-      {
-        src: '../img/notWork/photo_2.jpg',
-        title: "Project Title 2",
-        desc: "Description of Project 2",
-        year: "2024",
-        location: "Location 2",
-        company: "Company 2",
-        url: "project2.html"
-      },
-      {
-        src: '../img/notWork/photo_3.jpg',
-        title: "Project Title 3",
-        desc: "Description of Project 3",
-        year: "2025",
-        location: "Location 3",
-        company: "Company 3",
-        url: "project3.html"
-      }
-    ];
-  }
+  } 
+  // else if (window.location.href.indexOf("project4.html") > -1) {
+  //   projects = [
+  //     {
+  //       src: '../img/notWork/photo_1.jpg',
+  //       title: "Project Title 1",
+  //       desc: "Description of Project 1",
+  //       year: "2023",
+  //       location: "Location 1",
+  //       company: "Company 1",
+  //       url: "project1.html"
+  //     },
+  //     {
+  //       src: '../img/notWork/photo_2.jpg',
+  //       title: "Project Title 2",
+  //       desc: "Description of Project 2",
+  //       year: "2024",
+  //       location: "Location 2",
+  //       company: "Company 2",
+  //       url: "project2.html"
+  //     },
+  //     {
+  //       src: '../img/notWork/photo_3.jpg',
+  //       title: "Project Title 3",
+  //       desc: "Description of Project 3",
+  //       year: "2025",
+  //       location: "Location 3",
+  //       company: "Company 3",
+  //       url: "project3.html"
+  //     }
+  //   ];
+  // }
 
   // 썸네일 리스트 생성
   for (var i = 0; i < projects.length; i++) {
@@ -132,6 +133,7 @@ $(document).ready(function() {
       var title = $("<div class='card-title'></div>");
       var h1 = $("<div class='h1'>" + projects[index].title + "</div>");
       var desc = $("<div class='body2 white'>" + projects[index].desc + "</div>");
+      item.css("width", "100%");
       title.append(h1);
       title.append(desc);
       img.append(title);

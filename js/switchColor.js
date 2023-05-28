@@ -55,12 +55,14 @@ function changeColor() {
   var span = document.querySelector('span');
   var body2 = document.querySelector('.body2');
   var border = document.querySelector('.border');
+  var subBg = document.querySelector('.sub-bg');
 
   var colorWhite = body.style.backgroundColor;
   var colorBtn = btn.style.backgroundColor;
   var colorGray = span.style.backgroundColor;
   var colorBody2 = body2.style.color;
   var colorBorder = border.style.backgroundColor;
+  var colorBg = subBg.style.backgroundColor;
 
   if (colorWhite === 'rgb(248, 248, 251)') {
     body.style.backgroundColor = '#20202D'; //바꿀 색상
@@ -93,10 +95,17 @@ function changeColor() {
   } else {
     body2.style.color = '#20202D'; 
   }
+
   if (colorBorder === '#C0C0CE'){
-    border.style.backgroundColor = '#49495A;';
+    border.style.backgroundColor = '#49495A';
   } else {
     border.style.backgroundColor = '#C0C0CE';
+  }
+
+  if (colorBg === 'rgb(238, 238, 241)'){
+    subBg.style.backgroundColor = '#49495A';
+  } else {
+    subBg.style.backgroundColor = '#EEEEF1';
   }
 }
 

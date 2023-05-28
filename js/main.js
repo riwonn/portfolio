@@ -100,15 +100,17 @@ const bgMain = document.querySelector('.container-main');
 const btnPersona1 = document.querySelector('.persona:nth-child(1)');
 const btnPersona2 = document.querySelector('.persona:nth-child(2)');
 const btnPersona3 = document.querySelector('.persona:nth-child(3)');
-const btnPersona4 = document.querySelector('.persona:nth-child(4)');
+// const btnPersona4 = document.querySelector('.persona:nth-child(4)');
 
 btnPersona1.addEventListener('mouseenter',() => {
   bgMain.style.background = 'red';
   bgMain.style.transition = 'background .3s ease-in-out';
+  btnPersona1.src = 'img/img_persona_02.svg';
 })
 btnPersona1.addEventListener('mouseleave',() => {
   bgMain.style.background = 'none';
   bgMain.style.transition = 'background .3s ease-in-out';
+  btnPersona1.src = 'img/img_persona_01.svg';
 })
 
 btnPersona2.addEventListener('mouseenter',() => {
@@ -129,11 +131,11 @@ btnPersona3.addEventListener('mouseleave',() => {
   bgMain.style.transition = 'background .3s ease-in-out';
 })
 
-btnPersona4.addEventListener('mouseenter',() => {
-  bgMain.style.background = 'red';
-  bgMain.style.transition = 'background .3s ease-in-out';
-})
-btnPersona4.addEventListener('mouseleave',() => {
-  bgMain.style.background = 'none';
-  bgMain.style.transition = 'background .3s ease-in-out';
-})
+// btnPersona4.addEventListener('mouseenter',() => {
+//   bgMain.style.background = 'red';
+//   bgMain.style.transition = 'background .3s ease-in-out';
+// })
+// btnPersona4.addEventListener('mouseleave',() => {
+//   bgMain.style.background = 'none';
+//   bgMain.style.transition = 'background .3s ease-in-out';
+// })
