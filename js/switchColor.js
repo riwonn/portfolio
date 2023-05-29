@@ -8,9 +8,9 @@ function changeColor() {
   var body2 = document.querySelector('.body2');
   var border = document.querySelector('.border');
   var menuLink = document.querySelector('.menu-link');
-  var btnBehance = document.querySelector('.btn_behance');
-  var btnLinkedin = document.querySelector('btn_linkedin');
-  var btnBlog = document.querySelector('btn_blog');
+  const btnBehance = document.querySelector('.btn_behance');
+  const btnLinkedin = document.querySelector('btn_linkedin');
+  const btnBlog = document.querySelector('btn_blog');
 
   var colorWhite = body.style.backgroundColor;
 
