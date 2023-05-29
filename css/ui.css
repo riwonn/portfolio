@@ -480,3 +480,18 @@ button:disabled {
     left: 4vw;
     top: 4vw;
 }
+.btn_behance{
+    width: 32px;
+    height: 32px;
+    background-image: url('/img/btn_main_behance_light.svg');
+}
+.btn_linkedin{
+    width: 32px;
+    height: 32px;
+    background-image: url('/img/btn_main_linkedin_light.svg');
+}
+.btn_blog{
+    width: 32px;
+    height: 32px;
+    background-image: url('/img/btn_main_blog_light.svg');
+}
