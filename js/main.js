@@ -100,35 +100,51 @@ const bgMain = document.querySelector('.container-main');
 const btnPersona1 = document.querySelector('.persona:nth-child(1)');
 const btnPersona2 = document.querySelector('.persona:nth-child(2)');
 const btnPersona3 = document.querySelector('.persona:nth-child(3)');
-// const btnPersona4 = document.querySelector('.persona:nth-child(4)');
 
 btnPersona1.addEventListener('mouseenter',() => {
   bgMain.style.background = 'red';
   bgMain.style.transition = 'background .3s ease-in-out';
-  btnPersona1.src = 'img/img_persona_02.svg';
+  btnPersona1.style.backgroundImage = 'url("/img/img_persona_02.svg")';
+  btnPersona1.style.transform = 'translate(-20%, -8%)';
+  btnPersona1.style.transform = 'scale(110%)';
 })
 btnPersona1.addEventListener('mouseleave',() => {
   bgMain.style.background = 'none';
   bgMain.style.transition = 'background .3s ease-in-out';
-  btnPersona1.src = 'img/img_persona_01.svg';
+  btnPersona1.style.backgroundImage = 'url("/img/img_persona_01.svg")';
+  btnPersona1.style.transform = 'translate(-20%, -8%)';
+  btnPersona1.style.transform = 'scale(100%)';
+
 })
 
 btnPersona2.addEventListener('mouseenter',() => {
   bgMain.style.background = 'red';
   bgMain.style.transition = 'background .3s ease-in-out';
+  btnPersona2.style.backgroundImage = 'url("/img/img_persona_01.svg")';
+  btnPersona2.style.transform = 'translate(-10%, -10%)';
+  btnPersona2.style.transform = 'scale(110%)';
 })
 btnPersona2.addEventListener('mouseleave',() => {
   bgMain.style.background = 'none';
   bgMain.style.transition = 'background .3s ease-in-out';
+  btnPersona2.style.backgroundImage = 'url("/img/img_persona_02.svg")';
+  btnPersona2.style.transform = 'translate(-10%, -10%)';
+  btnPersona2.style.transform = 'scale(100%)';
 })
 
 btnPersona3.addEventListener('mouseenter',() => {
   bgMain.style.background = 'red';
   bgMain.style.transition = 'background .3s ease-in-out';
+  btnPersona3.style.backgroundImage = 'url("/img/img_persona_02.svg")';
+  btnPersona3.style.transform = 'translate(-20%, -40%)';
+  btnPersona3.style.transform = 'scale(110%)';
 })
 btnPersona3.addEventListener('mouseleave',() => {
   bgMain.style.background = 'none';
   bgMain.style.transition = 'background .3s ease-in-out';
+  btnPersona3.style.backgroundImage = 'url("/img/img_persona_03.svg")';
+  btnPersona3.style.transform = 'translate(-20%, -40%)';
+  btnPersona3.style.transform = 'scale(100%)';
 })
 
 // btnPersona4.addEventListener('mouseenter',() => {

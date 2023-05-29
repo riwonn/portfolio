@@ -294,6 +294,9 @@ article{
 .card-item:nth-child(2){
     background-image: url('/img/img_temp2.png');
 }
+.card-item:nth-child(3){
+    background-image: url('/img/img_temp2.png');
+}
 /* 카드 1/2 */
 .card-half{
     overflow-x: hidden;

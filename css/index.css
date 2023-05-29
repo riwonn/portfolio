@@ -46,35 +46,31 @@
     transform-origin: center;
 }
 
-.img-persona img{
-	position: absolute;
+
+.persona{
 	width: 70px;
 	height: 250px;
+	position: absolute;
 	transition: .3s;
 	transform-origin: center;
 }
-.img-persona img:hover{
-	transform: scale(110%);
-}
-.persona{
-	position: absolute;
-	transition: .3s;
-}
+
 .persona:nth-child(1){
 	left: 8%;
-	bottom: 20%;
-	transform: translate(-20%, -8%);
+	bottom: 10%;
+	background-image: url('/img/img_persona_01.svg');
 }
 .persona:nth-child(2){
 	left: 15%;
 	top: 30%;
-	transform: translate(-20%, -10%);
+	background-image: url('/img/img_persona_02.svg');
 }
 .persona:nth-child(3){
 	right: 20%;
-	bottom: 40%;
-	transform: translate(-20%, -40%);
+	bottom: 50%;
+	background-image: url('/img/img_persona_03.svg');
 }
+	
 /* .persona:nth-child(3){
 	z-index: 2;
 	right: 30%;
