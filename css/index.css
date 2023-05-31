@@ -48,8 +48,8 @@
 
 
 .persona{
-	width: 198px;
-	height: 296px;
+	width: 338px;
+	height: 505px;
 	position: absolute;
 	transition: .3s;
 	transform-origin: center;
@@ -58,18 +58,18 @@
 }
 
 .persona:nth-child(1){
-	left: 10%;
-	top: 15%;
+	left: -6%;
+	top: -8%;
 	background-image: url('/img/img_persona_1.webp');
 }
 .persona:nth-child(2){
 	left: 4%;
-	bottom: 10%;
+	bottom: -8%;
 	background-image: url('/img/img_persona_2.webp');
 }
 .persona:nth-child(3){
-	right: 10%;
-	bottom: 40%;
+	right: 8%;
+	bottom: 20%;
 	background-image: url('/img/img_persona_3.webp');
 }
 	
