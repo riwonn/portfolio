@@ -59,11 +59,11 @@
 
 .persona:nth-child(1){
 	left: 10%;
-	top: 20%;
+	top: 15%;
 	background-image: url('/img/img_persona_1.webp');
 }
 .persona:nth-child(2){
-	left: 5%;
+	left: 4%;
 	bottom: 10%;
 	background-image: url('/img/img_persona_2.webp');
 }

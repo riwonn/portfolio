@@ -146,6 +146,7 @@ article{
     justify-content: flex-start;
     margin: 0px 16px;
     gap:32px;
+    z-index: 5;
 }
 .sidebar-r img{
     width: auto;

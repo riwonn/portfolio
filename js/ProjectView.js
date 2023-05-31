@@ -45,3 +45,15 @@ export class ProjectView{
         }, 10);
     }
 }
+
+const bigMenu = document.querySelector('.menu-dark');
+if (bigMenu) {
+    bigMenu.innerHTML = `
+        <nav class="btn_group">
+            <a href="https://www.everiwon.com/" class="menu-link white">EVERiwon</a>
+            <a href="https://www.everiwon.com/#first" class="menu-link white">WORK</a>
+            <a href="archive.html" class="menu-link white">ARCHIVE</a>
+            <a href="aboutMe.html" class="menu-link white">ABOUT ME</a>
+        </nav>
+    `;
+}
