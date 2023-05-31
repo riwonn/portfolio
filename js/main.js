@@ -155,3 +155,21 @@ btnPersona3.addEventListener('mouseleave',() => {
 //   bgMain.style.background = 'none';
 //   bgMain.style.transition = 'background .3s ease-in-out';
 // })
+
+// 카드 설명
+const itemCard = document.querySelector('.card-img');
+const title = document.querySelector('.card-title');
+const  info = document.querySelector('.card-info');
+
+itemCard.addEventListener('mouseenter',() => {
+  // title.style.display = 'block';
+  // info.style.display = 'block';
+  title.style.opacity = '1';
+  info.style.opacity = '1';
+})
+itemCard.addEventListener('mouseleave',() => {
+  // title.style.display = 'none';
+  // info.style.display = 'none';
+  title.style.opacity = '0';
+  info.style.opacity = '0';
+})

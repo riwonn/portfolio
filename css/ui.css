@@ -59,8 +59,8 @@ article{
     font-family: 'pretendard';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
-    line-height: 130%;
+    font-size: 26px;
+    line-height: 150%;
     transition: .3s;
     }   
 .title.project{
@@ -76,7 +76,7 @@ article{
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 130%;
+    line-height: 150%;
     /* color: #20202D; */
 }
 .caption{
@@ -146,7 +146,7 @@ article{
     justify-content: flex-start;
     margin: 0px 16px;
     gap:32px;
-    z-index: 5;
+    z-index: 1;
 }
 .sidebar-r img{
     width: auto;
@@ -290,16 +290,16 @@ article{
     color: inherit;
 }
 .card-item:nth-child(1){
-    background-image: url('/img/img_temp.png');
+    background-image: url('/img/img_thum_1.webp');
 }
 .card-item:nth-child(2){
-    background-image: url('/img/img_temp2.png');
+    background-image: url('/img/img_thum_2.webp');
 }
 .card-item:nth-child(3){
-    background-image: url('/img/img_temp2.png');
+    background-image: url('/img/img_thum_3.webp');
 }
 /* 카드 1/2 */
-.card-half{
+/* .card-half{
     overflow-x: hidden;
     color: inherit;
     display: flex;
@@ -310,7 +310,7 @@ article{
 }
 .card-half a:nth-child(2){
     background-image: url('/img/img_temp4.png');
-}
+} */
 
 @media(max-width: 834px){
 	.card-half{
@@ -358,11 +358,13 @@ article{
 }
 /* card text setting */
 .card-title {
-    display: block;
+    /* display: none; */
     text-align: center;
     margin: auto 0 auto;
     color: #fff;
     text-shadow: 0 0 10px #20202D;
+    transition: .3s;
+    opacity: 0;
   }
   
   .card-title .h1 {
@@ -379,11 +381,14 @@ article{
     font-size: 18px;
   }
 .card-info{
+    /* display: none; */
     width: 100%; 
     justify-content:end;
     text-align: left;
     color: #fff;
     text-shadow: 0 0 10px #20202D;
+    transition: .3s;
+    opacity: 0;
 }
 /* footer */
 .footer{
