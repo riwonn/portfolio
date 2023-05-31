@@ -48,27 +48,29 @@
 
 
 .persona{
-	width: 70px;
-	height: 250px;
+	width: 198px;
+	height: 296px;
 	position: absolute;
 	transition: .3s;
 	transform-origin: center;
+	background-size: cover;
+	z-index: 0;
 }
 
 .persona:nth-child(1){
-	left: 8%;
-	bottom: 10%;
-	background-image: url('/img/img_persona_01.svg');
+	left: 10%;
+	top: 20%;
+	background-image: url('/img/img_persona_1.webp');
 }
 .persona:nth-child(2){
-	left: 15%;
-	top: 30%;
-	background-image: url('/img/img_persona_02.svg');
+	left: 5%;
+	bottom: 10%;
+	background-image: url('/img/img_persona_2.webp');
 }
 .persona:nth-child(3){
-	right: 20%;
-	bottom: 50%;
-	background-image: url('/img/img_persona_03.svg');
+	right: 10%;
+	bottom: 40%;
+	background-image: url('/img/img_persona_3.webp');
 }
 	
 /* .persona:nth-child(3){
