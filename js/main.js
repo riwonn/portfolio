@@ -157,19 +157,18 @@ btnPersona3.addEventListener('mouseleave',() => {
 // })
 
 // 카드 설명
-const itemCard = document.querySelector('.card-img');
-const title = document.querySelector('.card-title');
-const  info = document.querySelector('.card-info');
+const itemCards = document.querySelectorAll('.card-img');
+const titles = document.querySelectorAll('.card-title');
+const infos = document.querySelectorAll('.card-info');
 
-itemCard.addEventListener('mouseenter',() => {
-  // title.style.display = 'block';
-  // info.style.display = 'block';
-  title.style.opacity = '1';
-  info.style.opacity = '1';
-})
-itemCard.addEventListener('mouseleave',() => {
-  // title.style.display = 'none';
-  // info.style.display = 'none';
-  title.style.opacity = '0';
-  info.style.opacity = '0';
-})
+itemCards.forEach((itemCard, index) => {
+  itemCard.addEventListener('mouseenter', () => {
+    titles[index].style.opacity = '1';
+    infos[index].style.opacity = '1';
+  });
+
+  itemCard.addEventListener('mouseleave', () => {
+    titles[index].style.opacity = '0';
+    infos[index].style.opacity = '0';
+  });
+});

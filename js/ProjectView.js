@@ -46,6 +46,7 @@ export class ProjectView{
     }
 }
 
+// 큰 메뉴
 const bigMenu = document.querySelector('.menu-dark');
 if (bigMenu) {
     bigMenu.innerHTML = `

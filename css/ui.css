@@ -358,7 +358,9 @@ article{
 }
 /* card text setting */
 .card-title {
-    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     text-align: center;
     margin: auto 0 auto;
     color: #fff;
