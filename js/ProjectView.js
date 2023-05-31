@@ -47,7 +47,7 @@ export class ProjectView{
 }
 
 // 큰 메뉴
-const bigMenu = document.querySelector('.menu-dark');
+const bigMenu = document.querySelector('#bigMenu');
 if (bigMenu) {
     bigMenu.innerHTML = `
         <nav class="btn_group">
