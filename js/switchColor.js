@@ -21,7 +21,7 @@ function changeColor() {
     // 바꿀 색상
     body.style.backgroundColor = '#20202D';
     body.style.color = '#EEEEF1';
-    btn.style.backgroundColor = '#7D7D90';
+    btn.style.backgroundColor = 'rgba(167, 166, 187, .5)';
     btn.style.backgroundImage = 'url("../img/btn_switch_dark.svg")';
     btn.style.backgroundRepeat = 'no-repeat';
     btn.style.backgroundPosition = 'center';
@@ -39,7 +39,7 @@ function changeColor() {
     // 기존 색상
     body.style.backgroundColor = '#F8F8FB';
     body.style.color = '#20202D';
-    btn.style.backgroundColor = '#D6D6E3';
+    btn.style.backgroundColor = 'hsla(240, 17%, 15%, .1)';
     btn.style.backgroundImage = 'url("../img/btn_switch_light.svg")';
     btn.style.backgroundRepeat = 'no-repeat';
     btn.style.backgroundPosition = 'center';
