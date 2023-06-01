@@ -51,10 +51,10 @@ const bigMenu = document.querySelector('#bigMenu');
 if (bigMenu) {
     bigMenu.innerHTML = `
         <nav class="btn_group">
-            <a href="https://www.everiwon.com/" class="menu-link white">EVERiwon</a>
-            <a href="https://www.everiwon.com/#first" class="menu-link white">작업</a>
-            <a href="archive.html" class="menu-link white">아카이브</a>
-            <a href="aboutMe.html" class="menu-link white">소개</a>
+            <a href="https://www.everiwon.com/" class="menu-link">EVERiwon</a>
+            <a href="https://www.everiwon.com/#first" class="menu-link">작업</a>
+            <a href="archive.html" class="menu-link">아카이브</a>
+            <a href="aboutMe.html" class="menu-link">소개</a>
             <button class="img-switch" onclick="changeColor()"></button>
         </nav>
     `;
