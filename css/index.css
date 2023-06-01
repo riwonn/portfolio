@@ -63,13 +63,13 @@
 	background-image: url('/img/img_persona_1.webp');
 }
 .persona:nth-child(2){
-	left: 4%;
-	bottom: -10%;
+	left: -6%;
+	top: -8%;
 	background-image: url('/img/img_persona_2.webp');
 }
 .persona:nth-child(3){
-	left: -6%;
-	top: -8%;
+	left: 4%;
+	bottom: -10%;
 	background-image: url('/img/img_persona_3.webp');
 }
 	
