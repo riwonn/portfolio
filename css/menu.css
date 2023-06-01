@@ -138,6 +138,11 @@
     cursor: pointer;
 }
 .img-switch:hover{
+    background-color: hsla(240, 17%, 15%, .3);
+    transition: .3s;
+    transform: scale(110%);
+}
+.img-switch.dark:hover{
     background-color: hsla(240, 17%, 15%, .4);
     transition: .3s;
     transform: scale(110%);
