@@ -506,3 +506,18 @@ button:disabled {
     height: 32px;
     background-image: url('/img/btn_main_blog_light.svg');
 }
+.btn_behance:hover{
+    background-color: hsla(240, 17%, 15%, .3);
+    transition: .3s;
+    transform: scale(108%);
+}
+.btn_linkedin:hover{
+    background-color: hsla(240, 17%, 15%, .3);
+    transition: .3s;
+    transform: scale(108%);
+}
+.btn_blog:hover{
+    background-color: hsla(240, 17%, 15%, .3);
+    transition: .3s;
+    transform: scale(108%);
+}
