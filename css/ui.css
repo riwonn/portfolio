@@ -496,15 +496,24 @@ button:disabled {
     height: 32px;
     background-image: url('/img/btn_main_behance_light.svg');
 }
+.btn_behance.white{
+    background-image: url('/img/btn_main_behance_dark.svg');
+}
 .btn_linkedin{
     width: 32px;
     height: 32px;
     background-image: url('/img/btn_main_linkedin_light.svg');
 }
+.btn_linkedin.white{
+    background-image: url('/img/btn_main_linkedin_dark.svg');
+}
 .btn_blog{
     width: 32px;
     height: 32px;
     background-image: url('/img/btn_main_blog_light.svg');
+}
+.btn_blog.white{
+    background-image: url('/img/btn_main_blog_dark.svg');
 }
 .btn_behance:hover{
     transition: .3s;
