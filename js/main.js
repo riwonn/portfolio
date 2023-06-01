@@ -105,15 +105,15 @@ btnPersona1.addEventListener('mouseenter',() => {
   bgMain.style.background = '#628061';
   bgMain.style.transition = 'background .3s ease-in-out';
   btnPersona1.style.backgroundImage = 'url("/img/img_persona_1_hover.webp")';
-  btnPersona1.style.transform = 'translate(-20%, -8%)';
-  btnPersona1.style.transform = 'scale(105%)';
+  // btnPersona1.style.transform = 'translate(-20%, -8%)';
+  // btnPersona1.style.transform = 'scale(105%)';
 })
 btnPersona1.addEventListener('mouseleave',() => {
   bgMain.style.background = 'none';
   bgMain.style.transition = 'background .3s ease-in-out';
   btnPersona1.style.backgroundImage = 'url("/img/img_persona_1.webp")';
-  btnPersona1.style.transform = 'translate(-20%, -8%)';
-  btnPersona1.style.transform = 'scale(100%)';
+  // btnPersona1.style.transform = 'translate(-20%, -8%)';
+  // btnPersona1.style.transform = 'scale(100%)';
 
 })
 
@@ -121,30 +121,30 @@ btnPersona2.addEventListener('mouseenter',() => {
   bgMain.style.background = '#d3d69f';
   bgMain.style.transition = 'background .3s ease-in-out';
   btnPersona2.style.backgroundImage = 'url("/img/img_persona_2_hover.webp")';
-  btnPersona2.style.transform = 'translate(-10%, -10%)';
-  btnPersona2.style.transform = 'scale(105%)';
+  // btnPersona2.style.transform = 'translate(-10%, -10%)';
+  // btnPersona2.style.transform = 'scale(105%)';
 })
 btnPersona2.addEventListener('mouseleave',() => {
   bgMain.style.background = 'none';
   bgMain.style.transition = 'background .3s ease-in-out';
   btnPersona2.style.backgroundImage = 'url("/img/img_persona_2.webp")';
-  btnPersona2.style.transform = 'translate(-10%, -10%)';
-  btnPersona2.style.transform = 'scale(100%)';
+  // btnPersona2.style.transform = 'translate(-10%, -10%)';
+  // btnPersona2.style.transform = 'scale(100%)';
 })
 
 btnPersona3.addEventListener('mouseenter',() => {
   bgMain.style.background = '#72a7c4';
   bgMain.style.transition = 'background .3s ease-in-out';
   btnPersona3.style.backgroundImage = 'url("/img/img_persona_3_hover.webp")';
-  btnPersona3.style.transform = 'translate(-20%, -40%)';
-  btnPersona3.style.transform = 'scale(105%)';
+  // btnPersona3.style.transform = 'translate(-20%, -40%)';
+  // btnPersona3.style.transform = 'scale(105%)';
 })
 btnPersona3.addEventListener('mouseleave',() => {
   bgMain.style.background = 'none';
   bgMain.style.transition = 'background .3s ease-in-out';
   btnPersona3.style.backgroundImage = 'url("/img/img_persona_3.webp")';
-  btnPersona3.style.transform = 'translate(-20%, -40%)';
-  btnPersona3.style.transform = 'scale(100%)';
+  // btnPersona3.style.transform = 'translate(-20%, -40%)';
+  // btnPersona3.style.transform = 'scale(100%)';
 })
 
 // btnPersona4.addEventListener('mouseenter',() => {
