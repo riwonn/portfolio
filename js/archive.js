@@ -209,11 +209,11 @@ projectImg.addEventListener('load', () => {
 });
 
 // 이미지 비율에 따라 보이는 크기가 달라지는 코드
-const imageElement = document.getElementById('imageBox');
-adjustImageSize(imageElement);
+// const imageElement = document.getElementById('.imageBox');
+adjustImageSize(projectImg);
 
 function adjustImageSize(img) {
-  const maxWidth = `${95}%`;// 최대 너비 설정
+  const maxWidth = `${85}%`;// 최대 너비 설정
   const maxHeight = `${85}%`;// 최대 높이 설정
 
   const width = img.naturalWidth;

@@ -142,6 +142,8 @@ video{
 	display: none;
 	transition: .3s;
     overflow: hidden;
+    -webkit-backdrop-filter:blur(5px);
+    backdrop-filter:blur(5px);
  }
 .wide-img-page{
     position: absolute;
@@ -159,11 +161,11 @@ video{
 .imageBox {
     margin: auto;
     display: flex;
-    height: 100%;
+    height: 85%;
     width: 100%;
     position: absolute;
     z-index: 20;
-    padding-top: 3%;
+    padding: 4vw;
     justify-content: center;
   }
   
@@ -361,12 +363,12 @@ video{
 
 @media (max-width: 834px){
     .btn-details{
-        width: 48px;
-        height: 48px;
+        width: 52px;
+        height: 52px;
     }
     .img-loading{
-        width: 48px;
-        height: 48px;
+        width: 52px;
+        height: 52px;
     }
 }
   

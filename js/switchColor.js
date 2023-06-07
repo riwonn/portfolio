@@ -8,6 +8,9 @@ function changeColor() {
   var body2 = document.querySelector('.body2');
   var border = document.querySelector('.border');
   var menuLink = document.querySelector('.menu-link');
+  const btnMenuBefore = document.querySelector('.btn-menu::before');
+  const btnMenuAfter = document.querySelector('.btn-menu::after');
+
   const btnBehance = document.querySelector('.btn_behance');
   const btnLinkedin = document.querySelector('btn_linkedin');
   const btnBlog = document.querySelector('btn_blog');
@@ -28,6 +31,8 @@ function changeColor() {
     span.style.backgroundColor = '#F8F8FB';
     body2.style.color = '#EEEEF1';
     border.style.backgroundColor = '#49495A';
+    btnMenuBefore.style.color = 'fff';
+    btnMenuAfter.style.color = 'fff';
     btnBehance.style.backgroundImage = 'url("/img/btn_main_behance_dark.svg")';
     btnLinkedin.style.backgroundImage = 'url("/img/btn_main_linkedin_dark.svg")';
     btnBlog.style.backgroundImage = 'url("/img/btn_main_blog_dark.svg")';
@@ -46,9 +51,12 @@ function changeColor() {
     span.style.backgroundColor = '#20202D';
     body2.style.color = '#20202D';
     border.style.backgroundColor = '#C0C0CE';
+    btnMenuBefore.style.color = '#20202D';
+    btnMenuAfter.style.color = '#20202D';
     btnBehance.style.backgroundImage = 'url("/img/btn_main_behance_light.svg")';
     btnLinkedin.style.backgroundImage = 'url("/img/btn_main_linkedin_light.svg")';
     btnBlog.style.backgroundImage = 'url("/img/btn_main_blog_light.svg")';
+    
 
     bigMenu.classList.replace('menu-dark', 'menu-light');
     smallMenu.classList.replace('menu-dark', 'menu-light');
