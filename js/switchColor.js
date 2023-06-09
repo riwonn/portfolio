@@ -2,18 +2,18 @@
 // light
 
 function changeColor() {
-  var body = document.querySelector('body');
-  var btn = document.querySelector('.img-switch');
-  var span = document.querySelector('span');
-  var body2 = document.querySelector('.body2');
-  var border = document.querySelector('.border');
-  var menuLink = document.querySelector('.menu-link');
+  var body = document.querySelectorAll('body');
+  var btn = document.querySelectorAll('.img-switch');
+  var span = document.querySelectorAll('span');
+  var body2 = document.querySelectorAll('.body2');
+  var border = document.querySelectorAll('.border');
+  var menuLink = document.querySelectorAll('.menu-link');
   const btnMenuBefore = document.querySelector('.btn-menu::before');
   const btnMenuAfter = document.querySelector('.btn-menu::after');
 
-  const btnBehance = document.querySelector('.btn_behance');
-  const btnLinkedin = document.querySelector('btn_linkedin');
-  const btnBlog = document.querySelector('btn_blog');
+  const btnBehance = document.querySelectorAll('.btn_behance');
+  const btnLinkedin = document.querySelectorAll('btn_linkedin');
+  const btnBlog = document.querySelectorAll('btn_blog');
 
   var colorWhite = body.style.backgroundColor;
 
