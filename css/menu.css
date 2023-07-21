@@ -1,6 +1,6 @@
 /* H2 */
 .menu-link{
-    font-family: 'Finlandica', sans-serif;
+    font-family: 'Inconsolata', monospace;
     display: flex;
     flex: 1 1 auto;
     text-decoration: none;
@@ -25,7 +25,7 @@
     color: #fff;
 }
 .menu-link-logo{
-    font-family: 'Finlandica', sans-serif;
+    font-family: 'Inconsolata', monospace;
     text-decoration: none;
     color: #20202D;
     font-style: normal;

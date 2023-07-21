@@ -250,7 +250,7 @@ video{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'pretendard';
+    font-family: 'Inconsolata', monospace;
     font-weight: 300;
     font-size: 26px;
     text-align: left;
