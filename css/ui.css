@@ -6,7 +6,7 @@ html {
 body{
     background-color: #F8F8FB;
     margin: 0px;
-    font-family: 'Finlandica', sans-serif;
+    font-family: 'Inconsolata', monospace;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -37,7 +37,7 @@ article{
     font-weight: 600;
 }
 .main{
-    font-family: 'Finlandica', sans-serif;
+    font-family: 'Inconsolata', monospace;
     font-style: normal;
     font-weight: 600;
     font-size: 130px;
@@ -46,7 +46,7 @@ article{
     z-index: 1;
 }
 .title{
-    font-family: 'Finlandica', sans-serif;
+    font-family: 'Inconsolata', monospace;
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
@@ -112,13 +112,13 @@ article{
     text-decoration: none;
 }
 .h1{
-    font-family: 'Finlandica', sans-serif;
+    font-family: 'Inconsolata', monospace;
     width: 600;
     font-size: 24px;
     line-height: 100%
 }
 .h2{
-    font-family: 'Finlandica';
+    font-family: 'Inconsolata', monospace;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

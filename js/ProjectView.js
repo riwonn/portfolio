@@ -21,11 +21,11 @@ export class ProjectView{
                     <a href="https://www.everiwon.com/" class="menu-link-logo">EVERiwon</a>
                 </div>
             </header>
-            <a href="https://www.everiwon.com/#first" class="menu-link-smallBtn">WORK</a>
+            <a href="https://www.everiwon.com/#first" class="menu-link-smallBtn">Work</a>
             <div class="border"></div>
-			<a href="archive.html" class="menu-link-smallBtn">ARCHIVE</a>
+			<a href="archive.html" class="menu-link-smallBtn">Extras</a>
             <div class="border"></div>
-            <a href="aboutMe.html" class="menu-link-smallBtn">ABOUT ME</a>
+            <a href="aboutMe.html" class="menu-link-smallBtn">About</a>
             <div class="border"></div>
         </section>
         `;
@@ -55,9 +55,9 @@ if (bigMenu) {
     bigMenu.innerHTML = `
         <nav class="btn_group">
             <a href="https://www.everiwon.com/" class="menu-link">EVERiwon</a>
-            <a href="https://www.everiwon.com/#first" class="menu-link">작업</a>
-            <a href="archive.html" class="menu-link">아카이브</a>
-            <a href="aboutMe.html" class="menu-link">소개</a>
+            <a href="https://www.everiwon.com/#first" class="menu-link">Work</a>
+            <a href="archive.html" class="menu-link">Extras</a>
+            <a href="aboutMe.html" class="menu-link">About</a>
             <button class="img-switch" onclick="changeColor()"></button>
         </nav>
     `;
@@ -66,9 +66,9 @@ if (bigMenuDark) {
     bigMenuDark.innerHTML = `
         <nav class="btn_group">
             <a href="https://www.everiwon.com/" class="menu-link white">EVERiwon</a>
-            <a href="https://www.everiwon.com/#first" class="menu-link white">작업</a>
-            <a href="archive.html" class="menu-link white">아카이브</a>
-            <a href="aboutMe.html" class="menu-link white">소개</a>
+            <a href="https://www.everiwon.com/#first" class="menu-link white">Work</a>
+            <a href="archive.html" class="menu-link white">Extras</a>
+            <a href="aboutMe.html" class="menu-link white">About</a>
         </nav>
     `;
 }
