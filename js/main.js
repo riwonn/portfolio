@@ -156,19 +156,19 @@ btnPersona3.addEventListener('mouseleave',() => {
 //   bgMain.style.transition = 'background .3s ease-in-out';
 // })
 
-// 카드 설명
-const itemCards = document.querySelectorAll('.card-img');
-const titles = document.querySelectorAll('.card-title');
-const infos = document.querySelectorAll('.card-info');
+// 카드 설명 켜짐 꺼짐
+// const itemCards = document.querySelectorAll('.card-img');
+// const titles = document.querySelectorAll('.card-title');
+// const infos = document.querySelectorAll('.card-info');
 
-itemCards.forEach((itemCard, index) => {
-  itemCard.addEventListener('mouseenter', () => {
-    titles[index].style.opacity = '1';
-    infos[index].style.opacity = '1';
-  });
+// itemCards.forEach((itemCard, index) => {
+//   itemCard.addEventListener('mouseenter', () => {
+//     titles[index].style.opacity = '1';
+//     infos[index].style.opacity = '1';
+//   });
 
-  itemCard.addEventListener('mouseleave', () => {
-    titles[index].style.opacity = '0';
-    infos[index].style.opacity = '0';
-  });
-});
+//   itemCard.addEventListener('mouseleave', () => {
+//     titles[index].style.opacity = '0';
+//     infos[index].style.opacity = '0';
+//   });
+// });

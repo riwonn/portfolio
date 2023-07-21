@@ -7,7 +7,7 @@
     color: #20202D;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 100%;
     -webkit-transition: .3s;
     transition: .3s;
@@ -24,25 +24,8 @@
 .menu-link.white{
     color: #fff;
 }
-.menu-link-logo{
-    font-family: 'Inconsolata', monospace;
-    text-decoration: none;
-    color: #20202D;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 100%;
-}
-.menu-link-smallBtn{
-    text-align: left;
-    text-decoration: none;
-    color: #20202D;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    font-weight: 400;
-    padding: 22px 0;
+.menu-link.logo{
+    font-weight: 700;
 }
 .title-center{
     display: flex;
@@ -64,8 +47,8 @@
     width: 50vw;
     margin:16px 0;
     padding: 0 2vw 0 3vw;
-    background-color: hsla(240, 10%, 94%, 0.8);
-    border: 1px solid hsla(240, 19%, 86%, 0.8);
+    background-color: hsla(240, 19%, 86%, .8);
+    border: 1px solid hsla(243, 13%, 78%, .6);
     -webkit-backdrop-filter:blur(10px);
     backdrop-filter:blur(10px);
     z-index: 10;
@@ -343,8 +326,8 @@ button{
     position: fixed;
     left: auto;
     top: auto;
-	right: 4vw;
-    bottom: 4vw;
+	right: 3vw;
+    bottom: 3vw;
     padding: 14px;
     gap: 16px;
     transition: .3s;
