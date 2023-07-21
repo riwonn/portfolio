@@ -6,7 +6,7 @@ function changeColor() {
   var btn = document.querySelector('.img-switch');
   var span = document.querySelector('span');
   var body2 = document.querySelector('.body2');
-  var border = document.querySelector('.border');
+  var border = document.querySelectorAll('.border');
   var menuLink = document.querySelector('.menu-link');
   const btnMenuBefore = document.querySelector('.btn-menu::before');
   const btnMenuAfter = document.querySelector('.btn-menu::after');
