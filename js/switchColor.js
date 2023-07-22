@@ -18,7 +18,7 @@ function changeColor() {
   var bigMenu = document.getElementById('bigMenuDark');
   var smallMenu = document.getElementById('smallMenu');
 
-  if (colorWhite === 'rgb(248, 248, 251)') {
+  if (colorWhite === 'rgb(238, 238, 241)') {
     // 바꿀 색상
     body.style.backgroundColor = '#20202D';
     body.style.color = '#EEEEF1';
@@ -45,16 +45,16 @@ function changeColor() {
 
 
     // Create a new style rule for the pseudo-elements
-    var pseudoElementStyle = `
-      .btn-menu::before, .btn-menu::after {
-        color: #fff;
-      }
-    `;
+    // var pseudoElementStyle = `
+    //   .btn-menu::before, .btn-menu::after {
+    //     color: #fff;
+    //   }
+    // `;
     // Add the new style rule to the document
     var style = document.createElement('style');
     style.type = 'text/css';
-    style.appendChild(document.createTextNode(pseudoElementStyle));
-    document.head.appendChild(style);
+    // style.appendChild(document.createTextNode(pseudoElementStyle));
+    // document.head.appendChild(style);
 
     btnBehance.forEach((btn) => {
       btn.style.backgroundImage = 'url("/img/btn_main_behance_dark.svg")';
@@ -94,16 +94,16 @@ function changeColor() {
     });
 
     // Create a new style rule for the pseudo-elements
-    var pseudoElementStyle = `
-      .btn-menu::before, .btn-menu::after {
-        color: #20202D;
-      }
-    `;
+    // var pseudoElementStyle = `
+    //   .btn-menu::before, .btn-menu::after {
+    //     color: #20202D;
+    //   }
+    // `;
     // Add the new style rule to the document
     var style = document.createElement('style');
     style.type = 'text/css';
-    style.appendChild(document.createTextNode(pseudoElementStyle));
-    document.head.appendChild(style);
+    // style.appendChild(document.createTextNode(pseudoElementStyle));
+    // document.head.appendChild(style);
 
     btnBehance.forEach((btn) => {
       btn.style.backgroundImage = 'url("/img/btn_main_behance_light.svg")';
