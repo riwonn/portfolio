@@ -37,10 +37,10 @@ article{
     font-weight: 700;
 }
 .main{
-    font-family: 'Inconsolata', monospace;
+    font-family: 'pretendard';
     font-style: normal;
     font-weight: 700;
-    font-size: 130px;
+    font-size: 100px;
     line-height: 100%;
     transition: .3s;
     z-index: 1;
@@ -77,7 +77,7 @@ article{
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    /* color: #20202D; */
+    color: #EEEEF1;
 }
 .caption{
     font-family: 'Inconsolata', monospace;
@@ -85,7 +85,9 @@ article{
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
+    color: #EEEEF1;
 }
+/* color */
 .gray200{
     color: #D6D6E3;
 }
@@ -102,10 +104,10 @@ article{
     color: #fff;
 }
 .main-color{
-    color: #00AA50;
+    color: #E73C50;
 }
 .link{
-    color: #00AA50;
+    color: #E73C50;
     text-decoration: none;
 }
 .h1{
@@ -207,21 +209,6 @@ article{
         font-size: 20px;
     }  
 }
-@media(min-width: 1300px){
-    .main{
-        font-size: 140px;
-    }
-}
-@media(min-width: 1100px) and (max-width: 1300px){
-    .main{
-        font-size: 120px;
-    }
-}
-@media(min-width: 843px) and (max-width: 1100px){
-    .main{
-        font-size: 103px;
-    }
-}
 @media(min-width: 700px) and (max-width: 843px){
     .main{
         font-size: 91px;
@@ -239,7 +226,7 @@ article{
 }
 @media(min-width: 400px){
     .main-text{
-        margin: 0px 20vw;
+        margin: 0px 10vw;
     }
     /* Social network's buttons */
     .sidebar-r { 
@@ -453,7 +440,7 @@ input::placeholder{
     height: 100%;
     padding: 12px;
     border: none;
-    background: #49495A;
+    background: #EEEEF1;
     cursor: pointer;
     margin: 0;
 }

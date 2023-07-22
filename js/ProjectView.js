@@ -14,7 +14,7 @@ export class ProjectView{
 
     show(){
         this.bodyElem.innerHTML = `
-        <section class="menu-flex">
+        <section class="menu-flex ">
             <header class="menu-title">
                 <button class="btn-back"><span></span></button>
                 <div class="title-center">
@@ -54,10 +54,10 @@ const bigMenuDark = document.querySelector('#bigMenuDark');
 if (bigMenu) {
     bigMenu.innerHTML = `
         <nav class="btn_group">
-            <a href="https://www.everiwon.com/" class="menu-link logo">EVERiwon</a>
+            <a href="https://www.everiwon.com/" class="menu-link logo white">EVERiwon</a>
             <a href="https://www.everiwon.com/#first" class="menu-link">Work</a>
-            <a href="extras.html" class="menu-link">Extras</a>
-            <a href="aboutMe.html" class="menu-link">About</a>
+            <a href="extras.html" class="menu-link white">Extras</a>
+            <a href="aboutMe.html" class="menu-link white">About</a>
             <button class="img-switch" onclick="changeColor()"></button>
         </nav>
     `;
@@ -69,6 +69,7 @@ if (bigMenuDark) {
             <a href="https://www.everiwon.com/#first" class="menu-link white">Work</a>
             <a href="extras.html" class="menu-link white">Extras</a>
             <a href="aboutMe.html" class="menu-link white">About</a>
+            <button class="img-switch dark" onclick="changeColor()"></button>
         </nav>
     `;
 }

@@ -34,17 +34,22 @@
 
 /* 요소 디자인 */
 .btn-cv{
-    width: 161px;
-    height: 48px;
-    border: none;
-    background: #49495A;
+	position:absolute;
+    right: 25vw;
+    bottom: 30vh;
+	height: 65px;
+	width: 252px;
+	border: none;
+    background: #E73C50;
+	rotate: -8deg;
+	border-radius: 32px;
     cursor: pointer;
 }
 .btn-cv:hover{
     transition: .3s;
-    transform:scale(108%);
+    transform:scale(105%);
     transform-origin: center;
-	background-color: #393948;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), var(--main, #E73C50);
 }
 
 
@@ -85,3 +90,21 @@
 	bottom: 40%;
 	transform: translate(-20%, -40%);
 } */
+
+.hover-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bodymovinanim {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	mix-blend-mode :screen;
+  }

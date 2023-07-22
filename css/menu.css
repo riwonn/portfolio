@@ -146,7 +146,7 @@
     top: 50%;
     width: 24px;
     height: 2px;
-    background: #20202D;
+    background: #fff;
     border-radius: 2px;
     transform: translate(-50%,0);
 }
@@ -157,7 +157,7 @@
     top: 50%;
     width:24px;
     height: 2px;
-    background: #20202D;
+    background: #fff;
     transform: translate(-50%,-8px);
     border-radius: 2px;
 }
@@ -168,7 +168,7 @@
     top: 50%;
     width:24px;
     height: 2px;
-    background: #20202D;
+    background: #fff;
     transform: translate(-50%,8px);
     border-radius: 2px;
 }

@@ -24,118 +24,97 @@
 	</script>
 </head>
 
-<body>
+<body class="bg-black black">
 	<div class="btn-go-top"><div class="ic-go-top"></div><div class="h2 white">Go to Top</div></div>
 	<!-- Big Menu Start -->
-	<nav id="bigMenu" class="menu-light"></nav>
+	<nav id="bigMenuDark" class="menu-dark"></nav>
 	
-	  <nav id="smallMenu" class="menu-light small">
-		<a href="https://www.everiwon.com/" class="menu-link logo">EVERiwon</a>
+	  <nav id="smallMenu" class="menu-dark small">
+		<a href="https://www.everiwon.com/" class="menu-link white logo">EVERiwon</a>
 		<nav class="btn_group small">
 		  <button class="btn-menu"><span></span></button>
 		  <input type="button" class="img-switch" onclick="changeColor()">
 		</nav>
 	  </nav>
 	<!-- Small Memu Finish -->
-	<script src="js/switchColor.js"></script>
 
 	<!-- scroll ddown btn/icon -->
 	<a href="#first">
 		<img class="down" src="img/btn_scrollDown.svg">
 	</a>
 	<aside class="sidebar-r">
-		<a class="btn_behance" href="https://www.behance.net/everiwon" target='_blank'></a>
-		<a class="btn_linkedin" href="https://www.linkedin.com/in/riwon-kwon-732a9a15b/" target='_blank'></a>
-		<a class="btn_blog" href="https://brunch.co.kr/@everiwon" target='_blank'></a>
+		<a class="btn_behance white" href="https://www.behance.net/everiwon" target='_blank'></a>
+		<a class="btn_linkedin white" href="https://www.linkedin.com/in/riwon-kwon-732a9a15b/" target='_blank'></a>
+		<a class="btn_blog white" href="https://brunch.co.kr/@everiwon" target='_blank'></a>
 	</aside>
 	<!-- Information Text Start -->
-	<main class="container-main">
-		<!-- <div class="img-persona">
-			<a class="persona" href="project1.html"></a>
-			<a class="persona" href="project2.html"></a>
-			<a class="persona" href="project3.html"></a>
-		</div> -->
-		<div class="item main-page">
-			<article class="main-text gray900">
-				<span class="main">DESIGN FOR EVERYONE!</span>
-				<span class="body1">Hello, I'm Riwon Kwon.<br>
-					As a professional product designer, I focus on the user's perspective, conduct thorough research, and value feedback for continuous improvement. I'm a fast learner, constantly staying updated with industry trends to deliver exceptional design solutions.				<!-- <span class="body1">안녕하세요! <strong>프로덕트 디자이너, 권리원</strong>입니다.<br>사용자 관점에서 고민하고 다양한 조사를 하며<br>사용자의 피드백을 받아들일 수 있는 긍정적인 디자이너입니다. -->
-				</span>
-				<button class="btn-cv" onclick="window.open('etc/riwon_kwon_cv.pdf');"><span class="h1 white">Read CV</span></button>
-			</article>
-		</div>
+	<div class="hover-area">
+		<main class="container-main">
+			<!-- <div class="img-persona">
+				<a class="persona" href="project1.html"></a>
+				<a class="persona" href="project2.html"></a>
+				<a class="persona" href="project3.html"></a>
+			</div> -->
+			<div class="item main-page">
+				<article class="main-text main gray400">
+					<span class="main-color">Design For EVERiwon!</span>
+					<span>Product Designer.</span>
+					<span>Riwon Kwon.</span>
+					<button class="btn-cv" onclick="window.open('etc/riwon_kwon_cv.pdf');"><span class="h1 white">Read CV</span></button>
+				</article>
+			</div>
+				
+			<!-- 카드 리스트 시작 -->
 			
-		<!-- 카드 리스트 시작 -->
-		
-		<div class="item card-list" >
-			<!-- 카드 아이템 한 개 -->
-			<article class="card-item" id="first">
-				<a href="project1.html" class="card-img first"></a>
-				<span class="card-title caption">
-					D-run | Health care running app, based on NFT
-					<br>2023.03 Lifefesta & Seoul Marathon
-				</span>
-			</article>
-			<!-- 카드 아이템 한 개 -->
-			<article class="card-item">
-				<a href="project2.html" class="card-img second"></a>
-				<span class="card-title caption">
-					Thanksnow | Gratitude journal app with Friends
-					<br>2020.06 Sookmyung Univ.
-				</span>
-			</article>	
-			<!-- 카드 아이템 한 개 -->
-			<article class="card-item">
-				<a href="project3.html" class="card-img third"></a>
-				<span class="card-title caption">
-					Ko-Ling | AR Language game app for Korean learners
-					<br>2021.06 Sookmyung Univ.
-				</span>
-			</article>	
-			<!-- 카드 반반 -->
-			<!-- 카드 아이템 한 개 -->
-			<!-- <article class="card-half">
-				<a href="project3.html" class="card-item">
-					<div class="card-img">
-						<div class="card-title">
-							<span class="title">Title</span>
-							<span class="caption white">Immersive AR Hangul learning app for non-Koreans Immersive AR Hangul learning app  for non-Koreans Koreans.</span>
-						</div>
-						<span class="card-info caption white">2023<br>Location, Company</span>
-					</div>
-				</a> -->
+			<div class="item card-list" >
 				<!-- 카드 아이템 한 개 -->
-				<!-- <a href="project4.html" class="card-item">
-					<div class="card-img">
-						<div class="card-title">
-							<span class="title">Title</span>
-							<span class="caption white">Immersive AR Hangul learning app for non-Koreans Immersive AR Hangul learning app  for non-Koreans Koreans.</span>
-						</div>
-						<span class="card-info caption white">2023<br>Location, Company</span>
-					</div>
-				</a>
-			</article> -->
-		</div>
-		<!-- footer -->
-		<footer class="item footer">
-			<div class="footer-icons">
-				<a class="btn_behance" href="https://www.behance.net/everiwon" target='_blank'></a>
-				<a class="btn_linkedin"href="https://www.linkedin.com/in/riwon-kwon-732a9a15b/" target='_blank'></a>
-				<a class="btn_blog" href="https://brunch.co.kr/@everiwon" target='_blank'></a>
+				<article class="card-item" id="first">
+					<a href="project1.html" class="card-img first"></a>
+					<span class="card-title caption">
+						D-run | Health care running app, based on NFT
+						<br>2023.03 Lifefesta & Seoul Marathon
+					</span>
+				</article>
+				<!-- 카드 아이템 한 개 -->
+				<article class="card-item">
+					<a href="project2.html" class="card-img second"></a>
+					<span class="card-title caption">
+						Thanksnow | Gratitude journal app with Friends
+						<br>2020.06 Sookmyung Univ.
+					</span>
+				</article>	
+				<!-- 카드 아이템 한 개 -->
+				<article class="card-item">
+					<a href="project3.html" class="card-img third"></a>
+					<span class="card-title caption">
+						Ko-Ling | AR Language game app for Korean learners
+						<br>2021.06 Sookmyung Univ.
+					</span>
+				</article>	
 			</div>
-			<div class="border"></div>
-			<div class="footer-stretch menu-link">
-				<div>EVERiwon</div>
-				<div>Seoul, South Korea</div>
-			</div>
-			<div class="footer-stretch menu-link">
-				<div>©Riwon Kwon 2023</div>
-				<a href="mailto:everiwon0@gmail.com">everiwon0@gmail.com</a>
-			</div>
-		</footer>
+			<!-- footer -->
+			<footer class="footer">
+				<div class="footer-icons">
+					<a class="btn_behance white" href="https://www.behance.net/everiwon" target='_blank'></a>
+					<a class="btn_linkedin white"href="https://www.linkedin.com/in/riwon-kwon-732a9a15b/" target='_blank'></a>
+					<a class="btn_blog white" href="https://brunch.co.kr/@everiwon" target='_blank'></a>
+				</div>
+				<div class="border-d"></div>
+				<div class="footer-stretch caption white">
+					<div>EVERiwon</div>
+					<div>Seoul, South Korea</div>
+				</div>
+				<div class="footer-stretch caption white">
+					<div>©Riwon Kwon 2023</div>
+					<a href="mailto:everiwon0@gmail.com">everiwon0@gmail.com</a>
+				</div>
 
-	</main>
-	<!-- Information Text Finish -->
+		</main>
+	</div>
+	<div class="bodymovinanim"></div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js'></script>
+	<script  src="js/lottie.js"></script>
+	<script src="js/switchColor.js"></script>
 
 </body>
 </html>
