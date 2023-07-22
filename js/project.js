@@ -5,151 +5,74 @@ $(document).ready(function() {
   if (window.location.href.indexOf("project1.html") > -1) {
     projects = [
       {
-        src: '../img/notWork/photo_2.jpg',
+        src: '../img/img_thum_2.webp',
         title: "Project Title 2",
         desc: "Description of Project 2",
-        year: "2024",
-        location: "Location 2",
-        company: "Company 2",
+        info: "2024",
         url: "project2.html"
       },
       {
-        src: '../img/notWork/photo_3.jpg',
+        src: '../img/img_thum_3.webp',
         title: "Project Title 3",
         desc: "Description of Project 3",
-        year: "2025",
-        location: "Location 3",
-        company: "Company 3",
+        info: "2024",
         url: "project3.html"
-      },
-      // {
-      //   src: '../img/notWork/photo_4.jpg',
-      //   title: "Project Title 4",
-      //   desc: "Description of Project 4",
-      //   year: "2025",
-      //   location: "Location 4",
-      //   company: "Company 4",
-      //   url: "project4.html"
-      // }
+      }
     ];
   } else if (window.location.href.indexOf("project2.html") > -1) {
     projects = [
       {
-        src: '../img/notWork/photo_1.jpg',
+        src: '../img/img_thum_1.webp',
         title: "Project Title 1",
         desc: "Description of Project 1",
-        year: "2023",
-        location: "Location 1",
-        company: "Company 1",
+        info: "2024",
         url: "project1.html"
       },
       {
-        src: '../img/notWork/photo_3.jpg',
+        src: '../img/img_thum_3.webp',
         title: "Project Title 3",
         desc: "Description of Project 3",
-        year: "2025",
-        location: "Location 3",
-        company: "Company 3",
+        info: "2024",
         url: "project3.html"
-      },
-      // {
-      //   src: '../img/notWork/photo_4.jpg',
-      //   title: "Project Title 4",
-      //   desc: "Description of Project 4",
-      //   year: "2025",
-      //   location: "Location 4",
-      //   company: "Company 4",
-      //   url: "project4.html"
-      // }
+      }
     ];
   } else if (window.location.href.indexOf("project3.html") > -1) {
     projects = [
       {
-        src: '../img/notWork/photo_1.jpg',
+        src: '../img/img_thum_1.webp',
         title: "Project Title 1",
         desc: "Description of Project 1",
-        year: "2023",
-        location: "Location 1",
-        company: "Company 1",
+        info: "2024",
         url: "project1.html"
       },
       {
-        src: '../img/notWork/photo_2.jpg',
+        src: '../img/img_thum_2.webp',
         title: "Project Title 2",
         desc: "Description of Project 2",
-        year: "2024",
-        location: "Location 2",
-        company: "Company 2",
+        info: "2024",
         url: "project2.html"
-      },
-      // {
-      //   src: '../img/notWork/photo_4.jpg',
-      //   title: "Project Title 4",
-      //   desc: "Description of Project 4",
-      //   year: "2025",
-      //   location: "Location 4",
-      //   company: "Company 4",
-      //   url: "project4.html"
-      // }
+      }
     ];
-  } 
-  // else if (window.location.href.indexOf("project4.html") > -1) {
-  //   projects = [
-  //     {
-  //       src: '../img/notWork/photo_1.jpg',
-  //       title: "Project Title 1",
-  //       desc: "Description of Project 1",
-  //       year: "2023",
-  //       location: "Location 1",
-  //       company: "Company 1",
-  //       url: "project1.html"
-  //     },
-  //     {
-  //       src: '../img/notWork/photo_2.jpg',
-  //       title: "Project Title 2",
-  //       desc: "Description of Project 2",
-  //       year: "2024",
-  //       location: "Location 2",
-  //       company: "Company 2",
-  //       url: "project2.html"
-  //     },
-  //     {
-  //       src: '../img/notWork/photo_3.jpg',
-  //       title: "Project Title 3",
-  //       desc: "Description of Project 3",
-  //       year: "2025",
-  //       location: "Location 3",
-  //       company: "Company 3",
-  //       url: "project3.html"
-  //     }
-  //   ];
-  // }
+  }
 
   // 썸네일 리스트 생성
   for (var i = 0; i < projects.length; i++) {
     (function(index) {
-      var item = $("<div class='card-item-project' style='background-image: url(" + projects[index].src + ");'></div>");
-      var img = $("<div class='card-img'></div>");
-      var title = $("<div class='card-title'></div>");
-      var h1 = $("<div class='h1'>" + projects[index].title + "</div>");
-      var desc = $("<div class='body2 white'>" + projects[index].desc + "</div>");
-      item.css("width", "100%");
-      title.append(h1);
-      title.append(desc);
-      img.append(title);
-      var info = $("<div class='card-info body2'>" + projects[index].year + "<br>" + projects[index].location + ", " + projects[index].company + "</div>");
-      img.append(info);
-      item.append(img);
+      var item = $("<div class='card-half'></div>");
+      var link = $("<a href='" + projects[index].url + "' class='card-img-half'></a>");
+      link.css("background-image", "url(" + projects[index].src + ")");
+      item.append(link);
 
-      // 클릭 이벤트 추가
-      item.click(function() {
-        window.location.href = projects[index].url;
-      });
+      var title = $("<span class='card-title half caption white'>" + projects[index].title + "</br>" + projects[index].info + "</span>");
+      item.append(title);
 
-      $(".card-triple").append(item);
+      $(".card-column").append(item);
     })(i);
   }
 });
+
+
+
 
 // 설정한 비밀번호
 var password = "1234";

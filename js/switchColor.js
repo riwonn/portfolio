@@ -4,7 +4,7 @@
 function changeColor() {
   var body = document.querySelector('body');
   var btn = document.querySelector('.img-switch');
-  var span = document.querySelector('span');
+  var span = document.querySelectorAll('span');
   var borders = document.querySelectorAll('.border-d');
   var captions = document.querySelectorAll('.caption');
   var menuLink = document.querySelectorAll('.menu-link');
@@ -22,7 +22,7 @@ function changeColor() {
     // 바꿀 색상
     body.style.backgroundColor = '#20202D';
     body.style.color = '#EEEEF1';
-    span.style.backgroundColor = '#F8F8FB';
+    // span.style.backgroundColor = '#F8F8FB';
 
     btn.style.backgroundColor = 'rgba(167, 166, 187, .5)';
     btn.style.backgroundImage = 'url("../img/btn_switch_dark.svg")';
@@ -38,6 +38,11 @@ function changeColor() {
     menuLink.forEach((menuLink) => {
       menuLink.style.color = '#EEEEF1';
     });
+
+    span.forEach((span) => {
+      span.style.color = '#EEEEF1';
+    });
+
 
     // Create a new style rule for the pseudo-elements
     var pseudoElementStyle = `
@@ -67,7 +72,7 @@ function changeColor() {
     // 기존 색상
     body.style.backgroundColor = '#F8F8FB';
     body.style.color = '#20202D';
-    span.style.backgroundColor = '#20202D';
+    // span.style.backgroundColor = '#20202D';
 
     btn.style.backgroundColor = 'hsla(240, 17%, 15%, .1)';
     btn.style.backgroundImage = 'url("../img/btn_switch_light.svg")';
@@ -82,6 +87,10 @@ function changeColor() {
 
     menuLink.forEach((menuLink) => {
       menuLink.style.color = '#20202D';
+    });
+
+    span.forEach((span) => {
+      span.style.color = '#20202D';
     });
 
     // Create a new style rule for the pseudo-elements
