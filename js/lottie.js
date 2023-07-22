@@ -7,7 +7,7 @@ let animationMenu = bodymovin.loadAnimation({
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: "https://lottie.host/e462d386-3ed6-4b01-accc-a286fe0a4543/hQiaZ88zN4.json"
+    path: "https://lottie.host/fb019b84-2f76-4aaa-bedf-9e81d6940902/T2v0yJ0Deb.json"
 });
 
 var directionMenu = 1;

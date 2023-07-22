@@ -1,6 +1,6 @@
 /* Basic Setting */
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     overflow: scroll;
   }
 body{
@@ -11,10 +11,28 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    -ms-overflow-style: none;
     overflow-y: auto;
     overflow-x: hidden;
     transition: background-color 0.3s ease;
 }
+body::-webkit-scrollbar {
+    width: 12px;  
+	background: rgba(125, 125, 144, 0.1);
+}
+body::-webkit-scrollbar:horizontal {
+    display: none;
+}
+body::-webkit-scrollbar-thumb {
+	background: rgba(125, 125, 144, 0.4);
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover {
+	background: rgba(125, 125, 144, 0.7);
+}
+
+
 strong{
     font-weight: 700;
 }
