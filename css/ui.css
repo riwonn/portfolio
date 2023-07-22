@@ -77,7 +77,7 @@ article{
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    color: #EEEEF1;
+    color: #F8F8FB;
 }
 .caption{
     font-family: 'Inconsolata', monospace;
@@ -85,7 +85,7 @@ article{
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    color: #EEEEF1;
+    color: #F8F8FB;
 }
 /* color */
 .gray200{
@@ -101,7 +101,7 @@ article{
     color: #49495A;
 }
 .white{
-    color: #fff;
+    color: #F8F8FB;
 }
 .main-color{
     color: #E73C50;
@@ -144,7 +144,7 @@ article{
     flex-direction: column;
     justify-content: flex-start;
     margin: 0px 16px;
-    gap:32px;
+    gap:56px;
     z-index: 1;
 }
 .sidebar-r img{
@@ -206,11 +206,17 @@ article{
     .down{
         opacity: 0;
     }
+    .main-text{
+        gap:32px;
+    }
 }
 @media(min-width: 400px) and (max-width: 843px){
     .body1{
         font-size: 20px;
     }  
+    .main-text{
+        gap:48px;
+    }
 }
 @media(min-width: 700px) and (max-width: 843px){
     .main{

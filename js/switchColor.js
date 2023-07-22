@@ -70,7 +70,7 @@ function changeColor() {
     smallMenu.classList.replace('menu-light', 'menu-dark');
   } else {
     // 기존 색상
-    body.style.backgroundColor = '#F8F8FB';
+    body.style.backgroundColor = '#EEEEF1';
     body.style.color = '#20202D';
     // span.style.backgroundColor = '#20202D';
 
