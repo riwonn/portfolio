@@ -35,8 +35,8 @@
 /* 요소 디자인 */
 .btn-cv{
 	position:absolute;
-    right: 25vw;
-    bottom: 30vh;
+    right: 20vw;
+    top: 60vh;
 	height: 65px;
 	width: 252px;
 	border: none;

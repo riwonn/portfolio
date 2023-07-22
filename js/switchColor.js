@@ -7,7 +7,7 @@ function changeColor() {
   var span = document.querySelector('span');
   var borders = document.querySelectorAll('.border-d');
   var captions = document.querySelectorAll('.caption');
-  var menuLink = document.querySelector('.menu-link');
+  var menuLink = document.querySelectorAll('.menu-link');
 
   var btnBehance = document.querySelectorAll('.btn_behance');
   var btnLinkedin = document.querySelectorAll('.btn_linkedin');
@@ -35,6 +35,10 @@ function changeColor() {
       caption.style.color = '#EEEEF1';
     });
 
+    menuLink.forEach((menuLink) => {
+      menuLink.style.color = '#EEEEF1';
+    });
+
     // Create a new style rule for the pseudo-elements
     var pseudoElementStyle = `
       .btn-menu::before, .btn-menu::after {
@@ -59,7 +63,6 @@ function changeColor() {
 
     bigMenu.classList.replace('menu-light', 'menu-dark');
     smallMenu.classList.replace('menu-light', 'menu-dark');
-    menuLink.style.color = 'white';
   } else {
     // 기존 색상
     body.style.backgroundColor = '#F8F8FB';
@@ -75,6 +78,10 @@ function changeColor() {
 
     captions.forEach((caption) => {
       caption.style.color = '#20202D';
+    });
+
+    menuLink.forEach((menuLink) => {
+      menuLink.style.color = '#20202D';
     });
 
     // Create a new style rule for the pseudo-elements
@@ -101,6 +108,5 @@ function changeColor() {
 
     bigMenu.classList.replace('menu-dark', 'menu-light');
     smallMenu.classList.replace('menu-dark', 'menu-light');
-    menuLink.style.color = '#20202D';
   }
 }
