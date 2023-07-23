@@ -80,6 +80,7 @@ btnTop.addEventListener('mouseleave', () => {
         btnTop.style.padding = '12px';
     }
 });
+
   
 // 스크롤 이벤트 핸들러
 window.addEventListener('scroll', () => {
@@ -93,6 +94,27 @@ window.addEventListener('scroll', () => {
       }, 300);
     }
   });
+
+// 스크롤 시 매뉴
+const menu = document.querySelector('.menu-dark');
+const menuSmall = document.querySelector('.menu-dark.small');
+
+let preScrollTop = 0;
+
+window.addEventListener('scroll',() => {
+    let nextScrollTop = window.scrollY;
+  
+  if(preScrollTop < nextScrollTop) {
+    menu.style.transform = 'translate(-50%, -150%)';
+    menuSmall.style.transform = 'translate(-50%, -150%)';
+    }
+  else { // (preScrollTop > nextScrollTop)
+    menu.style.transform = 'translate(-50%, 0)';
+    menuSmall.style.transform = 'translate(-50%, 0%)';
+    }
+  preScrollTop = nextScrollTop;
+});
+
 
 
 // 마우스 호버 시 배경색 바뀌는 코드

@@ -3,7 +3,8 @@
 
 function changeColor() {
   var body = document.querySelector('body');
-  var btn = document.querySelector('.img-switch');
+  var btnSwitch = document.querySelector('.img-switch');
+  var btnDown = document.querySelector('.down');
   var span = document.querySelectorAll('span');
   var borders = document.querySelectorAll('.border-d');
   var captions = document.querySelectorAll('.caption');
@@ -24,8 +25,9 @@ function changeColor() {
     body.style.color = '#EEEEF1';
     // span.style.backgroundColor = '#F8F8FB';
 
-    btn.style.backgroundColor = 'rgba(167, 166, 187, .5)';
-    btn.style.backgroundImage = 'url("../img/btn_switch_dark.svg")';
+    btnSwitch.style.backgroundColor = 'rgba(167, 166, 187, .5)';
+    btnSwitch.style.backgroundImage = 'url("../img/btn_switch_dark.svg")';
+    btnDown.style.backgroundImage = 'url("../img/btn_scrolldown_light.svg")';
 
     borders.forEach((border) => {
       border.style.backgroundColor = '#49495A';
@@ -74,8 +76,10 @@ function changeColor() {
     body.style.color = '#20202D';
     // span.style.backgroundColor = '#20202D';
 
-    btn.style.backgroundColor = 'hsla(240, 17%, 15%, .1)';
-    btn.style.backgroundImage = 'url("../img/btn_switch_light.svg")';
+    btnSwitch.style.backgroundColor = 'hsla(240, 17%, 15%, .1)';
+    btnSwitch.style.backgroundImage = 'url("../img/btn_switch_light.svg")';
+    btnDown.style.backgroundImage = 'url("../img/btn_scrolldown.svg")';
+
 
     borders.forEach((border) => {
       border.style.backgroundColor = '#C0C0CE';
