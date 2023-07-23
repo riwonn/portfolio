@@ -98,6 +98,9 @@ window.addEventListener('scroll', () => {
 // 스크롤 시 매뉴
 const menu = document.querySelector('.menu-dark');
 const menuSmall = document.querySelector('.menu-dark.small');
+// const menuExtra = document.querySelector('.notWork-btns');
+// const menuExtraBg = document.querySelector('.bg-trans');
+
 
 let preScrollTop = 0;
 
@@ -107,14 +110,17 @@ window.addEventListener('scroll',() => {
   if(preScrollTop < nextScrollTop) {
     menu.style.transform = 'translate(-50%, -150%)';
     menuSmall.style.transform = 'translate(-50%, -150%)';
+    // menuExtra.style.opacity = '0';
+    // menuExtraBg.style.top = '-10%';
     }
   else { // (preScrollTop > nextScrollTop)
     menu.style.transform = 'translate(-50%, 0)';
     menuSmall.style.transform = 'translate(-50%, 0%)';
+    // menuExtra.style.opacity = '100';
+    // menuExtraBg.style.top = '0%';
     }
   preScrollTop = nextScrollTop;
 });
-
 
 
 // 마우스 호버 시 배경색 바뀌는 코드
