@@ -106,17 +106,23 @@ article{
     color: #F8F8FB;
 }
 /* color */
+.gray100{
+    color: #F8F8FB;
+}
 .gray200{
     color: #D6D6E3;
 }
 .gray400{
     color: #A7A6BB;
 }
-.gray900{
-    color: #20202D;
+.gray500{
+    color: #7D7D90;
 }
 .gray700{
     color: #49495A;
+}
+.gray900{
+    color: #20202D;
 }
 .white{
     color: #F8F8FB;
