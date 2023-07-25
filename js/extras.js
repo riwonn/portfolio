@@ -142,13 +142,13 @@ function viewImg() {
 
 // 이미지 돌리기
 function rotateImgLeft() {
-  const imgLoading = document.querySelector('.img-loading');
+  const imgLoading = document.querySelector('.btn-loading');
   imgLoading.style.transition = '0.6s';
   imgLoading.style.transform += ' rotate(-180deg)';
 }
 
 function rotateImgRight() {
-  const imgLoading = document.querySelector('.img-loading');
+  const imgLoading = document.querySelector('.btn-loading');
   imgLoading.style.transition = '0.6s';
   imgLoading.style.transform += ' rotate(180deg)';
 }

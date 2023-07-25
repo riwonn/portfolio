@@ -19,25 +19,26 @@ main {
     }
 }
 
-/* 버튼 */
-.img-loading{
-    background-image: url('/img/notWork/img_spinner.webp');
+/* 사진 세부 페이지 버튼들 */
+.btn-loading{
     width: 64px;
     height: 64px;
     z-index: 100;
+    background-image: url('/img/notWork/img_spinner.webp');
     transform-origin: center;
     background-size: cover;
 }
-.btn-loading{
+.bottom-btns{
+    display: flex;
+    flex-direction: row;
     position: absolute;
+    justify-content: center;
+    gap: 10vw;
     bottom: 3vw;
     left: 50%;
-    z-index: 100;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0%);
 }
-/* 사진 세부 페이지 버튼들 */
 .btn-details{
-	position: absolute;
 	width: 64px;
 	height: 64px;
     bottom: 3vw;
@@ -59,13 +60,8 @@ main {
     transform-origin: center;
 }
 .btn-details.cancel{
+    position: absolute;
 	right: 3vw;
-}
-.btn-details.left{
-    left: 35%;
-}
-.btn-details.right{
-    right: 35%;
 }
 
 .btn-details.cancel span{
@@ -420,7 +416,7 @@ main {
         width: 52px;
         height: 52px;
     }
-    .img-loading{
+    .btn-loading{
         width: 52px;
         height: 52px;
     }
