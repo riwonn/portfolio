@@ -299,43 +299,43 @@ const images = [
     // 3d
     {
       src: 'img/notWork/img_3d_1.webp',
-      alt: '3D design 1',
-      category: '3d',
+      alt: '3d design 2',
+      category: 'graphic',
       projectName: '산학협력(게임)',
       projectCaption : '2021'
     },
     {
       src: 'img/notWork/img_3d_2.webp',
-      alt: '3D design 1',
-      category: '3d',
+      alt: '3d design 2',
+      category: 'graphic',
       projectName: '산학협력(게임)',
       projectCaption : '2021'
     }, 
     {
       src: 'img/notWork/img_3d_3.webp',
-      alt: '3D design 1',
-      category: '3d',
+      alt: '3d design 2',
+      category: 'graphic',
       projectName: '산학협력(게임)',
       projectCaption : '2021'
     }, 
     {
       src: 'img/notWork/img_3d_4.webp',
-      alt: '3D design 1',
-      category: '3d',
+       alt: '3d design 2',
+      category: 'graphic',
       projectName: '산학협력(게임)',
       projectCaption : '2021'
     }, 
     {
       src: 'img/notWork/img_3d_5.webp',
-      alt: '3D design 1',
-      category: '3d',
+       alt: '3d design 2',
+      category: 'graphic',
       projectName: '산학협력(게임)',
       projectCaption : '2021'
     }, 
     {
       src: 'img/notWork/img_3d_6.webp',
-      alt: '3D design 1',
-      category: '3d',
+       alt: '3d design 2',
+      category: 'graphic',
       projectName: '창작 동화 [정글]',
       projectCaption : '2019'
     }
