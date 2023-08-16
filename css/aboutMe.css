@@ -13,6 +13,7 @@
 }
 .img-profile-deco{
     position: relative;
+    z-index: -1;
 }
 .circle-container {
     position: absolute;
@@ -102,7 +103,7 @@
     .item-aboutMe:nth-child(1){
 		grid-area: aboutMe;
 		align-items: center;
-        padding: 25vh 20vh;
+        padding: 25vh 10vh;
     	}
     .column span{
         width: 60%;
