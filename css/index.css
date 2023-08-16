@@ -36,7 +36,7 @@
 .btn-cv{
 	position:absolute;
     right: 20vw;
-    top: 60vh;
+    top: 70vh;
 	height: 65px;
 	width: 252px;
 	border: none;
@@ -44,6 +44,7 @@
 	rotate: -8deg;
 	border-radius: 32px;
     cursor: pointer;
+	transition: .3s;
 }
 .btn-cv:hover{
     transition: .3s;
@@ -52,6 +53,12 @@
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), var(--main, #E73C50);
 }
 
+@media (max-width: 700px) {
+    .btn-cv{
+		height: 55px;
+		width: 212px;
+    }
+}
 
 .persona{
 	width: 300px;

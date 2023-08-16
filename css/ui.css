@@ -60,20 +60,14 @@ article{
     font-family: "arboria", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 140px;
+    font-size: 130px;
     line-height: 100%;
     transition: .3s;
     z-index: 1;
 }
-.main-light{
-    /* font-family: 'pretendard'; */
-    font-family: "arboria", sans-serif;
+.main.light{
     font-style: italic;
     font-weight: 300;
-    font-size: 140px;
-    line-height: 100%;
-    transition: .3s;
-    z-index: 1;
 }
 .title{
     font-family: 'Inconsolata', monospace;
@@ -217,84 +211,92 @@ article{
     transition: .4s;
     cursor: pointer;
 }
-@media(max-width: 400px){
-    .title{
-        font-size: 32px;
-        line-height:32px;
+/* Common styles */
+.title {
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.body1 {
+    font-size: 16px;
+}
+
+/* Social network's buttons */
+.sidebar-r {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+/* down to portfolio list */
+.down {
+    opacity: 0;
+    height: 64px;
+    width: 64px;
+}
+
+.main-text {
+    gap: 32px;
+    margin: 0 10vw;
+}
+
+/* Media Queries */
+@media (min-width: 400px) {
+    .body1 {
+        font-size: 20px;
     }
-    .body1{
-        font-size: 16px;
-    }   
-    /* Social network's buttons */
-    .sidebar-r { 
-        position: absolute;
+    .main-text {
+        gap: 48px;
+    }
+    .sidebar-r {
+        right: 3vw;
+        flex-direction: column;
+        justify-content: center;
+        gap: 48px;
+        height: 100vh;
+    }
+    .down {
+        opacity: 1;
+    }
+}
+@media (max-width: 1000px) {
+    .main {
+        font-size: 110px;
+    }
+}
+
+@media (max-width: 843px) {
+    .main {
+        font-size: 91px;
+    }
+}
+
+@media (max-width: 700px) {
+    .main {
+        font-size: 58px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main {
+        font-size: 44px;
+    }
+
+    .sidebar-r {
         left: 50%;
         bottom: 3vw;
         height: 48px;
         border-radius: 24px;
         transform: translate(-50%, 0);
-        z-index: 1;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         gap: 64px;
-        transition: .4s;
+        flex-direction: row;
+        transition: 0.4s;
     }
-    /* down to protpolio list */
-    .down{
+
+    .down {
         opacity: 0;
-    }
-    .main-text{
-        gap:32px;
-    }
-}
-@media(min-width: 400px) and (max-width: 843px){
-    .body1{
-        font-size: 20px;
-    }  
-    .main-text{
-        gap:48px;
-    }
-}
-@media(min-width: 700px) and (max-width: 843px){
-    .main{
-        font-size: 91px;
-    }
-}
-@media(min-width: 520px) and (max-width: 700px){
-    .main{
-        font-size: 58px;
-    }
-}
-@media(max-width: 520px){
-    .main{
-        font-size: 44px;
-    }
-    .down{
-        height: 64px;
-        width: 64px;
-    }
-}
-@media(min-width: 400px){
-    .main-text{
-        margin: 0px 10vw;
-    }
-    /* Social network's buttons */
-    .sidebar-r { 
-        position: absolute;
-        right: 3vw;
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 48px;
-        height: 100vh;
-        transition: .4s;
-    }
-    /* down to protpolio list */
-    .down{
-        opacity: 1;
     }
 }
 
