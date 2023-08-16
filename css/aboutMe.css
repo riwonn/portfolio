@@ -99,7 +99,7 @@
     justify-content: column;
     margin-bottom: 1em;
 }
-@media(min-width: 500px){
+@media(min-width: 600px){
     .item-aboutMe:nth-child(1){
 		grid-area: aboutMe;
 		align-items: center;
@@ -112,11 +112,11 @@
         flex-grow: 0.8;
     }
 }
-@media(max-width: 500px){
+@media(max-width: 600px){
     .item-aboutMe:nth-child(1){
 		grid-area: aboutMe;
 		align-items: center;
-		padding: 72px 0 10vw;
+		padding: 25vh 0 10vw;
 	}
     .item-aboutMe:nth-child(2){
         grid-area: skill;
