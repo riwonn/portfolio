@@ -55,9 +55,20 @@ article{
     font-weight: 700;
 }
 .main{
-    font-family: 'pretendard';
+    /* font-family: 'pretendard'; */
+    font-family: "arboria", sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 100%;
+    transition: .3s;
+    z-index: 1;
+}
+.main-light{
+    /* font-family: 'pretendard'; */
+    font-family: "arboria", sans-serif;
+    font-style: italic;
+    font-weight: 300;
     font-size: 100px;
     line-height: 100%;
     transition: .3s;
@@ -74,7 +85,8 @@ article{
     line-height: 150%;
 }
 .body1{
-    font-family: 'pretendard';
+    /* font-family: 'pretendard'; */
+    font-family: "arboria", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -90,7 +102,8 @@ article{
     text-align: -webkit-center;
 }
 .body2{
-    font-family: 'pretendard';
+    /* font-family: 'pretendard'; */
+    font-family: "arboria", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
