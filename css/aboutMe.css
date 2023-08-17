@@ -8,7 +8,7 @@
   	'aboutMe'
    	'skill'
 	'experience';
-	margin: 3vw;
+	padding: 3vw;
 	overflow: hidden;
 }
 .img-profile-deco{
