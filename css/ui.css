@@ -6,7 +6,11 @@ html {
 body{
     background-color: #EEEEF1;
     margin: 0px;
-    font-family: 'Inconsolata', monospace;
+    /* font-family: 'Inconsolata', monospace; */
+    /* font-family: "bio-sans", sans-serif; */
+    font-family: "mortise", serif;
+    font-weight: 200;
+    font-style: normal;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -52,8 +56,10 @@ article{
 }
 /* Text */
 .bold{
+    font-family: "arboria", sans-serif;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 36px;
+    line-height: 140%;
 }
 .main{
     /* font-family: 'pretendard'; */
@@ -70,9 +76,9 @@ article{
     font-weight: 300;
 }
 .title{
-    font-family: 'Inconsolata', monospace;
+    font-family: "arboria", sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 40px;
     line-height:40px;
 }
@@ -80,10 +86,6 @@ article{
     line-height: 150%;
 }
 .body1{
-    /* font-family: 'pretendard'; */
-    font-family: "arboria", sans-serif;
-    font-style: normal;
-    font-weight: 300;
     font-size: 24px;
     line-height: 180%;
     transition: .3s;
@@ -97,18 +99,11 @@ article{
     text-align: -webkit-center;
 }
 .body2{
-    /* font-family: 'pretendard'; */
-    font-family: "arboria", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 150%;
+    font-size: 17px;
+    line-height: 160%;
     color: #F8F8FB;
 }
 .caption{
-    font-family: 'Inconsolata', monospace;
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     color: #F8F8FB;
@@ -143,15 +138,12 @@ article{
     text-decoration: none;
 }
 .h1{
-    font-family: 'Inconsolata', monospace;
-    width: 700;
+    /* font-family: 'Inconsolata', monospace; */
     font-size: 24px;
     line-height: 100%
 }
 .h2{
-    font-family: 'Inconsolata', monospace;
-    font-style: normal;
-    font-weight: 400;
+    /* font-family: 'Inconsolata', monospace; */
     font-size: 16px;
     line-height: 150%;
     white-space:nowrap;
