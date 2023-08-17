@@ -1,16 +1,17 @@
 /* H2 */
 .menu-link{
-    font-family: 'Inconsolata', monospace;
+    font-family: "arboria", sans-serif;
+    font-weight: 300;
     display: flex;
     flex: 1 1 auto;
     text-decoration: none;
     color: #20202D;
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 100%;
     -webkit-transition: .3s;
     transition: .3s;
+    padding-bottom: .1em;
 }
 .menu-link:hover{
     -webkit-transition: .3s;
