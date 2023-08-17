@@ -99,8 +99,8 @@ article{
     text-align: -webkit-center;
 }
 .body2{
-    font-size: 18px;
-    line-height: 150%;
+    font-size: 20px;
+    line-height: 160%;
     color: #F8F8FB;
 }
 .caption{
@@ -218,10 +218,6 @@ article{
     line-height: 32px;
 }
 
-.body1 {
-    font-size: 16px;
-}
-
 /* Social network's buttons */
 .sidebar-r {
     position: absolute;
@@ -245,9 +241,6 @@ article{
 
 /* Media Queries */
 @media (min-width: 400px) {
-    .body1 {
-        font-size: 20px;
-    }
     .main-text {
         gap: 48px;
     }

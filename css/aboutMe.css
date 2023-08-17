@@ -7,7 +7,8 @@
    	grid-template-areas: 
   	'aboutMe'
    	'skill'
-	'experience';
+	'experience'
+    'project';
 	padding: 3vw;
 	overflow: hidden;
 }
@@ -106,23 +107,15 @@
         padding: 25vh 10vh;
     	}
     .flex:nth-child(1){
-        flex-grow: 0.8;
+        flex-grow: .8;
     }
 }
 @media(max-width: 700px){
     .item-aboutMe:nth-child(1){
 		grid-area: aboutMe;
 		align-items: center;
-		padding: 25vh 0 10vw;
+		padding: 25vh 2vw 10vw;
 	}
-    .item-aboutMe:nth-child(2){
-        grid-area: skill;
-        padding: 0 2vw;
-    }
-    .item-aboutMe:nth-child(3){
-        grid-area: experience;
-        padding: 0 2vw;
-    }
     .column{
         flex-direction: column-reverse;
         padding: 24px 0 32px;
@@ -130,13 +123,14 @@
     .column.reverse{
         flex-direction: column;
         gap: 0;
+        padding: 24px 2vw;
     }
     .height{
         margin-bottom: .7em;
     }
     .flex:nth-child(1){
-        flex-grow: 0.8;
-        margin-bottom: 1em;
+        flex-grow: .8;
+        margin-bottom: 1.5em;
     }    
 }
 @media(max-width: 400px){
