@@ -6,14 +6,14 @@ $(document).ready(function() {
     projects = [
       {
         src: '../img/img_thum_2.webp',
-        title: "Ko-Ling",
+        title: "Ko-Ling | AR Language game app for Korean learners",
         // desc: "Description of Project 2",
         info: "2021",
         url: "project2.html"
       },
       {
         src: '../img/img_thum_3.webp',
-        title: "B:UM",
+        title: "B:UM | Emotion Diary",
         // desc: "Description of Project 3",
         info: "2021",
         url: "project3.html"
@@ -23,14 +23,14 @@ $(document).ready(function() {
     projects = [
       {
         src: '../img/img_thum_1.webp',
-        title: "D-RUN",
+        title: "D-RUN | Health care running app, based on NFT",
         // desc: "Description of Project 1",
         info: "2022 - 2023",
         url: "project1.html"
       },
       {
         src: '../img/img_thum_3.webp',
-        title: "B:UM",
+        title: "B:UM | Emotion Diary",
         // desc: "Description of Project 3",
         info: "2021",
         url: "project3.html"
@@ -40,14 +40,14 @@ $(document).ready(function() {
     projects = [
       {
         src: '../img/img_thum_1.webp',
-        title: "D-RUN",
+        title: "D-run | Health care running app, based on NFT",
         // desc: "Description of Project 1",
         info: "2022 - 2023",
         url: "project1.html"
       },
       {
         src: '../img/img_thum_2.webp',
-        title: "Ko-Ling",
+        title: "Ko-Ling | AR Language game app for Korean learners",
         // desc: "Description of Project 2",
         info: "2021",
         url: "project2.html"
