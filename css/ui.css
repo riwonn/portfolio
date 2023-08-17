@@ -6,6 +6,7 @@ html {
 body{
     background-color: #EEEEF1;
     margin: 0px;
+    /* font-family: 'Pretendard'; */
     /* font-family: 'Inconsolata', monospace; */
     /* font-family: "bio-sans", sans-serif; */
     font-family: "karmina-sans", sans-serif;
@@ -146,8 +147,9 @@ article{
     color: #E73C50;
     text-decoration: none;
 }
-.h1{
-    /* font-family: 'Inconsolata', monospace; */
+.h1{    
+    font-family: "arboria", sans-serif;
+    font-weight: 500;
     font-size: 24px;
     line-height: 100%
 }
