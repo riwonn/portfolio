@@ -8,8 +8,8 @@ body{
     margin: 0px;
     /* font-family: 'Inconsolata', monospace; */
     /* font-family: "bio-sans", sans-serif; */
-    font-family: "mortise", serif;
-    font-weight: 200;
+    font-family: "karmina-sans", sans-serif;
+    font-weight: 300;
     font-style: normal;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -104,6 +104,13 @@ article{
     color: #F8F8FB;
 }
 .caption{
+    font-size: 18px;
+    line-height: 150%;
+    color: #F8F8FB;
+}
+.caption.bold{
+    font-family: "arboria", sans-serif;
+    font-weight: 500;
     font-size: 18px;
     line-height: 150%;
     color: #F8F8FB;
