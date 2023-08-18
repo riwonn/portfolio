@@ -4,9 +4,8 @@
     font-weight: 300;
     display: flex;
     flex: 1 1 auto;
-    text-decoration: none;
     color: #20202D;
-    font-style: normal;
+    /* font-style: italic; */
     font-size: 17px;
     line-height: 100%;
     -webkit-transition: .3s;

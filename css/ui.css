@@ -81,7 +81,7 @@ article{
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
-    line-height:40px;
+    line-height:100%;
 }
 .title.main-project{
     line-height: 150%;
@@ -150,13 +150,14 @@ article{
 .h1{    
     font-family: "arboria", sans-serif;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 100%
+    font-size: 28px;
+    line-height: 100%;
 }
 .h2{
-    /* font-family: 'Inconsolata', monospace; */
-    font-size: 16px;
-    line-height: 150%;
+    font-family: "arboria", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
     white-space:nowrap;
     display : none;
 }
@@ -213,11 +214,6 @@ article{
     z-index: 1;
     transition: .4s;
     cursor: pointer;
-}
-/* Common styles */
-.title {
-    font-size: 32px;
-    line-height: 32px;
 }
 
 /* Social network's buttons */
