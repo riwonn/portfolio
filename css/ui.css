@@ -158,8 +158,6 @@ article{
     font-weight: 500;
     font-size: 24px;
     line-height: 100%;
-    white-space:nowrap;
-    display : none;
 }
 
 /* 이 파일에서는 layout.css의 그리드에 들어가는 ui 요소들을 정의한다. */
