@@ -160,13 +160,6 @@ iframe {
     width: 100%; /* 로티 파일 크기 조절 */
     height: 100%;
     border: 1px solid #EEEEF1;
-    border-radius: 32px;
-    padding: 1em;
-}
-.project-phone{
-    border: 1px soild #EEEEF1;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
+    border-radius: 1.5em;
     padding: 1em;
 }
