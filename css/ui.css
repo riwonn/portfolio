@@ -116,7 +116,7 @@ article{
     font-weight: 500;
     font-size: 18px;
     line-height: 120%;
-    color: #F8F8FB;
+    /* color: #F8F8FB; */
 }
 /* color */
 .gray100{
@@ -152,12 +152,14 @@ article{
     font-weight: 500;
     font-size: 28px;
     line-height: 100%;
+    color: #F8F8FB;
 }
 .h2{
     font-family: "arboria", sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 100%;
+    color: #F8F8FB;
 }
 
 /* 이 파일에서는 layout.css의 그리드에 들어가는 ui 요소들을 정의한다. */

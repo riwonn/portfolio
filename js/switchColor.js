@@ -3,16 +3,18 @@
 
 function changeColor() {
   var body = document.querySelector('body');
+  var body1 = document.querySelectorAll('.body1');
   var body2 = document.querySelectorAll('.body2');
+  var h1 = document.querySelectorAll('.h1');
   var captions = document.querySelectorAll('.caption');
   var btnSwitch = document.querySelector('.img-switch');
-  var btnDown = document.querySelector('.down');
   var span = document.querySelectorAll('span');
   var borders = document.querySelectorAll('.border-d');
   var menuLink = document.querySelectorAll('.menu-link');
   var btnBehance = document.querySelectorAll('.btn_behance');
   var btnLinkedin = document.querySelectorAll('.btn_linkedin');
   var btnBlog = document.querySelectorAll('.btn_blog');
+  var circle = document.querySelectorAll('.main-circle');
 
   var colorWhite = body.style.backgroundColor;
 
@@ -23,11 +25,9 @@ function changeColor() {
     // 바꿀 색상
     body.style.backgroundColor = '#20202D';
     body.style.color = '#EEEEF1';
-    // span.style.backgroundColor = '#F8F8FB';
 
     btnSwitch.style.backgroundColor = 'rgba(167, 166, 187, .5)';
     btnSwitch.style.backgroundImage = 'url("../img/btn_switch_dark.svg")';
-    btnDown.style.backgroundImage = 'url("../img/btn_scrolldown_light.svg")';
 
     borders.forEach((border) => {
       border.style.backgroundColor = '#49495A';
@@ -37,6 +37,13 @@ function changeColor() {
       body2.style.color = '#EEEEF1';
     });
 
+    body1.forEach((body1) => {
+      body1.style.color = '#EEEEF1';
+    });
+
+    h1.forEach((h1) => {
+      h1.style.color = '#EEEEF1';
+    });
 
     captions.forEach((caption) => {
       caption.style.color = '#EEEEF1';
@@ -50,18 +57,12 @@ function changeColor() {
       span.style.color = '#EEEEF1';
     });
 
+    circle.forEach((circle) => {
+      circle.style.border = '1px solid #EEEEF1';
+    })
 
-    // Create a new style rule for the pseudo-elements
-    // var pseudoElementStyle = `
-    //   .btn-menu::before, .btn-menu::after {
-    //     color: #fff;
-    //   }
-    // `;
-    // Add the new style rule to the document
     var style = document.createElement('style');
     style.type = 'text/css';
-    // style.appendChild(document.createTextNode(pseudoElementStyle));
-    // document.head.appendChild(style);
 
     btnBehance.forEach((btn) => {
       btn.style.backgroundImage = 'url("/img/btn_main_behance_dark.svg")';
@@ -79,12 +80,9 @@ function changeColor() {
     // 기존 색상
     body.style.backgroundColor = '#EEEEF1';
     body.style.color = '#20202D';
-    // span.style.backgroundColor = '#20202D';
 
     btnSwitch.style.backgroundColor = 'hsla(240, 17%, 15%, .1)';
     btnSwitch.style.backgroundImage = 'url("../img/btn_switch_light.svg")';
-    btnDown.style.backgroundImage = 'url("../img/btn_scrolldown.svg")';
-
 
     borders.forEach((border) => {
       border.style.backgroundColor = '##49495A';
@@ -92,6 +90,14 @@ function changeColor() {
 
     body2.forEach((body2) => {
       body2.style.color = '#20202D';
+    });
+
+    body1.forEach((body1) => {
+      body1.style.color = '#20202D';
+    });
+
+    h1.forEach((h1) => {
+      h1.style.color = '#20202D';
     });
 
     captions.forEach((caption) => {
@@ -106,17 +112,12 @@ function changeColor() {
       span.style.color = '#20202D';
     });
 
-    // Create a new style rule for the pseudo-elements
-    // var pseudoElementStyle = `
-    //   .btn-menu::before, .btn-menu::after {
-    //     color: #20202D;
-    //   }
-    // `;
-    // Add the new style rule to the document
+    circle.forEach((circle) => {
+      circle.style.border = '1px solid #20202D';
+    })
+
     var style = document.createElement('style');
     style.type = 'text/css';
-    // style.appendChild(document.createTextNode(pseudoElementStyle));
-    // document.head.appendChild(style);
 
     btnBehance.forEach((btn) => {
       btn.style.backgroundImage = 'url("/img/btn_main_behance_light.svg")';

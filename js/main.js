@@ -191,3 +191,23 @@ window.addEventListener('scroll',() => {
 //     infos[index].style.opacity = '0';
 //   });
 // });
+
+// 컬러 스위치 버튼
+// light
+
+function changeColor() {
+  var btnDown = document.querySelector('.down');
+
+  var colorWhite = body.style.backgroundColor;
+
+  var bigMenu = document.getElementById('bigMenuDark');
+  var smallMenu = document.getElementById('smallMenu');
+
+  if (colorWhite === 'rgb(238, 238, 241)') {
+    // 바꿀 색상
+    btnDown.style.backgroundImage = 'url("../img/btn_scrolldown_light.svg")';
+  } else {
+    // 기존 색상
+    btnDown.style.backgroundImage = 'url("../img/btn_scrolldown.svg")';
+  }
+}
