@@ -1,5 +1,5 @@
 // 프로젝트 프로토타입
-let project1 = document.querySelector('.project1');
+let project1 = document.querySelector('.prototype.first');
 
 let animationProject1 = bodymovin.loadAnimation({
     container: project1,
