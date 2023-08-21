@@ -40,17 +40,18 @@
 	height: 65px;
 	width: 252px;
 	border: none;
-    background: #E73C50;
+    background: #A68953;
 	rotate: -8deg;
 	border-radius: 32px;
     cursor: pointer;
 	transition: .3s;
+	padding: 0 0 .5em;
 }
 .btn-cv:hover{
     transition: .3s;
     transform:scale(105%);
     transform-origin: center;
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), var(--main, #E73C50);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), var(--main, #A68953);
 }
 
 @media (max-width: 700px) {
