@@ -62,9 +62,9 @@ function changeColor() {
       circle.style.border = '1px solid #EEEEF1';
     })
 
-    project.forEach((project) => {
-      project.style.border = '1px solid #EEEEF1';
-    })
+    // project.forEach((project) => {
+    //   project.style.border = '1px solid #EEEEF1';
+    // })
 
     var style = document.createElement('style');
     style.type = 'text/css';
@@ -121,9 +121,9 @@ function changeColor() {
       circle.style.border = '1px solid #20202D';
     })
 
-    project.forEach((project) => {
-      project.style.border = '1px solid #C0C0CE';
-    })
+    // project.forEach((project) => {
+    //   project.style.border = '1px solid #C0C0CE';
+    // })
 
     var style = document.createElement('style');
     style.type = 'text/css';

@@ -65,6 +65,12 @@ iframe {
     padding: 64px 0;
     background: rgba(125, 125, 144, 0.1);
 }
+.sub-bg.gradient{
+    background: linear-gradient(rgba(189, 91, 255, 0), rgba(189, 91, 255, .15));
+}
+.sub-bg.purple{
+    background: rgba(189, 91, 255, .15);
+}
 .sub-title-flex {
     display: flex;
     flex-direction: row;
