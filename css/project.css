@@ -71,6 +71,15 @@ iframe {
 .sub-bg.purple{
     background: rgba(189, 91, 255, .15);
 }
+.sub-bg.orange{
+    background: #FF7246;
+}
+.sub-bg.orange div{
+    padding: 0;
+    margin: auto;
+    width: 30%;
+    height: 30%;
+}
 .sub-title-flex {
     display: flex;
     flex-direction: row;
@@ -89,9 +98,22 @@ iframe {
 .sub-title-flex.center.align .sub-title {
     flex-grow: 2;
 }
-
 .sub-title-flex.half{
     width: 50%;
+}
+.img-large {
+    flex-grow: 1; /* 이미지가 동등한 공간을 차지하도록 설정 */
+    max-height: 100%;
+    display: flex; /* 이미지를 가운데 정렬하기 위해 부모 요소도 flex로 설정 */
+    justify-content: center; /* 이미지를 가로로 가운데 정렬 */
+    align-items: center; /* 이미지를 세로로 가운데 정렬 */
+    object-fit: cover; /* 이미지 비율을 그대로 유지하면서 채우도록 설정 */
+}
+.img-large:nth-child(1){
+    max-width: 30%;
+}
+.img-large:nth-child(2){
+    max-width: 66.6%;
 }
 .sub-title-circle{
     border: 1px solid rgba(125, 125, 144, 1);
@@ -156,6 +178,9 @@ iframe {
         }
     .bubble{
         width: 90%;
+    }
+    .img-half{
+        width: 100%;
     }
 }
 @media(max-width: 400px){
@@ -289,4 +314,7 @@ iframe {
 .img-round{
     border-radius: 16px;
     border: .7px solid rgba(255, 255, 255, .2);
+}
+.img-half{
+    width: 50%;
 }

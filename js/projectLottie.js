@@ -1,16 +1,4 @@
 // 프로젝트 프로토타입
-// document.getElementById('drun_1').play();
-
-// videojs.getPlayer('drun_1').ready(function() {
-//     var myPlayer = this;
-//     // Play here? Two tasks to do
-//     myPlayer.muted(true);
-//     myPlayer.on('loadedmetadata', function(){
-//       myPlayer.play();
-//     });
-//   });
-
-// 프로젝트 프로토타입
 let project2 = document.getElementById('drun_1');
 
 let animationProject2 = bodymovin.loadAnimation({
@@ -38,3 +26,18 @@ let animationProject1 = bodymovin.loadAnimation({
 document.querySelector('.img-clip').addEventListener('mouseenter', () => {
     animationProject1.play(); // 자동 재생으로 변경되었으므로 play()만 호출
 });
+
+let project3 = document.getElementById('ounce_1');
+
+let animationProject3 = bodymovin.loadAnimation({
+    container: project3,
+    renderer: 'svg',
+    loop: false,
+    autoplay: true, // 자동 재생 옵션 추가
+    path: "https://lottie.host/2308db22-7516-453c-83b2-13f24aec931d/CLSrk5nRLE.json"
+});
+
+document.querySelector('.img-clip').addEventListener('mouseenter', () => {
+    animationProject1.play(); // 자동 재생으로 변경되었으므로 play()만 호출
+});
+

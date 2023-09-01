@@ -14,7 +14,7 @@ function changeColor() {
   var btnBehance = document.querySelectorAll('.btn_behance');
   var btnLinkedin = document.querySelectorAll('.btn_linkedin');
   var btnBlog = document.querySelectorAll('.btn_blog');
-  var circle = document.querySelectorAll('.main-point');
+  // var circle = document.querySelectorAll('.main-point');
   var project = document.querySelectorAll('.project');
 
   var colorWhite = body.style.backgroundColor;
@@ -58,9 +58,9 @@ function changeColor() {
       span.style.color = '#EEEEF1';
     });
 
-    circle.forEach((circle) => {
-      circle.style.border = '1px solid #EEEEF1';
-    })
+    // circle.forEach((circle) => {
+    //   circle.style.border = '1px solid #EEEEF1';
+    // })
 
     // project.forEach((project) => {
     //   project.style.border = '1px solid #EEEEF1';
@@ -117,9 +117,9 @@ function changeColor() {
       span.style.color = '#20202D';
     });
 
-    circle.forEach((circle) => {
-      circle.style.border = '1px solid #20202D';
-    })
+    // circle.forEach((circle) => {
+    //   circle.style.border = '1px solid #20202D';
+    // })
 
     // project.forEach((project) => {
     //   project.style.border = '1px solid #C0C0CE';
