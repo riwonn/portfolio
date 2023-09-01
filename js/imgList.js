@@ -72,6 +72,76 @@ const images = [
     },
     // photographs
     {
+      src: 'img/notWork/photo_25.webp',
+      alt: 'Photograph 16',
+      category: 'photographs',
+      projectName: 'Mongolia',
+      projectCaption : '2023'
+    },
+    {
+      src: 'img/notWork/photo_26.webp',
+      alt: 'Photograph 16',
+      category: 'photographs',
+      projectName: 'Mongolia',
+      projectCaption : '2023'
+    },
+    {
+      src: 'img/notWork/photo_27.webp',
+      alt: 'Photograph 16',
+      category: 'photographs',
+      projectName: 'Mongolia',
+      projectCaption : '2023'
+    },
+    {
+      src: 'img/notWork/photo_28.webp',
+      alt: 'Photograph 16',
+      category: 'photographs',
+      projectName: 'Mongolia',
+      projectCaption : '2023'
+    },
+    {
+      src: 'img/notWork/photo_29.webp',
+      alt: 'Photograph 16',
+      category: 'photographs',
+      projectName: 'Mongolia',
+      projectCaption : '2023'
+    },
+    {
+      src: 'img/notWork/photo_30.webp',
+      alt: 'Photograph 16',
+      category: 'photographs',
+      projectName: 'Mongolia',
+      projectCaption : '2023'
+    },
+    {
+      src: 'img/notWork/photo_31.webp',
+      alt: 'Photograph 16',
+      category: 'photographs',
+      projectName: 'Mongolia',
+      projectCaption : '2023'
+    },
+    {
+      src: 'img/notWork/photo_32.webp',
+      alt: 'Photograph 16',
+      category: 'photographs',
+      projectName: 'Mongolia',
+      projectCaption : '2023'
+    },
+    {
+      src: 'img/notWork/photo_33.webp',
+      alt: 'Photograph 16',
+      category: 'photographs',
+      projectName: 'Mongolia',
+      projectCaption : '2023'
+    },
+    {
+      src: 'img/notWork/photo_34.webp',
+      alt: 'Photograph 16',
+      category: 'photographs',
+      projectName: 'Mongolia',
+      projectCaption : '2023'
+    },
+    {
       src: 'img/notWork/photo_11.webp',
       alt: 'Photograph 11',
       category: 'photographs',
