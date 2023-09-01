@@ -1,4 +1,8 @@
 /* project page */
+video{
+    width: 100%;
+    height: auto;
+}
 .project-page{
     /* margin: 0px 20vw; */
     display: flex;
@@ -31,9 +35,11 @@
     background-size: cover;
     margin: 0px 10vw;
 }
-.image-align{
-    justify-content: center;
+.img-clip{
+    /* background-color: #fff; */
     position: relative;
+    /* justify-content: center; */
+    /* clip-path: inset(100% 100% round 16px); */
 }
 iframe {
     width: 100%;
@@ -59,14 +65,33 @@ iframe {
     padding: 64px 0;
     background: rgba(125, 125, 144, 0.1);
 }
-.sub-title-flex{
+.sub-title-flex {
     display: flex;
     flex-direction: row;
     gap: 36px;
+}
+
+.sub-title-flex.center {
     align-items: center;
 }
+
+.sub-title-flex.center.align img {
+    flex-grow: 1;
+    max-width: 30%;
+}
+
+.sub-title-flex.center.align .sub-title {
+    flex-grow: 2;
+}
+
 .sub-title-flex.half{
     width: 50%;
+}
+.sub-title-circle{
+    border: 1px solid rgba(125, 125, 144, 1);
+    border-radius: 50px;
+    padding: 16px 24px;
+    margin: 24px auto;
 }
 .card-column{
     display: flex;
@@ -189,6 +214,11 @@ iframe {
     align-items: center;
 }
 .main-point.circle{
+    /* background: rgba(242, 242, 242, .1); */
+    border: .7px solid rgba(255, 255, 255, .5);
+    width: 100%;
+    height: 100%;
+    padding: 14% 0;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
@@ -249,4 +279,8 @@ iframe {
     max-width: 200px;
     max-height: 200px;
     background-size: cover;
+}
+.img-round{
+    border-radius: 16px;
+    border: .7px solid rgba(255, 255, 255, .2);
 }
