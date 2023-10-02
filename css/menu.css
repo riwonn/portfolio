@@ -40,14 +40,14 @@
     right: 50%;
     transform:translate(-50%,0%);
     align-items: center;
-    height: 64px;
+    height: 60px;
     border-radius: 32px;
     /* 반응형 코딩 필요 */
     width: 50vw;
-    margin:16px 0;
-    padding: 0 2vw 0 3vw;
-    background-color: hsla(240, 19%, 86%, .8);
-    border: 1px solid hsla(243, 13%, 78%, .6);
+    margin: 20px 0;
+    padding: 0 1vw 0 2.5vw;
+    background-color: hsla(240, 19%, 86%, .6);
+    border: 1px solid hsla(243, 13%, 78%, .4);
     -webkit-backdrop-filter:blur(10px);
     backdrop-filter:blur(10px);
     z-index: 10;
@@ -68,12 +68,12 @@
     right: 50%;
     transform:translate(-50%,0%);
     align-items: center;
-    height: 64px;
+    height: 60px;
     border-radius: 32px;
     /* 반응형 코딩 필요 */
     width: 50vw;
-    margin:16px 0;
-    padding: 0 2vw 0 3vw; 
+    margin: 20px 0;
+    padding: 0 1vw 0 2.5vw;
     background-color: hsla(240, 10%, 32%, 0.5);
     border: 1px solid hsla(240, 8%, 53%, 0.5);
     -webkit-backdrop-filter:blur(10px);
@@ -249,6 +249,7 @@ input.img-menu.light{
     transition: .4s;
     transition-delay: .2s;
     opacity: 0;
+    gap: 12px
 }
 .cover-panel.active .menu-flex{
     opacity: 1;

@@ -21,11 +21,11 @@ export class ProjectView{
                     <a href="https://www.everiwon.com/" class="menu-link logo">EVERiwon</a>
                 </div>
             </header>
-            <a href="https://www.everiwon.com/#first" class="menu-link">Work</a>
+            <a href="https://www.everiwon.com/#first" class="body2 gray700">Work</a>
             <div class="border"></div>
-			<a href="extras.html" class="menu-link">Extras</a>
+			<a href="extras.html" class="body2 gray700">Extras</a>
             <div class="border"></div>
-            <a href="aboutMe.html" class="menu-link">About</a>
+            <a href="aboutMe.html" class="body2 gray700">About</a>
             <div class="border"></div>
         </section>
         `;
@@ -55,9 +55,9 @@ if (bigMenu) {
     bigMenu.innerHTML = `
         <nav class="btn_group">
             <a href="https://www.everiwon.com/" class="menu-link logo white">EVERiwon</a>
-            <a href="https://www.everiwon.com/#first" class="menu-link">Work</a>
-            <a href="extras.html" class="menu-link white">Extras</a>
-            <a href="aboutMe.html" class="menu-link white">About</a>
+            <a href="https://www.everiwon.com/#first" class="body2">Work</a>
+            <a href="extras.html" class="body2">Extras</a>
+            <a href="aboutMe.html" class="body2">About</a>
             <button class="img-switch" onclick="changeColor()"></button>
         </nav>
     `;
@@ -66,9 +66,9 @@ if (bigMenuDark) {
     bigMenuDark.innerHTML = `
         <nav class="btn_group">
             <a href="https://www.everiwon.com/" class="menu-link logo white">EVERiwon</a>
-            <a href="https://www.everiwon.com/#first" class="menu-link white">Work</a>
-            <a href="extras.html" class="menu-link white">Extras</a>
-            <a href="aboutMe.html" class="menu-link white">About</a>
+            <a href="https://www.everiwon.com/#first" class="body2">Work</a>
+            <a href="extras.html" class="body2">Extras</a>
+            <a href="aboutMe.html" class="body2">About</a>
             <button class="img-switch dark" onclick="changeColor()"></button>
         </nav>
     `;

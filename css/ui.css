@@ -189,7 +189,7 @@ article{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin:  10vh 10vw 0;
+    margin:  20vh 10vw 5vh;
     gap:48px;
     z-index: 1;
 }
