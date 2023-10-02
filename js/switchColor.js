@@ -3,6 +3,7 @@
 
 function changeColor() {
   var body = document.querySelector('body');
+  var body0 = document.querySelectorAll('.body0');
   var body1 = document.querySelectorAll('.body1');
   var body2 = document.querySelectorAll('.body2');
   var h1 = document.querySelectorAll('.h1');
@@ -32,6 +33,10 @@ function changeColor() {
 
     borders.forEach((border) => {
       border.style.backgroundColor = '#49495A';
+    });
+
+      body0.forEach((body0) => {
+      body0.style.color = '#F8F8FB';
     });
 
     body2.forEach((body2) => {
@@ -93,6 +98,10 @@ function changeColor() {
       border.style.backgroundColor = '#49495A';
     });
 
+    body0.forEach((body0) => {
+      body0.style.color = '#20202D';
+    });
+
     body2.forEach((body2) => {
       body2.style.color = '#20202D';
     });
@@ -106,7 +115,7 @@ function changeColor() {
     });
 
     captions.forEach((caption) => {
-      caption.style.color = '#A7A6BB';
+      caption.style.color = '#7D7D90';
     });
 
     menuLink.forEach((menuLink) => {

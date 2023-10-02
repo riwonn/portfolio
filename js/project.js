@@ -63,7 +63,7 @@ $(document).ready(function() {
       link.css("background-image", "url(" + projects[index].src + ")");
       item.append(link);
 
-      var title = $("<span class='card-title half white'>" + "<span class='body1'>" + projects[index].title + "</span>" + "<span class='caption'>" + projects[index].info + "</span>"  + "</span>");
+      var title = $("<div class='card-title half white'>" + "<div class='body1'>" + projects[index].title + "</div>" + "<div class='caption'>" + projects[index].info + "</div>"  + "</div>");
       item.append(title);
 
       $(".card-column").append(item);

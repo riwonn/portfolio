@@ -35,17 +35,15 @@
 /* 요소 디자인 */
 .btn-cv{
 	position:absolute;
-    right: 20vw;
-    top: 70vh;
-	height: 65px;
-	width: 252px;
+    right: 28vw;
+    top: 32vh;
+	height: 52px;
+	width: 192px;
 	border: none;
     background: #A68953;
 	rotate: -8deg;
-	border-radius: 32px;
     cursor: pointer;
 	transition: .3s;
-	padding: 0 0 .5em;
 }
 .btn-cv:hover{
     transition: .3s;
