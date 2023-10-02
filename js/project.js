@@ -6,16 +6,16 @@ $(document).ready(function() {
     projects = [
       {
         src: '../img/img_thum_2.webp',
-        title: "Ko-Ling | AR Language game app for Korean learners",
+        title: "Ko-Ling | AR Language game app",
         // desc: "Description of Project 2",
         info: "2021",
         url: "project2.html"
       },
       {
         src: '../img/img_thum_3.webp',
-        title: "B:UM | Emotion Diary",
+        title: "OUNCE | Cat food tracking app",
         // desc: "Description of Project 3",
-        info: "2021",
+        info: "2020",
         url: "project3.html"
       }
     ];
@@ -30,9 +30,9 @@ $(document).ready(function() {
       },
       {
         src: '../img/img_thum_3.webp',
-        title: "B:UM | Emotion Diary",
+        title: "OUNCE | Cat food tracking app",
         // desc: "Description of Project 3",
-        info: "2021",
+        info: "2020",
         url: "project3.html"
       }
     ];
@@ -47,7 +47,7 @@ $(document).ready(function() {
       },
       {
         src: '../img/img_thum_2.webp',
-        title: "Ko-Ling | AR Language game app for Korean learners",
+        title: "Ko-Ling | AR Language game app",
         // desc: "Description of Project 2",
         info: "2021",
         url: "project2.html"
@@ -63,7 +63,7 @@ $(document).ready(function() {
       link.css("background-image", "url(" + projects[index].src + ")");
       item.append(link);
 
-      var title = $("<span class='card-title half caption white'>" + projects[index].title + "</br>" + projects[index].info + "</span>");
+      var title = $("<span class='card-title half white'>" + "<span class='body1'>" + projects[index].title + "</span>" + "<span class='caption'>" + projects[index].info + "</span>"  + "</span>");
       item.append(title);
 
       $(".card-column").append(item);

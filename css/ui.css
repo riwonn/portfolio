@@ -4,7 +4,7 @@ html {
     overflow: scroll;
   }
 body{
-    background-color: #EEEEF1;
+    background-color: #F8F8FB;
     margin: 0px;
     /* font-family: 'Pretendard'; */
     /* font-family: 'Inconsolata', monospace; */
@@ -58,16 +58,14 @@ article{
 }
 /* Text */
 .bold{
-    font-family: "arboria", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 36px;
     line-height: 140%;
 }
 .main{
     /* font-family: 'pretendard'; */
-    font-family: "arboria", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 130px;
     line-height: 100%;
     transition: .3s;
@@ -78,9 +76,8 @@ article{
     font-weight: 300;
 }
 .title{
-    font-family: "arboria", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 40px;
     line-height:100%;
 }
@@ -88,9 +85,11 @@ article{
     line-height: 150%;
 }
 .body1{
-    font-size: 24px;
-    line-height: 160%;
+    font-family: 'Spectral', serif;
+    font-size: 28px;
+    line-height: 140%;
     transition: .3s;
+    color: #F8F8FB;
     }   
 .title.project{
     margin-top: 16vh;
@@ -103,18 +102,16 @@ article{
 .body2{
     font-size: 20px;
     line-height: 170%;
-    color: #F8F8FB;
+    color: #D6D6E3;
 }
 .caption{
-    /* font-family: "arboria", sans-serif;
-    font-weight: 300; */
-    font-size: 17px;
+    font-size: 16px;
     line-height: 150%;
-    color: #F8F8FB;
+    color: #A7A6BB;
 }
 .caption.bold{
-    font-family: "arboria", sans-serif;
-    font-weight: 500;
+    color: #F8F8FB;
+    font-weight: 400;
     font-size: 18px;
     line-height: 120%;
     /* color: #F8F8FB; */
@@ -152,15 +149,13 @@ article{
     text-decoration: none;
 }
 .h1{    
-    font-family: "arboria", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 28px;
     line-height: 100%;
     color: #F8F8FB;
 }
 .h2{
-    font-family: "arboria", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 24px;
     line-height: 100%;
     color: #F8F8FB;
@@ -372,6 +367,7 @@ article{
     align-items: flex-start;
     text-align: left;
     margin: 1.5vw 0;
+    gap: .1em;
 }
 
 /* footer */
@@ -425,7 +421,7 @@ article{
     width: 360px;
     height: 54px;
     background: #F8F8FB;
-    border: 1px #EEEEF1;
+    border: 1px #F8F8FB;
     display: flex;
     position: absolute;
     gap: 16px;
@@ -459,7 +455,7 @@ input::placeholder{
     height: 100%;
     padding: 12px;
     border: none;
-    background: #EEEEF1;
+    background: #F8F8FB;
     cursor: pointer;
     margin: 0;
 }

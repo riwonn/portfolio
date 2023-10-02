@@ -22,10 +22,10 @@ function changeColor() {
   var bigMenu = document.getElementById('bigMenuDark');
   var smallMenu = document.getElementById('smallMenu');
 
-  if (colorWhite === 'rgb(238, 238, 241)') {
+  if (colorWhite === 'rgb(248, 248, 251)') {
     // 바꿀 색상
     body.style.backgroundColor = '#20202D';
-    body.style.color = '#EEEEF1';
+    body.style.color = '#F8F8FB';
 
     btnSwitch.style.backgroundColor = 'rgba(167, 166, 187, .5)';
     btnSwitch.style.backgroundImage = 'url("../img/btn_switch_dark.svg")';
@@ -35,35 +35,35 @@ function changeColor() {
     });
 
     body2.forEach((body2) => {
-      body2.style.color = '#EEEEF1';
+      body2.style.color = '#D6D6E3';
     });
 
     body1.forEach((body1) => {
-      body1.style.color = '#EEEEF1';
+      body1.style.color = '#F8F8FB';
     });
 
     h1.forEach((h1) => {
-      h1.style.color = '#EEEEF1';
+      h1.style.color = '#F8F8FB';
     });
 
     captions.forEach((caption) => {
-      caption.style.color = '#EEEEF1';
+      caption.style.color = '#A7A6BB';
     });
 
     menuLink.forEach((menuLink) => {
-      menuLink.style.color = '#EEEEF1';
+      menuLink.style.color = '#F8F8FB';
     });
 
     span.forEach((span) => {
-      span.style.color = '#EEEEF1';
+      span.style.color = '#F8F8FB';
     });
 
     // circle.forEach((circle) => {
-    //   circle.style.border = '1px solid #EEEEF1';
+    //   circle.style.border = '1px solid #F8F8FB';
     // })
 
     // project.forEach((project) => {
-    //   project.style.border = '1px solid #EEEEF1';
+    //   project.style.border = '1px solid #F8F8FB';
     // })
 
     var style = document.createElement('style');
@@ -83,14 +83,14 @@ function changeColor() {
     smallMenu.classList.replace('menu-light', 'menu-dark');
   } else {
     // 기존 색상
-    body.style.backgroundColor = '#EEEEF1';
+    body.style.backgroundColor = '#F8F8FB';
     body.style.color = '#20202D';
 
     btnSwitch.style.backgroundColor = 'hsla(240, 17%, 15%, .1)';
     btnSwitch.style.backgroundImage = 'url("../img/btn_switch_light.svg")';
 
     borders.forEach((border) => {
-      border.style.backgroundColor = '##49495A';
+      border.style.backgroundColor = '#49495A';
     });
 
     body2.forEach((body2) => {
@@ -106,7 +106,7 @@ function changeColor() {
     });
 
     captions.forEach((caption) => {
-      caption.style.color = '#20202D';
+      caption.style.color = '#A7A6BB';
     });
 
     menuLink.forEach((menuLink) => {
