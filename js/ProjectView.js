@@ -18,7 +18,7 @@ export class ProjectView{
             <header class="menu-title">
                 <button class="btn-back"><span></span></button>
                 <div class="title-center">
-                    <a href="https://www.riwonk.com/" class="menu-link logo">Riwon Kwon/a>
+                    <a href="https://www.riwonk.com/" class="menu-link logo">Riwon Kwon</a>
                 </div>
             </header>
             <a href="https://www.riwonk.com/#first" class="menu-link body2 gray700">Work</a>
