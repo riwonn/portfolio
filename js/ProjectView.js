@@ -1,16 +1,3 @@
-const browserAPI = typeof browser !== 'undefined' ? browser : chrome;
-
-browserAPI.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    if (message.action === 'performAsyncTask') {
-        performAsyncTask(message.data).then(result => {
-            sendResponse({ success: true, data: result });
-        }).catch(error => {
-            sendResponse({ success: false, error: error.message });
-        });
-        return true; // 비동기 응답을 표시
-    }
-});
-
 export class ProjectView{
     constructor(){
         this.bodyElem = document.createElement('div');
