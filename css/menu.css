@@ -102,7 +102,7 @@
     display: flex;
     flex: 0 0 auto;
     gap: 1em;
-    justify-content: right;
+    justify-content: center;
  }
 .img-switch{
     background: hsla(240, 17%, 15%, .1) url("../img/btn_switch_light.svg") no-repeat center;

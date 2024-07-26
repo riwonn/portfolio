@@ -18,10 +18,10 @@ export class ProjectView{
             <header class="menu-title">
                 <button class="btn-back"><span></span></button>
                 <div class="title-center">
-                    <a href="https://www.everiwon.com/" class="menu-link logo">EVERiwon</a>
+                    <a href="https://www.riwonk.com/" class="menu-link logo">Riwon Kwon/a>
                 </div>
             </header>
-            <a href="https://www.everiwon.com/#first" class="body2 gray700">Work</a>
+            <a href="https://www.riwonk.com/#first" class="body2 gray700">Work</a>
             <div class="border"></div>
 			<a href="extras.html" class="body2 gray700">Extras</a>
             <div class="border"></div>
@@ -54,8 +54,8 @@ const bigMenuDark = document.querySelector('#bigMenuDark');
 if (bigMenu) {
     bigMenu.innerHTML = `
         <nav class="btn_group">
-            <a href="https://www.everiwon.com/" class="menu-link logo white">EVERiwon</a>
-            <a href="https://www.everiwon.com/#first" class="body2">Work</a>
+            <a href="https://www.riwonk.com/" class="menu-link logo white">Riwon Kwon/a>
+            <a href="https://www.riwonk.com/#first" class="body2">Work</a>
             <a href="extras.html" class="body2">Extras</a>
             <a href="aboutMe.html" class="body2">About</a>
             <button class="img-switch" onclick="changeColor()"></button>
@@ -65,8 +65,8 @@ if (bigMenu) {
 if (bigMenuDark) {
     bigMenuDark.innerHTML = `
         <nav class="btn_group">
-            <a href="https://www.everiwon.com/" class="menu-link logo white">EVERiwon</a>
-            <a href="https://www.everiwon.com/#first" class="body2">Work</a>
+            <a href="https://www.riwonk.com/" class="menu-link logo white">Riwon Kwon/a>
+            <a href="https://www.riwonk.com/#first" class="body2">Work</a>
             <a href="extras.html" class="body2">Extras</a>
             <a href="aboutMe.html" class="body2">About</a>
             <button class="img-switch dark" onclick="changeColor()"></button>
