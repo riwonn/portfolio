@@ -1,4 +1,7 @@
 /* H2 */
+.white{
+    color:#fff;
+}
 .menu-link{
     font-weight: 300;
     display: flex;
