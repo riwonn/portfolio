@@ -21,11 +21,11 @@ export class ProjectView{
                     <a href="https://www.riwonk.com/" class="menu-link logo">Riwon Kwon/a>
                 </div>
             </header>
-            <a href="https://www.riwonk.com/#first" class="body2 gray700">Work</a>
+            <a href="https://www.riwonk.com/#first" class="menu-link body2 gray700">Work</a>
             <div class="border"></div>
-			<a href="extras.html" class="body2 gray700">Extras</a>
+			<a href="extras.html" class="menu-link body2 gray700">Extras</a>
             <div class="border"></div>
-            <a href="aboutMe.html" class="body2 gray700">About</a>
+            <a href="aboutMe.html" class="menu-link body2 gray700">About</a>
             <div class="border"></div>
         </section>
         `;
@@ -55,9 +55,9 @@ if (bigMenu) {
     bigMenu.innerHTML = `
         <nav class="btn_group">
             <a href="https://www.riwonk.com/" class="menu-link logo white">Riwon Kwon/a>
-            <a href="https://www.riwonk.com/#first" class="body2">Work</a>
-            <a href="extras.html" class="body2">Extras</a>
-            <a href="aboutMe.html" class="body2">About</a>
+            <a href="https://www.riwonk.com/#first" class="menu-link body2">Work</a>
+            <a href="extras.html" class="menu-link body2">Extras</a>
+            <a href="aboutMe.html" class="menu-link body2">About</a>
             <button class="img-switch" onclick="changeColor()"></button>
         </nav>
     `;
