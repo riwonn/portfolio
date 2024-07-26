@@ -1,9 +1,5 @@
-const browserAPI = typeof browser !== 'undefined' ? browser : chrome;
+import browser from 'webextension-polyfill';
 
-browserAPI.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    // 메시지 처리 로직
-    sendResponse({ response: "Message received" });
-});
 
 $(document).ready(function() {
   var projects = [];
