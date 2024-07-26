@@ -65,7 +65,7 @@ if (bigMenu) {
 if (bigMenuDark) {
     bigMenuDark.innerHTML = `
         <nav class="btn_group">
-            <a href="https://www.riwonk.com/" class="menu-link logo white">Riwon Kwon/a>
+            <a href="https://www.riwonk.com/" class="menu-link logo white">Riwon Kwon</a>
             <a href="https://www.riwonk.com/#first" class="body2">Work</a>
             <a href="extras.html" class="body2">Extras</a>
             <a href="aboutMe.html" class="body2">About</a>
