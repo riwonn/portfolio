@@ -1,4 +1,3 @@
-import browser from 'webextension-polyfill';
 
 
 $(document).ready(function() {
